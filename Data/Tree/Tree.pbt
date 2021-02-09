@@ -559,24 +559,13 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+            X: 425
+            Y: -125
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 16483616467998129853
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 350
-            Y: -75
-            Z: -6.10351563e-05
           }
         }
       }
