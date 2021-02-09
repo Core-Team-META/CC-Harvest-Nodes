@@ -5,6 +5,12 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:_HarvestManager"
+        AssetReference {
+          Id: 4832434136466344299
+        }
+      }
+      Overrides {
         Name: "cs:MaxHealth"
         Int: 5
       }
@@ -15,10 +21,8 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:_HarvestManager"
-        AssetReference {
-          Id: 4832434136466344299
-        }
+        Name: "cs:NodeName"
+        String: ""
       }
     }
   }

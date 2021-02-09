@@ -3,8 +3,8 @@ local propDestroyEffect = script:GetCustomProperty("DestroyEffect")
 local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
 
 
-local mgr = require(prop_HarvestManager)
+--local mgr = require(prop_HarvestManager)
 
-mgr.RegisterNode(script)
+--mgr.RegisterNode(script)
 
 

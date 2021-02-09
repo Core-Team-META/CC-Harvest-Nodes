@@ -47,6 +47,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 5949526791574331083
   ChildIds: 8270882688003474880
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -74,6 +75,17 @@ Objects {
   }
   ParentId: 13762246887671800200
   ChildIds: 5560001739703565192
+  ChildIds: 17235477273057050028
+  ChildIds: 4359709514149619929
+  ChildIds: 13683861703679455840
+  ChildIds: 753343797138932328
+  ChildIds: 16308200544473535788
+  ChildIds: 9341702658784797650
+  ChildIds: 2396068506845935808
+  ChildIds: 13609098438461399940
+  ChildIds: 14513565052202275314
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -82,6 +94,496 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 14513565052202275314
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: 1200
+      Y: 225
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1650
+            Y: 75
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 13609098438461399940
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: 1050
+      Y: -600
+      Z: -6.10351563e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1500
+            Y: -750
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 2396068506845935808
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: 550
+      Y: -100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1000
+            Y: -250
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16483616467998129853
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 350
+            Y: -75
+            Z: -6.10351563e-05
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 9341702658784797650
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: 650
+      Y: 325
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1200
+            Y: 225
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 16308200544473535788
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: 500
+      Y: -500
+      Z: -6.10351563e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1050
+            Y: -600
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 753343797138932328
+  Name: "BasicRock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 550
+            Y: -100
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16483616467998129853
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 350
+            Y: -75
+            Z: -6.10351563e-05
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 13683861703679455840
+  Name: "BasicRock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 650
+            Y: 325
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 4359709514149619929
+  Name: "BasicRock"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 500
+            Y: -500
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 17235477273057050028
+  Name: "BasicRock"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "First Rock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16483616467998129853
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 350
+            Y: -75
+            Z: -6.10351563e-05
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
   }
 }
 Objects {
@@ -99,6 +601,14 @@ Objects {
     }
   }
   ParentId: 8270882688003474880
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeDataObj"
+      ObjectReference {
+        SelfId: 5949526791574331083
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -109,6 +619,42 @@ Objects {
     ScriptAsset {
       Id: 13229308759355056505
     }
+  }
+}
+Objects {
+  Id: 5949526791574331083
+  Name: "NodeData"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13762246887671800200
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeData"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:NodeData:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
@@ -131,6 +677,15 @@ Objects {
       Name: "cs:_HarvestManager"
       AssetReference {
         Id: 4832434136466344299
+      }
+    }
+    Overrides {
+      Name: "cs:FirstRock"
+      ObjectReference {
+        SelfId: 8014762394421363834
+        SubObjectId: 5032801462570562361
+        InstanceId: 17235477273057050028
+        TemplateId: 1876360131157000047
       }
     }
   }

@@ -36,8 +36,6 @@ Assets {
         Name: "Rock 03"
         Transform {
           Location {
-            X: 225
-            Y: 250
           }
           Rotation {
           }

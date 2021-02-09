@@ -10,6 +10,11 @@ Assets {
           Id: 4832434136466344299
         }
       }
+      Overrides {
+        Name: "cs:NodeDataObj"
+        ObjectReference {
+        }
+      }
     }
   }
   SerializationVersion: 74
