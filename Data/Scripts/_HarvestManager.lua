@@ -57,17 +57,24 @@ function API.RegisterHarvestableNodes(newNodeList, hcMgr)
 			h_id = nextUniqueId,
 			active = true,
 			bitfield = bitfield,
+			properties = v:GetCustomProperties(),
+			--[[
 			maxHealth = v:GetCustomProperty("MaxHealth"),
-			health = v:GetCustomProperty("MaxHealth"),
 			hitFX = v:GetCustomProperty("HitEffect"),
 			destroyFX = v:GetCustomProperty("DestroyEffect"),
+			harvestMessage = v:GetCustomProperty("HarvestMessage"),
+			resourceMin = v:GetCustomProperty("HarvestMessage"),
+			resourceMax = v:GetCustomProperty("HarvestMessage"),
+			resourceType = 
+			]]
+			health = v:GetCustomProperty("MaxHealth"),
 			--contextMgr = hcMgr,
 			nodeDataObj = nodeDataObj,
 			templateId = v.sourceTemplateId,
 			transform = v:GetWorldTransform(),
 			parent = v.parent
 		}
-		print("destroy = ", newData.destroyFX)
+		--print("destroy = ", newData.properties.DestroyEffect)
 		nodeGroups[nodeDataObj][k] = newData
 
 		allNodes[nextUniqueId] = newData
@@ -76,7 +83,8 @@ function API.RegisterHarvestableNodes(newNodeList, hcMgr)
 
 	end
 	nodeDataObj.networkedPropertyChangedEvent:Connect(OnNodeDataUpdate)
-	OnNodeDataUpdate(nodeDataObj)
+	UpdateToStringData(nodeDataObj)
+	--OnNodeDataUpdate(nodeDataObj, CUSTOM_PROPERTY_NAME)
 end
 
 
@@ -89,8 +97,9 @@ end
 
 function UpdateToStringData(obj)
 	local newStringData = obj:GetCustomProperty(CUSTOM_PROPERTY_NAME)
+	if newStringData:len() == 0 then return end
 	bitfields[obj].raw = newStringData
-	print("Something changed!", newStringData)
+	--print("Something changed!", newStringData)
 
 	for k,nodeData in pairs(nodeGroups[obj]) do
 
@@ -109,17 +118,13 @@ function UpdateToStringData(obj)
 				nextUniqueId = nextUniqueId + 1
 			else
 				if nodeData.obj ~= nil then
-					
-					--[[
-					if nodeData.destroyFX ~= nil and Environment.IsClient() or Environment.IsPreview() then
-						print(nodeData.destroyFX)
-							World.SpawnAsset(nodeData.destroyFX,
-							{
-								position = nodeData.obj:GetWorldPosition(),
-								rotation = Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360))
-							})
+					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsPreview()) then
+						Events.Broadcast("Harvest-SpawnAsset",
+								nodeData.properties.DestroyEffect,
+								nodeData.obj:GetWorldPosition(),
+								Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
+
 					end
-					]]
 
 
 
@@ -149,23 +154,30 @@ function API.AttemptToHarvest(obj, tool, hitresult)
 
 	local nodeData = allNodes[newTarget]
 
-	nodeData.health = nodeData.health - damage
-	print(nodeData.health)
 
-
-	if nodeData.hitFX ~= nil then
-		print("spawning?")
-		World.SpawnAsset(nodeData.hitFX, {
-			position = hitresult:GetImpactPosition(),
-			--rotation = hitresult:GetTransform():GetRotation()
-		})
+	if nodeData.properties.HitEffect ~= nil and (Environment.IsClient() or Environment.IsPreview()) then
+		Events.Broadcast("Harvest-SpawnAsset",
+				nodeData.properties["HitEffect"],
+				hitresult:GetImpactPosition(),
+				hitresult:GetTransform():GetRotation())
 	end
-	--print(damageToTarget)
 
---local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
---local propHarvestAbility = script:GetCustomProperty("HarvestAbility"):WaitForObject()
---local propToolRoot = script:GetCustomProperty("ToolRoot"):WaitForObject()
---local propToolTags = script:GetCustomProperty("ToolTags")
+	if nodeData.health > 0 then
+		nodeData.health = nodeData.health - damage
+		if nodeData.health <= 0 then
+			local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
+
+			Events.BroadcastToPlayer(tool.owner, "Harvest-FlyupText",
+				string.format(nodeData.properties.HarvestMessage, harvestAmount),
+				nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
+				Color.GREEN)
+
+			tool.owner:AddResource(nodeData.properties.HarvestResource, harvestAmount)
+
+			--print("Text:", string.format(nodeData.properties.HarvestMessage, harvestAmount))
+			API.SetNodeState(nodeData.h_id, false)
+		end
+	end
 
 end
 
@@ -177,7 +189,7 @@ end
 
 function API.SetNodeState(h_id, newState)
 	if not ServerCheck("SetNodeState") then return end
-	print("Setting state for", h_id)
+	--print("Setting state for", h_id)
 	local nodeData = allNodes[h_id]
 	if nodeData == nil then
 		warn("Got nill nodedata?")

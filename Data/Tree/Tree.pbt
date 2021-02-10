@@ -22,8 +22,7 @@ Objects {
   ChildIds: 2636173854424072013
   ChildIds: 13762246887671800200
   ChildIds: 14844116558761297279
-  ChildIds: 18018147917171729234
-  ChildIds: 3170248114809170156
+  ChildIds: 4576134389465926228
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,8 +35,8 @@ Objects {
   }
 }
 Objects {
-  Id: 3170248114809170156
-  Name: "Rock Break VFX"
+  Id: 4576134389465926228
+  Name: "Spawner Relay"
   Transform {
     Scale {
       X: 1
@@ -46,92 +45,29 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 10525405703232930436
+      key: 3662926344063606595
       value {
         Overrides {
           Name: "Name"
-          String: "Rock Break VFX"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -275
-            Y: 546.943726
-            Z: 200
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
+          String: "Spawner Relay"
         }
       }
     }
     TemplateAsset {
-      Id: 8170435218190728286
-    }
-  }
-}
-Objects {
-  Id: 18018147917171729234
-  Name: "Rock Hit VFX"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3767227744304301888
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Rock Hit VFX"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -275
-            Y: 546.943726
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4842855893470161523
+      Id: 2444002510257603865
     }
   }
 }
 Objects {
   Id: 14844116558761297279
-  Name: "Weapon"
+  Name: "Mining Pick"
   Transform {
     Location {
-      Z: 175
+      X: -369.839844
+      Y: 866.54248
+      Z: 175.000061
     }
     Rotation {
     }
@@ -684,8 +620,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1650
-            Y: 75
+            X: 1546.58142
+            Y: 840.763062
           }
         }
         Overrides {
@@ -729,8 +665,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1500
-            Y: -750
+            X: 1396.58142
+            Y: 15.7630615
             Z: -6.10351563e-05
           }
         }
@@ -774,11 +710,24 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+            X: 1327.78223
+            Y: 486.800842
+            Z: 0.000122070313
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16483616467998129853
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
           }
         }
       }
@@ -816,8 +765,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1200
-            Y: 225
+            X: 1096.58142
+            Y: 990.763062
           }
         }
         Overrides {
@@ -869,8 +818,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1050
-            Y: -600
+            X: 946.581421
+            Y: 165.763062
             Z: -6.10351563e-05
           }
         }
@@ -920,8 +869,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 550
-            Y: -100
+            X: 446.581421
+            Y: 665.763062
           }
         }
         Overrides {
@@ -989,8 +938,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 650
-            Y: 325
+            X: 546.581421
+            Y: 1090.76306
           }
         }
         Overrides {
@@ -1039,8 +988,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 500
-            Y: -500
+            X: 396.581421
+            Y: 265.763062
             Z: -6.10351563e-05
           }
         }
@@ -1086,8 +1035,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 425
-            Y: -125
+            X: 321.581421
+            Y: 640.763062
           }
         }
         Overrides {

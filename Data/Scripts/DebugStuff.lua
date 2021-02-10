@@ -1,3 +1,5 @@
+if true then return end
+
 local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
 local propFirstRock = script:GetCustomProperty("FirstRock"):WaitForObject()
 
