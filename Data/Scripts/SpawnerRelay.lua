@@ -13,7 +13,6 @@ function SpawnAsset(assetId, position, rotation, scale)
 end
 
 function SpawnFlyupText(text, pos, color)
-	print("flyup text!", text, pos, color)
 	if Environment.IsClient() then
 		UI.ShowFlyUpText(text, pos, {
 			color = color or Color.WHITE,

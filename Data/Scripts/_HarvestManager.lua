@@ -186,6 +186,14 @@ function API.IsNode(obj)
 	return API.GetHId(obj) ~= nil
 end
 
+function API.ResetNodes(nodeGroupObj)
+	print("Resetting!")
+	for k,v in pairs(nodeGroups[nodeGroupObj]) do
+		v.bitfield:Set(v.index - 1, true)
+	end
+	nodeGroupObj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, bitfields[nodeGroupObj].raw)
+end
+
 
 function API.SetNodeState(h_id, newState)
 	if not ServerCheck("SetNodeState") then return end
@@ -197,7 +205,7 @@ function API.SetNodeState(h_id, newState)
 	nodeData.bitfield:Set(nodeData.index - 1, newState)
 	--nodeData.active = newState
 	nodeData.nodeDataObj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, nodeData.bitfield.raw)
-	Events.Broadcast("HN-Update", nodeData.bitfield.raw)
+	--Events.Broadcast("HN-Update", nodeData.bitfield.raw)
 end
 
 
