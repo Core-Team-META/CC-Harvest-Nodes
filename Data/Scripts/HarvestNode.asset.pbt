@@ -21,7 +21,33 @@ Assets {
         }
       }
       Overrides {
+        Name: "cs:HitEffect"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
+      Overrides {
         Name: "cs:NodeName"
+        String: "Rock"
+      }
+      Overrides {
+        Name: "cs:HarvestResource"
+        String: "rocks"
+      }
+      Overrides {
+        Name: "cs:HarvestResourceMin"
+        Int: 1
+      }
+      Overrides {
+        Name: "cs:HarvestResourceMax"
+        Int: 5
+      }
+      Overrides {
+        Name: "cs:HarvestMessage"
+        String: "+%d Rocks!"
+      }
+      Overrides {
+        Name: "cs:RequiredHarvestTags"
         String: ""
       }
     }

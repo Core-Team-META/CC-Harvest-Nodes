@@ -7,7 +7,7 @@ Assets {
       RootId: 5032801462570562361
       Objects {
         Id: 5032801462570562361
-        Name: "BasicRock"
+        Name: "First Rock"
         Transform {
           Scale {
             X: 1
@@ -18,6 +18,18 @@ Assets {
         ParentId: 8270882688003474880
         ChildIds: 16483616467998129853
         UnregisteredParameters {
+          Overrides {
+            Name: "cs:HitEffect"
+            AssetReference {
+              Id: 4842855893470161523
+            }
+          }
+          Overrides {
+            Name: "cs:DestroyEffect"
+            AssetReference {
+              Id: 8170435218190728286
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
