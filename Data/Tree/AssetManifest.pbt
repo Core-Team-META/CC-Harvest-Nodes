@@ -52,3 +52,12 @@ Assets {
     AssetId: "sm_urb_computer-monitor_001"
   }
 }
+Assets {
+  Id: 1450856503829411012
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
+  }
+}

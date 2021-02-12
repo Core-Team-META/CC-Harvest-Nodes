@@ -71,7 +71,7 @@ function API.RegisterHarvestableNodes(newNodeList, hcMgr)
 			--contextMgr = hcMgr,
 			nodeDataObj = nodeDataObj,
 			templateId = v.sourceTemplateId,
-			transform = v:GetWorldTransform(),
+			transform = v:GetTransform(),
 			parent = v.parent
 		}
 		--print("destroy = ", newData.properties.DestroyEffect)
@@ -114,8 +114,7 @@ function UpdateToStringData(obj)
 					rotation = nodeData.transform:GetRotation(),
 					scale = nodeData.transform:GetScale(),
 				})
-				h_idLookup[GetShortId(nodeData.obj)] = nextUniqueId
-				nextUniqueId = nextUniqueId + 1
+				h_idLookup[GetShortId(nodeData.obj)] = nodeData.h_id
 			else
 				if nodeData.obj ~= nil then
 					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsPreview()) then
@@ -147,15 +146,12 @@ function API.AttemptToHarvest(obj, tool, hitresult)
 		print("Nothing to harvest")
 		return
 	end
-	if newTarget ~= currentTarget then
-		currentTarget = newTarget
-		damageToTarget = 0
-	end
 
 	local nodeData = allNodes[newTarget]
 
+	print("nodeData", nodeData, newTarget)
 
-	if nodeData.properties.HitEffect ~= nil and (Environment.IsClient() or Environment.IsPreview()) then
+	if nodeData.properties.HitEffect ~= nil then --and (Environment.IsClient() or Environment.IsPreview()) then
 		Events.Broadcast("Harvest-SpawnAsset",
 				nodeData.properties["HitEffect"],
 				hitresult:GetImpactPosition(),
@@ -174,7 +170,6 @@ function API.AttemptToHarvest(obj, tool, hitresult)
 
 			tool.owner:AddResource(nodeData.properties.HarvestResource, harvestAmount)
 
-			--print("Text:", string.format(nodeData.properties.HarvestMessage, harvestAmount))
 			API.SetNodeState(nodeData.h_id, false)
 		end
 	end
@@ -186,12 +181,29 @@ function API.IsNode(obj)
 	return API.GetHId(obj) ~= nil
 end
 
-function API.ResetNodes(nodeGroupObj)
-	print("Resetting!")
+function ResetNodeGroup(nodeGroupObj, newSetting)
 	for k,v in pairs(nodeGroups[nodeGroupObj]) do
-		v.bitfield:Set(v.index - 1, true)
+		v.bitfield:Set(v.index - 1, newSetting)
+		v.health = v.properties.MaxHealth
 	end
 	nodeGroupObj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, bitfields[nodeGroupObj].raw)
+end
+
+
+local boop = false
+function API.ResetNodes(nodeGroupObj)
+	print("Resetting!")
+
+	if nodeGroupObj ~= nil then
+		ResetNodeGroup(nodeGroupObj, true)
+	else
+		print("resetting all!")
+		for ngo, nodes in pairs(nodeGroups) do
+			print(ngo)
+			ResetNodeGroup(ngo, boop)
+		end
+		boop = not boop
+	end
 end
 
 

@@ -5,7 +5,7 @@ local mgr = require(prop_HarvestManager)
 
 
 function ButtonPress()
-	mgr.ResetNodes(propNodeData)
+	mgr.ResetNodes()--propNodeData)
 end
 
 
