@@ -18,6 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 16376134008609701213
         ChildIds: 16549913958864328388
+        ChildIds: 6554529199025904185
         Lifespan: 3
         WantsNetworking: true
         Collidable_v2 {
@@ -114,6 +115,61 @@ Assets {
           IsAttenuationEnabled: true
         }
       }
+      Objects {
+        Id: 6554529199025904185
+        Name: "Impact Sparks VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3767227744304301888
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 0.741457
+              B: 0.39
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Spark Line Scale Multiplier"
+            Float: 0.5
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 164442090419073939
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
     }
     Assets {
       Id: 3651708692326070408
@@ -131,6 +187,15 @@ Assets {
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_gun_impact_metal_02_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 164442090419073939
+      Name: "Impact Sparks VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_impact_sparks"
       }
     }
     PrimaryAssetId {
