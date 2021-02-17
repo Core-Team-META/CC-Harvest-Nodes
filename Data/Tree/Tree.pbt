@@ -24,6 +24,7 @@ Objects {
   ChildIds: 16589965482293628526
   ChildIds: 5003576127518947190
   ChildIds: 6148008806011559126
+  ChildIds: 3092244866190057791
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -33,6 +34,33 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 3092244866190057791
+  Name: "Mining Pick"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3376498988457263438
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Mining Pick"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 438556900277317622
+    }
   }
 }
 Objects {
@@ -1029,6 +1057,7 @@ Objects {
   }
   ParentId: 13762246887671800200
   ChildIds: 4359709514149619929
+  ChildIds: 3447144938764569178
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -1039,6 +1068,64 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 3447144938764569178
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -386.421692
+      Y: 758.520203
+      Z: -6.10351563e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -108.667328
+            Y: 986.383484
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:RequiredHarvestTags"
+          String: "axe"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
   }
 }
 Objects {
@@ -1076,6 +1163,10 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "cs:RequiredHarvestTags"
+          String: "mining"
         }
       }
     }

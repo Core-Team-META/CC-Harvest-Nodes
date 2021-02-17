@@ -16,6 +16,16 @@ function GetShortId(obj)
 	return obj:GetReference().id
 end
 
+-- Helper function for splitting tags
+function SplitTags(tags)
+	local result = {}
+	for str in string.gmatch(tags, "([^%s]+)") do
+		table.insert(result, str)
+	end
+	return result
+end
+
+
 
 function ServerCheck(functionName)
 	if not Environment.IsServer() then
@@ -71,6 +81,14 @@ function API.RegisterHarvestableNodes(groupRoot)
 	bitfields[nodeDataObj] = bitfield
 	nodeGroups[nodeDataObj] = {}
 	for k,v in pairs(newNodeList) do
+
+		local tagList = nil
+		for k,v in pairs(SplitTags(v:GetCustomProperty("RequiredHarvestTags"))) do
+			if tagList == nil then tagList = {} end
+			tagList[v] = true
+		end
+
+
 		local newData = {
 			obj = v,
 			index = k,
@@ -92,7 +110,8 @@ function API.RegisterHarvestableNodes(groupRoot)
 			nodeDataObj = nodeDataObj,
 			templateId = v.sourceTemplateId,
 			transform = v:GetTransform(),
-			parent = v.parent
+			parent = v.parent,
+			requiredTags = tagList
 		}
 		--print("destroy = ", newData.properties.DestroyEffect)
 		nodeGroups[nodeDataObj][k] = newData
@@ -156,11 +175,32 @@ function UpdateToStringData(obj)
 	end
 end
 
+-- Helper function for the logic to determine if a tool can
+-- harvest a particular node, based on tags:
+function CanHarvest(toolTags, nodeTagList)
+	local toolTagList = SplitTags(toolTags)
+	-- If no tags are specified, then yes, they can harvest.
+	if nodeTagList == nil then return true end
+
+	-- If there are no tool tags and there are node tags, then fail.
+	if toolTagList == nil then return false end
+
+	-- Otherwise, go through and look for a match:
+	for k,v in pairs(toolTagList) do
+		if nodeTagList[v] ~= nil then 
+			print("Tag match:", v)
+			return true
+		end
+	end
+	return false
+end
+
 
 
 function API.AttemptToHarvest(obj, tool, hitresult)
 	if damage == nil then damage = tool.damage end
 	if not ServerCheck("AttemptToHarvest") then return end
+
 	local newTarget = API.GetHId(obj)
 	if newTarget == nil then
 		print("Nothing to harvest")
@@ -171,12 +211,32 @@ function API.AttemptToHarvest(obj, tool, hitresult)
 
 	print("nodeData", nodeData, newTarget)
 
+	local toolScript = tool:FindChildByName("HarvestToolScript")
+	if toolScript == nil then
+		print("!!!")
+		return
+	end
+
+
+
 	if nodeData.properties.HitEffect ~= nil then --and (Environment.IsClient() or Environment.IsPreview()) then
 		Events.Broadcast("Harvest-SpawnAsset",
 				nodeData.properties["HitEffect"],
 				hitresult:GetImpactPosition(),
 				hitresult:GetTransform():GetRotation())
 	end
+
+	-- Verify that they have a tool that works here
+	local canHarvest = CanHarvest(toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
+	if not canHarvest then
+			Events.BroadcastToPlayer(tool.owner, "Harvest-FlyupText",
+				"You need a different tool.",
+				nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
+				Color.RED)
+		return
+	end
+
+
 
 	if nodeData.health > 0 then
 		nodeData.health = nodeData.health - damage
