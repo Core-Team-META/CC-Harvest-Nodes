@@ -1,13 +1,13 @@
 Assets {
   Id: 15251422738044263284
-  Name: "Axe"
+  Name: "Tool - Axe"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 8583049880314352059
       Objects {
         Id: 8583049880314352059
-        Name: "Axe"
+        Name: "Tool - Axe"
         Transform {
           Scale {
             X: 1
@@ -19,7 +19,7 @@ Assets {
         ChildIds: 10613276244945792615
         ChildIds: 2429667060356643935
         ChildIds: 11165079345553534293
-        ChildIds: 18418403284252908378
+        ChildIds: 9636877743567997651
         ChildIds: 16972731118799440578
         ChildIds: 5648504430275594095
         WantsNetworking: true
@@ -279,14 +279,13 @@ Assets {
         }
       }
       Objects {
-        Id: 18418403284252908378
-        Name: "Pickaxe"
+        Id: 9636877743567997651
+        Name: "ClientContext"
         Transform {
           Location {
-            Z: 75
+            Z: 69.4827881
           }
           Rotation {
-            Yaw: 90
           }
           Scale {
             X: 1
@@ -304,8 +303,7 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
         }
       }
       Objects {
@@ -313,10 +311,11 @@ Assets {
         Name: "Cylinder - Bottom-Aligned"
         Transform {
           Location {
-            Z: 2.02211
+            Z: 7.5393219
           }
           Rotation {
-            Roll: -179.999985
+            Yaw: 89.9999771
+            Roll: -179.999954
           }
           Scale {
             X: 0.09
@@ -324,7 +323,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 18418403284252908378
+        ParentId: 9636877743567997651
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -337,7 +336,6 @@ Assets {
             Bool: false
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -366,10 +364,9 @@ Assets {
         Name: "Fantasy Axe Blade 01"
         Transform {
           Location {
-            Z: -5.51721191
           }
           Rotation {
-            Yaw: 90
+            Yaw: -179.999969
           }
           Scale {
             X: 1.47087419
@@ -377,8 +374,7 @@ Assets {
             Z: 1.3105886
           }
         }
-        ParentId: 18418403284252908378
-        WantsNetworking: true
+        ParentId: 9636877743567997651
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

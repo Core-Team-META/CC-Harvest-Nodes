@@ -1,13 +1,13 @@
 Assets {
   Id: 438556900277317622
-  Name: "Mining Pick"
+  Name: "Tool - Mining Pick"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 3376498988457263438
       Objects {
         Id: 3376498988457263438
-        Name: "Mining Pick"
+        Name: "Tool - Mining Pick"
         Transform {
           Scale {
             X: 1
@@ -19,7 +19,7 @@ Assets {
         ChildIds: 1867002693186125048
         ChildIds: 11764467755399991103
         ChildIds: 13025874573840402237
-        ChildIds: 12269499272518640773
+        ChildIds: 3901858285101031299
         ChildIds: 11686172424248130121
         ChildIds: 15524796547569305176
         WantsNetworking: true
@@ -279,14 +279,13 @@ Assets {
         }
       }
       Objects {
-        Id: 12269499272518640773
-        Name: "Pickaxe"
+        Id: 3901858285101031299
+        Name: "ClientContext"
         Transform {
           Location {
-            Z: 75
+            Z: 61.486496
           }
           Rotation {
-            Yaw: 90
           }
           Scale {
             X: 1
@@ -295,8 +294,8 @@ Assets {
           }
         }
         ParentId: 3376498988457263438
-        ChildIds: 9134387016336598855
         ChildIds: 8282619275002026655
+        ChildIds: 9134387016336598855
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -304,61 +303,7 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 9134387016336598855
-        Name: "Cylinder - Bottom-Aligned"
-        Transform {
-          Location {
-            Z: 2.02211
-          }
-          Rotation {
-            Roll: -179.999985
-          }
-          Scale {
-            X: 0.09
-            Y: 0.09
-            Z: 1
-          }
-        }
-        ParentId: 12269499272518640773
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7795504530598228722
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14609222748856275364
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
+        NetworkContext {
         }
       }
       Objects {
@@ -366,10 +311,11 @@ Assets {
         Name: "Crescent - 02"
         Transform {
           Location {
-            Z: -13.513504
           }
           Rotation {
             Pitch: -90
+            Yaw: -90
+            Roll: 180
           }
           Scale {
             X: 0.290590227
@@ -377,7 +323,7 @@ Assets {
             Z: 0.1
           }
         }
-        ParentId: 12269499272518640773
+        ParentId: 3901858285101031299
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -407,7 +353,6 @@ Assets {
             Float: 0.194317594
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -417,6 +362,59 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 17486578884833630931
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9134387016336598855
+        Name: "Cylinder - Bottom-Aligned"
+        Transform {
+          Location {
+            Z: 15.535614
+          }
+          Rotation {
+            Yaw: 89.9999771
+            Roll: -179.999954
+          }
+          Scale {
+            X: 0.09
+            Y: 0.09
+            Z: 1
+          }
+        }
+        ParentId: 3901858285101031299
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7795504530598228722
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14609222748856275364
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -552,24 +550,6 @@ Assets {
       }
     }
     Assets {
-      Id: 14609222748856275364
-      Name: "Cylinder - Bottom-Aligned"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_001"
-      }
-    }
-    Assets {
-      Id: 7795504530598228722
-      Name: "Wood Planks Dark"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_planks_dark_001_uv"
-      }
-    }
-    Assets {
       Id: 17486578884833630931
       Name: "Crescent - 03"
       PlatformAssetType: 1
@@ -585,6 +565,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_stainless-steel_001_uv"
+      }
+    }
+    Assets {
+      Id: 14609222748856275364
+      Name: "Cylinder - Bottom-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_001"
+      }
+    }
+    Assets {
+      Id: 7795504530598228722
+      Name: "Wood Planks Dark"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_planks_dark_001_uv"
       }
     }
     PrimaryAssetId {
