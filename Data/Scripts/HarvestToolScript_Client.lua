@@ -41,7 +41,8 @@ function OnToolHit(ability)
 
 	local nodeData = mgr.GetNodeData(obj)
 	if nodeData == nil then 
-		warn("couldn't find nodedata I guess")
+		-- Hit something that wasn't nodedata
+		--warn("couldn't find nodedata I guess")
 		return
 	end
 
