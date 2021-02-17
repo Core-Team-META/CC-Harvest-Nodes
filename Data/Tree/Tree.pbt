@@ -24,6 +24,8 @@ Objects {
   ChildIds: 16589965482293628526
   ChildIds: 5003576127518947190
   ChildIds: 6148008806011559126
+  ChildIds: 10806320829286460856
+  ChildIds: 5462019910131152895
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,8 +38,82 @@ Objects {
   }
 }
 Objects {
+  Id: 5462019910131152895
+  Name: "Axe"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8583049880314352059
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Axe"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -465.874207
+            Y: 321.566193
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15251422738044263284
+    }
+  }
+}
+Objects {
+  Id: 10806320829286460856
+  Name: "Mining Pick"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3376498988457263438
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Mining Pick"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -370.259979
+            Y: 103.25975
+            Z: 3.81469727e-06
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 438556900277317622
+    }
+  }
+}
+Objects {
   Id: 6148008806011559126
-  Name: "Init - StaticContext"
+  Name: "HarvestSetup"
   Transform {
     Location {
     }
@@ -1081,6 +1157,16 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:RequiredHarvestTags"
+          String: "axe"
+        }
+        Overrides {
+          Name: "cs:HitEffect"
+          AssetReference {
+            Id: 2118190854122488142
           }
         }
       }
