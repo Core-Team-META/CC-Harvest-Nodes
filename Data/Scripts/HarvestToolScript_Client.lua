@@ -9,7 +9,7 @@ local hpTracker = require(prop_HarvestHPTracker)
 
 local CAMERA_DIST = 400 -- TODO - read this directly or something
 function OnToolHit(ability)
-	print("Client tool hit!")
+	--print("Client tool hit!")
 
 	-- We have to do our own raycast to figure out what we hit
 	-- because we are firing off of Ability.ExecuteEvent.

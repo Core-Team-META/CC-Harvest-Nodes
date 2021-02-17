@@ -26540,6 +26540,10 @@ Objects {
           Name: "cs:RequiredHarvestTags"
           String: "mining"
         }
+        Overrides {
+          Name: "cs:RespawnTime"
+          Float: 10
+        }
       }
     }
     TemplateAsset {
@@ -26578,6 +26582,10 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
+        }
+        Overrides {
+          Name: "cs:RespawnTime"
+          Float: 10
         }
       }
     }

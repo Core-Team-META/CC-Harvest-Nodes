@@ -50,6 +50,10 @@ Assets {
         Name: "cs:RequiredHarvestTags"
         String: ""
       }
+      Overrides {
+        Name: "cs:RespawnTime"
+        Float: 10
+      }
     }
   }
   SerializationVersion: 74

@@ -10,6 +10,8 @@ local bitfields = {} -- key is the node data obj that the networked custom prope
 local nodeGroups = {} -- key is also the node data obj that the networked custom property is on
 local h_idLookup = {}
 
+local respawnList = {}
+
 -- Just to make this a little cleaner.
 function GetShortId(obj)
 	--print(CoreDebug.GetStackTrace())
@@ -58,6 +60,10 @@ function API.Init()
 	end
 
 	--Events.Connect("ObjectLookup", PerformObjectLookup)
+
+	if Environment.IsServer() then
+		Task.Spawn(NodeRespawner)
+	end
 end
 
 function API.InitClient()
@@ -68,8 +74,6 @@ function API.InitClient()
 	end
 
 end
-
-
 
 
 function API.GetNodeData(obj)
@@ -215,7 +219,7 @@ function CanHarvest(toolTags, nodeTagList)
 	-- Otherwise, go through and look for a match:
 	for k,v in pairs(toolTagList) do
 		if nodeTagList[v] ~= nil then 
-			print("Tag match:", v)
+			--print("Tag match:", v)
 			return true
 		end
 	end
@@ -254,7 +258,9 @@ end
 
 
 function OnNodeHarvested(player, hid)
-	print("Node Harvested!")
+	if not ServerCheck("OnNodeHarvested") then return end
+
+	--print("Node Harvested!")
 	local nodeData = allNodes[hid]
 	if nodeData == nil then
 		warning("OnNodeHarvested: Got a bad hid:", hid)
@@ -270,6 +276,7 @@ function OnNodeHarvested(player, hid)
 
 	API.SetNodeState(nodeData.h_id, false)
 
+	RegisterForRespawn(hid, time() + nodeData.properties.RespawnTime)
 end
 
 
@@ -283,14 +290,14 @@ function API.CanHarvest(node, tool)
 	local nodeData = allNodes[h_id]
 
 	local toolScript = tool:FindChildByName("HarvestToolScript")
-	print("CanHarvest : checking tags:", toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
+	--print("CanHarvest : checking tags:", toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
 
 	local canHarvest = CanHarvest(toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
 	return canHarvest
 end
 
 
-
+--[[
 function API.AttemptToHarvest(obj, tool, hitresult)
 	if damage == nil then damage = tool.damage end
 	if not ServerCheck("AttemptToHarvest") then return end
@@ -340,7 +347,7 @@ function API.AttemptToHarvest(obj, tool, hitresult)
 
 end
 
-
+]]
 function API.IsNode(obj)
 	return API.GetHId(obj) ~= nil
 end
@@ -377,6 +384,8 @@ function API.SetNodeState(h_id, newState)
 	local nodeData = allNodes[h_id]
 	if nodeData == nil then
 		warn("Got nill nodedata?")
+		print("hid=", h_id)
+		return
 	end
 	nodeData.bitfield:Set(nodeData.index - 1, newState)
 	--nodeData.active = newState
@@ -388,5 +397,25 @@ end
 if Environment.IsServer() then
 	Events.ConnectForPlayer("NodeHarvested", OnNodeHarvested)
 end
+
+
+
+function RegisterForRespawn(hid, time)
+	print("Registering for respawning - hid:", hid, "time:", time)
+	table.insert(respawnList, {time = time, hid = hid})
+	table.sort(respawnList, function(a, b) return a.time < b.time end)
+end
+
+
+function NodeRespawner()
+	while true do
+		Task.Wait(1)
+		while #respawnList > 0 and respawnList[1].time < time() do
+			API.SetNodeState(respawnList[1].hid, true)
+			table.remove(respawnList, 1)
+		end
+	end
+end
+
 
 return API
