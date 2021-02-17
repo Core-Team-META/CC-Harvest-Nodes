@@ -169,10 +169,10 @@ Assets {
             Id: 1377196800742672142
           }
           AutoPlay: true
-          Pitch: -1995.16443
-          Volume: 2.02621961
-          Falloff: -1
-          Radius: -1
+          Pitch: -1472.16357
+          Volume: 4
+          Falloff: 1000
+          Radius: 500
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -212,7 +212,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -291,7 +290,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -372,7 +370,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -451,7 +448,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -530,7 +526,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -611,7 +606,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -691,7 +685,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -771,7 +764,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -853,7 +845,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }

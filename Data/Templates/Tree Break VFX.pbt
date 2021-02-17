@@ -228,9 +228,9 @@ Assets {
           }
           AutoPlay: true
           Pitch: 1633.15332
-          Volume: 2.13517809
+          Volume: 4
           Falloff: -1
-          Radius: -1
+          Radius: 500
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -271,7 +271,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -350,7 +349,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -429,7 +427,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -528,7 +525,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -591,7 +587,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -655,7 +650,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -718,7 +712,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -781,7 +774,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -845,7 +837,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -909,7 +900,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -971,7 +961,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1035,7 +1024,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1099,7 +1087,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1163,7 +1150,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1225,7 +1211,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1268,7 +1253,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1348,7 +1332,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1428,7 +1411,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1508,7 +1490,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1588,7 +1569,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }
@@ -1668,7 +1648,6 @@ Assets {
           }
           StaticMesh {
             Physics {
-              IsEnabled: true
               Mass: 100
               LinearDamping: 0.01
             }

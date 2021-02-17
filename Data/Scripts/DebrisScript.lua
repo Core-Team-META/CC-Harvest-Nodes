@@ -9,17 +9,28 @@ for k,v in pairs(script.parent:GetChildren()) do
 	--print(v, v:IsA("StaticMesh"), v.isSimulatingDebrisPhysics)
 	--if v:IsA("StaticMesh") and v.isSimulatingDebrisPhysics then
 	if v:IsA("StaticMesh") then
-        v:SetVelocity(rng:GetVector3())
         debris[k] = v
-        local pos = rng:GetVector3() * propFlingAmount
-        pos.z = math.abs(pos.z)
-        --v:SetWorldPosition(script.parent:GetWorldPosition() + pos)
-	end
+    end
 end
 
-Task.Wait(4)
+-- Double wait here is to get around some weird bugs with debris physics.
+Task.Wait()
+Task.Wait()
 for k,v in pairs(debris) do
-	v:ScaleTo(Vector3.ZERO, 0.25)
+    v.isSimulatingDebrisPhysics = true
+    v:SetVelocity(rng:GetVector3())
+    local pos = rng:GetVector3() * propFlingAmount
+    pos.z = math.abs(pos.z)
+    --v:SetWorldPosition(script.parent:GetWorldPosition() + pos)
+end
+
+
+Task.Wait(3)
+for k,v in pairs(debris) do
+	Task.Spawn(function()
+		Task.Wait(math.random() * 2)
+		v:ScaleTo(Vector3.ZERO, 1)
+	end)
 end
 
 

@@ -21,7 +21,7 @@ Assets {
           Overrides {
             Name: "cs:HitEffect"
             AssetReference {
-              Id: 4842855893470161523
+              Id: 2118190854122488142
             }
           }
           Overrides {
@@ -32,7 +32,7 @@ Assets {
           }
           Overrides {
             Name: "cs:RequiredHarvestTags"
-            String: ""
+            String: "axe"
           }
           Overrides {
             Name: "cs:NodeName"
@@ -45,6 +45,10 @@ Assets {
           Overrides {
             Name: "cs:HarvestMessage"
             String: "+%d Wood!"
+          }
+          Overrides {
+            Name: "cs:MaxHealth"
+            Int: 10
           }
         }
         Collidable_v2 {
