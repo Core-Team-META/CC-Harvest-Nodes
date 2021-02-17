@@ -30,6 +30,8 @@ Objects {
   ChildIds: 17377517494351055562
   ChildIds: 15925076577333130440
   ChildIds: 13733910929916968523
+  ChildIds: 12255573312055294824
+  ChildIds: 1113578094554751039
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,6 +41,3982 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1113578094554751039
+  Name: "Axe Dispenser"
+  Transform {
+    Location {
+      X: -3546.18384
+      Y: 803.384399
+      Z: -1043.70117
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 853874711998494474
+  ChildIds: 1504001951060525569
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1504001951060525569
+  Name: "Pile O\' Axes"
+  Transform {
+    Location {
+      X: -9.45056152
+      Y: -5.67913818
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1113578094554751039
+  ChildIds: 9619294744022206973
+  ChildIds: 11130196028367271465
+  ChildIds: 15042736883304467988
+  ChildIds: 16410123953470802305
+  ChildIds: 1752377090257040891
+  ChildIds: 480661803667349184
+  ChildIds: 18169312716739571739
+  ChildIds: 13578174577949177462
+  ChildIds: 2527610873154673475
+  ChildIds: 4894200759898782477
+  ChildIds: 1602428828281462843
+  ChildIds: 15727563840600024353
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15727563840600024353
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: -23.3687744
+      Y: 8.74231
+      Z: 25.5202484
+    }
+    Rotation {
+      Yaw: -97.1031494
+      Roll: -78.0270462
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 15708662230909220611
+  ChildIds: 5438127021493376999
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5438127021493376999
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 15727563840600024353
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15708662230909220611
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 15727563840600024353
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1602428828281462843
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: 32.8486328
+      Y: -15.6825562
+      Z: 25.5202484
+    }
+    Rotation {
+      Yaw: 5.29819632
+      Roll: -78.0266571
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 12897745997730913734
+  ChildIds: 15138345940669124830
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15138345940669124830
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 1602428828281462843
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 12897745997730913734
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 1602428828281462843
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4894200759898782477
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: -24.5783691
+      Y: -34.0296631
+      Z: 15.9021606
+    }
+    Rotation {
+      Pitch: 2.55660105
+      Yaw: -32.273674
+      Roll: -89.7457886
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 5204722152925726249
+  ChildIds: 15771825975622968425
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15771825975622968425
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 4894200759898782477
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 5204722152925726249
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 4894200759898782477
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2527610873154673475
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: 27.8831787
+      Y: 15.3484497
+      Z: 9.61808777
+    }
+    Rotation {
+      Yaw: -136.096542
+      Roll: -78.0274734
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 15994033580664711264
+  ChildIds: 9041095589367381168
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9041095589367381168
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 2527610873154673475
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15994033580664711264
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 2527610873154673475
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13578174577949177462
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: 56.2073975
+      Y: -39.0087891
+      Z: 9.61808777
+    }
+    Rotation {
+      Yaw: -33.6952362
+      Roll: -78.0271378
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 9686285730934184832
+  ChildIds: 13157073113813689391
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13157073113813689391
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 13578174577949177462
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9686285730934184832
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 13578174577949177462
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 18169312716739571739
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: 0.0295410156
+      Y: -17.1335449
+    }
+    Rotation {
+      Pitch: 2.55662847
+      Yaw: -71.267189
+      Roll: -89.7458
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 17566404943965696147
+  ChildIds: 667188320853324458
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 667188320853324458
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 18169312716739571739
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17566404943965696147
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 18169312716739571739
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 480661803667349184
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: -15.2414551
+      Y: 3.11096191
+      Z: 9.61808777
+    }
+    Rotation {
+      Yaw: 166.404831
+      Roll: -78.0280304
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 9400231342839477211
+  ChildIds: 15749957637013703370
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15749957637013703370
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 480661803667349184
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9400231342839477211
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 480661803667349184
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1752377090257040891
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: -45.8662109
+      Y: -49.984375
+      Z: 9.61808777
+    }
+    Rotation {
+      Yaw: -91.1939087
+      Roll: -78.0277481
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 13925329355077290217
+  ChildIds: 4617738861295803521
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4617738861295803521
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 1752377090257040891
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13925329355077290217
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 1752377090257040891
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16410123953470802305
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: -57.6025391
+      Y: 9.14880371
+    }
+    Rotation {
+      Pitch: 2.55666256
+      Yaw: -128.765976
+      Roll: -89.7457886
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 13962418134601481062
+  ChildIds: 11053640076133645853
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11053640076133645853
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 16410123953470802305
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13962418134601481062
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 16410123953470802305
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 15042736883304467988
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: 44.7944336
+      Y: 40.1251831
+    }
+    Rotation {
+      Pitch: 2.55671716
+      Yaw: 102.138802
+      Roll: -89.7457886
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 9295108813380719552
+  ChildIds: 16020706069150898887
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16020706069150898887
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 15042736883304467988
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9295108813380719552
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 15042736883304467988
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11130196028367271465
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: -8.49975586
+      Y: 68.3064575
+      Z: 9.61808777
+    }
+    Rotation {
+      Yaw: 139.710876
+      Roll: -78.0284882
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 10226781126345320476
+  ChildIds: 6760149282266623608
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6760149282266623608
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 11130196028367271465
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10226781126345320476
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 11130196028367271465
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 9619294744022206973
+  Name: "Axe Model"
+  Transform {
+    Location {
+      X: 13.3951416
+      Y: 11.0563965
+      Z: 9.61808777
+    }
+    Rotation {
+      Yaw: 37.3098907
+      Roll: -78.0286636
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1504001951060525569
+  ChildIds: 12298222021114985837
+  ChildIds: 8386685465833932966
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8386685465833932966
+  Name: "Fantasy Axe Blade 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -179.999954
+    }
+    Scale {
+      X: 1.47087419
+      Y: 1.00000012
+      Z: 1.3105886
+    }
+  }
+  ParentId: 9619294744022206973
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18423898048047861963
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 12298222021114985837
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Z: 7.5393219
+    }
+    Rotation {
+      Yaw: 89.9999466
+      Roll: -179.999954
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 9619294744022206973
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 853874711998494474
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 9.45056152
+      Y: 5.67919922
+      Z: 68.5068207
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.66953552
+      Y: 1.66953552
+      Z: 1.66953552
+    }
+  }
+  ParentId: 1113578094554751039
+  ChildIds: 3311221205343266624
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Grab an Axe!"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 3311221205343266624
+  Name: "ToolDispenser"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 853874711998494474
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tool"
+      AssetReference {
+        Id: 15251422738044263284
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9488761381614525965
+    }
+  }
+}
+Objects {
+  Id: 12255573312055294824
+  Name: "Mining Pick Dispenser"
+  Transform {
+    Location {
+      X: -3544.14478
+      Y: 1162.40356
+      Z: -1043.70117
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 10174687226462621116
+  ChildIds: 16795416609131847189
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16795416609131847189
+  Name: "Pile \'O Pickaxes"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12255573312055294824
+  ChildIds: 10502571042214373175
+  ChildIds: 16801678641592295813
+  ChildIds: 17790760277047846319
+  ChildIds: 8412800126039995147
+  ChildIds: 257674071616833753
+  ChildIds: 1789661366127208740
+  ChildIds: 18205242094886613331
+  ChildIds: 17494886207447266718
+  ChildIds: 16400915415214276109
+  ChildIds: 179879070194526295
+  ChildIds: 4696492153854579999
+  ChildIds: 1807502270579605124
+  ChildIds: 4072876813235974619
+  ChildIds: 2608147503093847085
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2608147503093847085
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: 54.4674072
+      Y: 86.6651611
+    }
+    Rotation {
+      Yaw: 141.096725
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 17884367331414036133
+  ChildIds: 13501923065821183987
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13501923065821183987
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 2608147503093847085
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17884367331414036133
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 2608147503093847085
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4072876813235974619
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: 10.5327148
+      Y: 92.8863525
+      Z: 14.343277
+    }
+    Rotation {
+      Pitch: 6.44063568
+      Yaw: -149.429443
+      Roll: 11.6611652
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 11977538037013286519
+  ChildIds: 11203277029765115549
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11203277029765115549
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 4072876813235974619
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11977538037013286519
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 4072876813235974619
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1807502270579605124
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -24.7856445
+      Y: -41.8997803
+      Z: 14.343277
+    }
+    Rotation {
+      Pitch: 6.44063568
+      Yaw: 22.5677662
+      Roll: 11.6604347
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 11926037453921654815
+  ChildIds: 12453392232796583189
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12453392232796583189
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 1807502270579605124
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 11926037453921654815
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 1807502270579605124
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4696492153854579999
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -56.9648438
+      Y: -25.2332764
+      Z: 6.10351563e-05
+    }
+    Rotation {
+      Yaw: 21.9092979
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 7461068931657447939
+  ChildIds: 8610033925544067546
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8610033925544067546
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 4696492153854579999
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 7461068931657447939
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 4696492153854579999
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 179879070194526295
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: 103.915283
+      Y: -3.04846191
+      Z: 3.05175781e-05
+    }
+    Rotation {
+      Yaw: 120.044518
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 8180054977476847
+  ChildIds: 1240109644182960218
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1240109644182960218
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 179879070194526295
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8180054977476847
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 179879070194526295
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16400915415214276109
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -52.7583
+      Y: 133.827759
+    }
+    Rotation {
+      Yaw: -154.924179
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 6313804081699905513
+  ChildIds: 12354330400929841604
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12354330400929841604
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 16400915415214276109
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6313804081699905513
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 16400915415214276109
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17494886207447266718
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -81.8520508
+      Y: 73.3768311
+      Z: 14.343277
+    }
+    Rotation {
+      Pitch: 6.44063568
+      Yaw: -68.1435
+      Roll: 11.6615105
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 6241128396713475097
+  ChildIds: 17293990115344039596
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17293990115344039596
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 17494886207447266718
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6241128396713475097
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 17494886207447266718
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 18205242094886613331
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: 74.3365479
+      Y: -29.0650635
+      Z: 14.343277
+    }
+    Rotation {
+      Pitch: 6.44063568
+      Yaw: 150.759079
+      Roll: 11.6601782
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 17525113009817550166
+  ChildIds: 7875340028427875184
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7875340028427875184
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 18205242094886613331
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17525113009817550166
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 18205242094886613331
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 1789661366127208740
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: 14.6938477
+      Y: -102.264526
+      Z: 14.343277
+    }
+    Rotation {
+      Pitch: 6.44063568
+      Yaw: 69.4738235
+      Roll: 11.6598415
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 12963922676959329943
+  ChildIds: 3252068805004984342
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3252068805004984342
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 1789661366127208740
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 12963922676959329943
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 1789661366127208740
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 257674071616833753
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -42.4658203
+      Y: 24.8061523
+      Z: 14.343277
+    }
+    Rotation {
+      Pitch: 6.44064951
+      Yaw: -118.52961
+      Roll: 11.6591311
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 13309391095258678854
+  ChildIds: 808221997974215158
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 808221997974215158
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 257674071616833753
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 13309391095258678854
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 257674071616833753
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 8412800126039995147
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -6.95898438
+      Y: 32.0446777
+      Z: 6.10351563e-05
+    }
+    Rotation {
+      Yaw: -119.188049
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 701196256454378906
+  ChildIds: 8203820930683951282
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8203820930683951282
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 8412800126039995147
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 701196256454378906
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 8412800126039995147
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 17790760277047846319
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -58.4135742
+      Y: -22.7043457
+      Z: 3.05175781e-05
+    }
+    Rotation {
+      Yaw: 86.104126
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 6600721491803565541
+  ChildIds: 4217452751077893703
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4217452751077893703
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 17790760277047846319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6600721491803565541
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 17790760277047846319
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 16801678641592295813
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: 89.6589355
+      Y: -94.3789063
+    }
+    Rotation {
+      Yaw: 63.9787407
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 12002446340498475216
+  ChildIds: 3384207061533450080
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3384207061533450080
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 16801678641592295813
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 12002446340498475216
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 16801678641592295813
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10502571042214373175
+  Name: " Pickaxe Model"
+  Transform {
+    Location {
+      X: -23.402832
+      Y: -125.014282
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16795416609131847189
+  ChildIds: 6848780090119469796
+  ChildIds: 9791216826799292301
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9791216826799292301
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      Y: -7.76196289
+    }
+    Rotation {
+      Pitch: 87.8159
+      Yaw: -89.9996414
+      Roll: -0.0357603393
+    }
+    Scale {
+      X: 0.09
+      Y: 0.09
+      Z: 1
+    }
+  }
+  ParentId: 10502571042214373175
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7795504530598228722
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14609222748856275364
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 6848780090119469796
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      Y: 7.76196289
+      Z: 0.601577759
+    }
+    Rotation {
+      Pitch: 2.22156668
+      Yaw: 89.9999847
+      Roll: -0.00207526912
+    }
+    Scale {
+      X: 0.290590227
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 10502571042214373175
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16254281410732861046
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 4.50611877
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.194317594
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17486578884833630931
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 10174687226462621116
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 9.45056152
+      Y: 5.67919922
+      Z: 68.5068207
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.66953552
+      Y: 1.66953552
+      Z: 1.66953552
+    }
+  }
+  ParentId: 12255573312055294824
+  ChildIds: 6837395350260431366
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Grab a Mining Pick!"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 6837395350260431366
+  Name: "ToolDispenser"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10174687226462621116
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Tool"
+      AssetReference {
+        Id: 438556900277317622
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9488761381614525965
+    }
   }
 }
 Objects {
@@ -8038,6 +12016,7 @@ Objects {
   ChildIds: 17865991990028869911
   ChildIds: 7004520203032736650
   ChildIds: 17347974778176159226
+  ChildIds: 18439732279330846942
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8046,6 +12025,61 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 18439732279330846942
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: -1355.23181
+      Y: -803.845337
+      Z: 436.97113
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.25678062
+      Y: 42.2514725
+      Z: 17.9461575
+    }
+  }
+  ParentId: 5003576127518947190
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1450856503829411012
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.871367335
+        G: 0.0865004659
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
