@@ -181,7 +181,9 @@ function UpdateToStringData(obj)
 				h_idLookup[GetShortId(nodeData.obj)] = nodeData.h_id
 			else
 				if nodeData.obj ~= nil then
-					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsPreview()) then
+					--if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsPreview()) then
+						if nodeData.properties.DestroyEffect ~= nil and Environment.IsServer() then
+
 						Events.Broadcast("Harvest-SpawnAsset",
 								nodeData.properties.DestroyEffect,
 								nodeData.obj:GetWorldPosition(),
