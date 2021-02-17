@@ -88,7 +88,7 @@ local nextUniqueId = 0
 function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 	local newNodeList = {}
 	for k,v in pairs(groupRoot:GetCustomProperty("StaticContext"):WaitForObject():GetChildren()) do
-		print("testing ", v.name)
+		--print("testing ", v.name)
 		local properties = v:GetCustomProperties()
 		if properties["_HarvestManager"] ~= nil then
 			table.insert(newNodeList, v)
