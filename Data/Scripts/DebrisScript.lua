@@ -1,3 +1,6 @@
+local propFlingAmount = script:GetCustomProperty("FlingAmount")
+
+
 -- Helper script to choreograph explosions of rock debris.
 
 local rng = RandomStream.New()
@@ -8,9 +11,9 @@ for k,v in pairs(script.parent:GetChildren()) do
 	if v:IsA("StaticMesh") then
         v:SetVelocity(rng:GetVector3())
         debris[k] = v
-        local pos = rng:GetVector3() * 100
+        local pos = rng:GetVector3() * propFlingAmount
         pos.z = math.abs(pos.z)
-        v:SetWorldPosition(script.parent:GetWorldPosition() + pos)
+        --v:SetWorldPosition(script.parent:GetWorldPosition() + pos)
 	end
 end
 

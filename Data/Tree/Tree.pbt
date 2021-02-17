@@ -24,7 +24,6 @@ Objects {
   ChildIds: 16589965482293628526
   ChildIds: 5003576127518947190
   ChildIds: 6148008806011559126
-  ChildIds: 3092244866190057791
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,33 +33,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 3092244866190057791
-  Name: "Mining Pick"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3376498988457263438
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Mining Pick"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 438556900277317622
-    }
   }
 }
 Objects {
@@ -1058,6 +1030,7 @@ Objects {
   ParentId: 13762246887671800200
   ChildIds: 4359709514149619929
   ChildIds: 3447144938764569178
+  ChildIds: 14252740872353124717
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -1068,6 +1041,53 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 14252740872353124717
+  Name: "BasicTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -379.518158
+            Y: 1237.36475
+            Z: -3.81469727e-06
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
   }
 }
 Objects {

@@ -83,6 +83,12 @@ Assets {
           }
         }
         ParentId: 9384206358802234991
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:FlingAmount"
+            Float: 60
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

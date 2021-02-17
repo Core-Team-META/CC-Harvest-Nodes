@@ -3,6 +3,12 @@ Assets {
   Name: "DebrisScript"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:FlingAmount"
+        Float: 0
+      }
+    }
   }
   SerializationVersion: 74
 }
