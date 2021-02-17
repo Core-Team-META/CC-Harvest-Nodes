@@ -41,13 +41,33 @@ function API.GetHId(obj)
 end
 
 
+function API.Init()
+	for k,groupRoot in pairs(World.FindObjectsByName("!HarvestNodeGroup")) do
+		-- TODO: Check that it's a static context and has the right properties?
+		API.RegisterHarvestableNodes(groupRoot)
+	end
+end
+
+
+
+
 local nextUniqueId = 0
 
-function API.RegisterHarvestableNodes(newNodeList, hcMgr)
+function API.RegisterHarvestableNodes(groupRoot)
+	local newNodeList = {}
+	for k,v in pairs(groupRoot:GetCustomProperty("StaticContext"):WaitForObject():GetChildren()) do
+		print("testing ", v.name)
+		local properties = v:GetCustomProperties()
+		if properties["_HarvestManager"] ~= nil then
+			table.insert(newNodeList, v)
+		end
+	end
+
+
 	print("Registering", #newNodeList, "nodes!")
 	local bitfield = BF.New(#newNodeList)
 	bitfield:Reset(true)
-	local nodeDataObj = hcMgr:GetCustomProperty("NodeDataObj"):WaitForObject()
+	local nodeDataObj = groupRoot:GetCustomProperty("NodeDataObj"):WaitForObject()
 	bitfields[nodeDataObj] = bitfield
 	nodeGroups[nodeDataObj] = {}
 	for k,v in pairs(newNodeList) do
