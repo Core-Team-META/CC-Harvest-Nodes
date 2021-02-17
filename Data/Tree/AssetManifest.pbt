@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1943848901426182074
+  Name: "Grass Clumps"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_grass_002_uv"
+  }
+}
+Assets {
   Id: 1450856503829411012
   Name: "Plastic Matte"
   PlatformAssetType: 2
