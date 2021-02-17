@@ -54,16 +54,38 @@ end
 function API.Init()
 	for k,groupRoot in pairs(World.FindObjectsByName("!HarvestNodeGroup")) do
 		-- TODO: Check that it's a static context and has the right properties?
-		API.RegisterHarvestableNodes(groupRoot)
+		API.RegisterHarvestableNodes(groupRoot, false)
 	end
+
+	--Events.Connect("ObjectLookup", PerformObjectLookup)
+end
+
+function API.InitClient()
+	print("initting client only stuff.")
+	for k,groupRoot in pairs(World.FindObjectsByName("!HarvestNodeGroup")) do
+		-- TODO: Check that it's a static context and has the right properties?
+		API.RegisterHarvestableNodes(groupRoot, true)
+	end
+
 end
 
 
 
 
+function API.GetNodeData(obj)
+	local h_id = API.GetHId(obj)
+	if h_id == nil then
+		--print("Nothing...")
+		return nil
+	end
+
+	local nodeData = allNodes[h_id]
+	return nodeData
+end
+
 local nextUniqueId = 0
 
-function API.RegisterHarvestableNodes(groupRoot)
+function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 	local newNodeList = {}
 	for k,v in pairs(groupRoot:GetCustomProperty("StaticContext"):WaitForObject():GetChildren()) do
 		print("testing ", v.name)
@@ -121,8 +143,11 @@ function API.RegisterHarvestableNodes(groupRoot)
 		nextUniqueId = nextUniqueId + 1
 
 	end
-	nodeDataObj.networkedPropertyChangedEvent:Connect(OnNodeDataUpdate)
-	UpdateToStringData(nodeDataObj)
+
+	if not dataOnly then
+		nodeDataObj.networkedPropertyChangedEvent:Connect(OnNodeDataUpdate)
+		UpdateToStringData(nodeDataObj)
+	end
 	--OnNodeDataUpdate(nodeDataObj, CUSTOM_PROPERTY_NAME)
 end
 
@@ -197,6 +222,73 @@ end
 
 
 
+function API.SpawnHarvestHitEffects(obj, tool, hitresult)
+	if damage == nil then damage = tool.damage end
+	if not ServerCheck("SpawnHarvestHitEffects") then return end
+
+	local newTarget = API.GetHId(obj)
+	if newTarget == nil then
+		print("Nothing to harvest")
+		return
+	end
+
+	local nodeData = allNodes[newTarget]
+
+
+	if nodeData.properties.HitEffect ~= nil then --and (Environment.IsClient() or Environment.IsPreview()) then
+		Events.Broadcast("Harvest-SpawnAsset",
+				nodeData.properties["HitEffect"],
+				hitresult:GetImpactPosition(),
+				hitresult:GetTransform():GetRotation())
+	end
+end
+
+
+function API.HarvestNodeByPlayer(obj, player)
+	if not ClientCheck("HarvestNode") then return end
+
+	Events.BroadcastToServer("NodeHarvested", API.GetHId(obj))
+end
+
+
+function OnNodeHarvested(player, hid)
+	print("Node Harvested!")
+	local nodeData = allNodes[hid]
+	if nodeData == nil then
+		warning("OnNodeHarvested: Got a bad hid:", hid)
+	end
+	local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
+
+	Events.BroadcastToPlayer(player, "Harvest-FlyupText",
+		string.format(nodeData.properties.HarvestMessage, harvestAmount),
+		nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
+		Color.GREEN)
+
+	player:AddResource(nodeData.properties.HarvestResource, harvestAmount)
+
+	API.SetNodeState(nodeData.h_id, false)
+
+end
+
+
+function API.CanHarvest(node, tool)
+	local h_id = API.GetHId(node)
+	if h_id == nil then
+		print("CanHarvest : couldn't find hid")
+		return false
+	end
+
+	local nodeData = allNodes[h_id]
+
+	local toolScript = tool:FindChildByName("HarvestToolScript")
+	print("CanHarvest : checking tags:", toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
+
+	local canHarvest = CanHarvest(toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
+	return canHarvest
+end
+
+
+
 function API.AttemptToHarvest(obj, tool, hitresult)
 	if damage == nil then damage = tool.damage end
 	if not ServerCheck("AttemptToHarvest") then return end
@@ -209,15 +301,6 @@ function API.AttemptToHarvest(obj, tool, hitresult)
 
 	local nodeData = allNodes[newTarget]
 
-	print("nodeData", nodeData, newTarget)
-
-	local toolScript = tool:FindChildByName("HarvestToolScript")
-	if toolScript == nil then
-		print("!!!")
-		return
-	end
-
-
 
 	if nodeData.properties.HitEffect ~= nil then --and (Environment.IsClient() or Environment.IsPreview()) then
 		Events.Broadcast("Harvest-SpawnAsset",
@@ -227,8 +310,7 @@ function API.AttemptToHarvest(obj, tool, hitresult)
 	end
 
 	-- Verify that they have a tool that works here
-	local canHarvest = CanHarvest(toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
-	if not canHarvest then
+	if not API.CanHarvest(obj, tool) then
 			Events.BroadcastToPlayer(tool.owner, "Harvest-FlyupText",
 				"You need a different tool.",
 				nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
@@ -301,7 +383,8 @@ function API.SetNodeState(h_id, newState)
 end
 
 
-
-
+if Environment.IsServer() then
+	Events.ConnectForPlayer("NodeHarvested", OnNodeHarvested)
+end
 
 return API

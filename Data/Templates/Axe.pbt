@@ -21,6 +21,7 @@ Assets {
         ChildIds: 11165079345553534293
         ChildIds: 18418403284252908378
         ChildIds: 16972731118799440578
+        ChildIds: 5648504430275594095
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -444,6 +445,82 @@ Assets {
         Script {
           ScriptAsset {
             Id: 16706010178393302417
+          }
+        }
+      }
+      Objects {
+        Id: 5648504430275594095
+        Name: "ClientContext"
+        Transform {
+          Location {
+            X: 95.6142273
+            Y: -218.306442
+            Z: 3.81469727e-06
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8583049880314352059
+        ChildIds: 7067686696212581041
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 7067686696212581041
+        Name: "HarvestToolScript_Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5648504430275594095
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ToolRoot"
+            ObjectReference {
+              SubObjectId: 8583049880314352059
+            }
+          }
+          Overrides {
+            Name: "cs:HarvestAbility"
+            ObjectReference {
+              SubObjectId: 10613276244945792615
+            }
+          }
+          Overrides {
+            Name: "cs:ServerToolScript"
+            ObjectReference {
+              SubObjectId: 16972731118799440578
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 10938322263209158755
           }
         }
       }

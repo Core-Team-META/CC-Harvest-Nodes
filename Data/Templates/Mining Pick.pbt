@@ -21,6 +21,7 @@ Assets {
         ChildIds: 13025874573840402237
         ChildIds: 12269499272518640773
         ChildIds: 11686172424248130121
+        ChildIds: 15524796547569305176
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -458,6 +459,10 @@ Assets {
               SubObjectId: 1867002693186125048
             }
           }
+          Overrides {
+            Name: "cs:ToolTags"
+            String: "mining"
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -469,6 +474,79 @@ Assets {
         Script {
           ScriptAsset {
             Id: 16706010178393302417
+          }
+        }
+      }
+      Objects {
+        Id: 15524796547569305176
+        Name: "ClientContext"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3376498988457263438
+        ChildIds: 1414267003242991426
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 1414267003242991426
+        Name: "HarvestToolScript_Client"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15524796547569305176
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ServerToolScript"
+            ObjectReference {
+              SubObjectId: 11686172424248130121
+            }
+          }
+          Overrides {
+            Name: "cs:ToolRoot"
+            ObjectReference {
+              SubObjectId: 3376498988457263438
+            }
+          }
+          Overrides {
+            Name: "cs:HarvestAbility"
+            ObjectReference {
+              SubObjectId: 1867002693186125048
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 10938322263209158755
           }
         }
       }

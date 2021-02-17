@@ -1,6 +1,6 @@
 Assets {
-  Id: 16706010178393302417
-  Name: "HarvestToolScript"
+  Id: 10938322263209158755
+  Name: "HarvestToolScript_Client"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -8,6 +8,12 @@ Assets {
         Name: "cs:_HarvestManager"
         AssetReference {
           Id: 4832434136466344299
+        }
+      }
+      Overrides {
+        Name: "cs:_HarvestHPTracker"
+        AssetReference {
+          Id: 2545808778274277438
         }
       }
       Overrides {
@@ -21,8 +27,9 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:ToolTags"
-        String: ""
+        Name: "cs:ServerToolScript"
+        ObjectReference {
+        }
       }
     }
   }
