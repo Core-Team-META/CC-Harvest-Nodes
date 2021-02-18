@@ -10,7 +10,7 @@ local mgr = require(prop_HarvestManager)
 local hpTracker = require(prop_HarvestHPTracker)
 
 
-
+propTargetDisplayPanel.isEnabled = false
 
 local EXAMINE_DIST = 1000
 function Tick()

@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5918760318625082276
+  Name: "\"Japanese Moonlight\" Music Construction Kit (Layers) 01"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "abp_JapaneseMoonlightKit_ref"
+  }
+}
+Assets {
   Id: 1943848901426182074
   Name: "Grass Clumps"
   PlatformAssetType: 2

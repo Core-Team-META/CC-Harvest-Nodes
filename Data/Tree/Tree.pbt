@@ -32,6 +32,7 @@ Objects {
   ChildIds: 13733910929916968523
   ChildIds: 12255573312055294824
   ChildIds: 1113578094554751039
+  ChildIds: 7739860303948702135
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -41,6 +42,42 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 7739860303948702135
+  Name: "\"Japanese Moonlight\" Music Construction Kit (Layers) 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5918760318625082276
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      AutoPlay: true
+      Repeat: true
+      Volume: 1
+      Falloff: 3600
+      Radius: 400
+    }
   }
 }
 Objects {
@@ -8000,7 +8037,7 @@ Objects {
   Name: "Mining Pick Dispenser"
   Transform {
     Location {
-      X: -1460.93311
+      X: -1864.27295
       Y: 997.002075
       Z: 128.905319
     }
@@ -10346,7 +10383,7 @@ Objects {
   Name: "Axe Dispenser"
   Transform {
     Location {
-      X: -1482.82959
+      X: -1886.16943
       Y: 1296.40808
       Z: 128.905319
     }
@@ -12033,7 +12070,7 @@ Objects {
   Transform {
     Location {
       X: -1355.23181
-      Y: -803.845337
+      Y: 3000.66626
       Z: 436.97113
     }
     Rotation {
@@ -13516,9 +13553,9 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 2078.87891
+      X: 3223.86914
       Y: -2439.16382
-      Z: 436.97113
+      Z: 737.655
     }
     Rotation {
     }
@@ -30457,6 +30494,7 @@ Objects {
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
+      Z: 300.683899
     }
     Rotation {
     }
@@ -30551,7 +30589,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -735.616211
+            X: -1466.5564
             Y: 765.539734
             Z: -6.10351563e-05
           }
@@ -30607,9 +30645,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -379.518158
+            X: -1110.45837
             Y: 1329.95215
-            Z: -3.81469727e-06
           }
         }
         Overrides {
@@ -30620,6 +30657,10 @@ Objects {
         Overrides {
           Name: "cs:RespawnTime"
           Float: 2
+        }
+        Overrides {
+          Name: "cs:MaxHealth"
+          Int: 70
         }
       }
     }
