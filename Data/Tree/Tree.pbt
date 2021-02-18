@@ -8000,8 +8000,8 @@ Objects {
   Name: "Mining Pick Dispenser"
   Transform {
     Location {
-      X: -1635.5293
-      Y: 1162.40356
+      X: -1460.93311
+      Y: 997.002075
       Z: 128.905319
     }
     Rotation {
@@ -10346,8 +10346,8 @@ Objects {
   Name: "Axe Dispenser"
   Transform {
     Location {
-      X: -1637.56836
-      Y: 803.384399
+      X: -1482.82959
+      Y: 1296.40808
       Z: 128.905319
     }
     Rotation {
@@ -30576,7 +30576,7 @@ Objects {
         }
         Overrides {
           Name: "cs:RespawnTime"
-          Float: 10
+          Float: 2
         }
       }
     }
@@ -30619,7 +30619,7 @@ Objects {
         }
         Overrides {
           Name: "cs:RespawnTime"
-          Float: 10
+          Float: 2
         }
       }
     }

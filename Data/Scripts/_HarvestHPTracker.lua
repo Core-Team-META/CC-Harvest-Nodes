@@ -44,5 +44,12 @@ function API.IsDestroyed(obj)
 end
 
 
+function OnRespawn(nodeData)
+	print("Object respawned!")
+	damagedObjects[nodeData.h_id] = nil
+end
+
+
+Events.Connect("HarvestRespawn", OnRespawn)
 
 return API

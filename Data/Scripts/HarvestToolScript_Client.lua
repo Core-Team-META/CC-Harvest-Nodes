@@ -57,10 +57,12 @@ function OnToolHit(ability)
 		})
 		return
 	else
-		hpTracker.ApplyDamage(obj, damage)
-		if hpTracker.IsDestroyed(obj) then
-			mgr.HarvestNodeByPlayer(obj, Game.GetLocalPlayer())
-			--Events.BroadcastToServer("Harvested", mgr.GetHId(obj))
+		if not hpTracker.IsDestroyed(obj) then
+			hpTracker.ApplyDamage(obj, damage)
+			if hpTracker.IsDestroyed(obj) then
+				mgr.HarvestNodeByPlayer(obj, Game.GetLocalPlayer())
+				--Events.BroadcastToServer("Harvested", mgr.GetHId(obj))
+			end
 		end
 	end
 

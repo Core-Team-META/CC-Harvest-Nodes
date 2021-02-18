@@ -183,6 +183,7 @@ function UpdateToStringData(obj)
 					scale = nodeData.transform:GetScale(),
 				})
 				h_idLookup[GetShortId(nodeData.obj)] = nodeData.h_id
+				Events.Broadcast("HarvestRespawn", nodeData)
 			else
 				if nodeData.obj ~= nil then
 					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
