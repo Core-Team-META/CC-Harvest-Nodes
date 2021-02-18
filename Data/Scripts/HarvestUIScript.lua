@@ -10,13 +10,6 @@ local mgr = require(prop_HarvestManager)
 local hpTracker = require(prop_HarvestHPTracker)
 
 
---[[
-
-function UpdatePlayerView()
-	while true do
-	end
-end
-]]
 
 
 local EXAMINE_DIST = 1000

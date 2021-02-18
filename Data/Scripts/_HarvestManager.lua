@@ -72,9 +72,20 @@ function API.InitClient()
 		-- TODO: Check that it's a static context and has the right properties?
 		API.RegisterHarvestableNodes(groupRoot, true)
 	end
-
+	Events.Connect("Harvest-Respawn", OnHarvestRespawn_PIE)
 end
 
+
+function OnHarvestRespawn_PIE(hid, objRef)
+	print("Got a respawn event:", hid)
+	local obj = objRef:WaitForObject()
+	print(obj.name, obj)
+	print("Am I in the client context?", Environment.IsClient())
+	h_idLookup[GetShortId(obj)] = hid
+	allNodes[hid].obj = obj
+	-- This is so that the HP tracker gets it.  This is so convoluted... ;_;
+	--Events.Broadcast("Harvest-Respawn", allNodes[hid])
+end
 
 function API.GetNodeData(obj)
 	local h_id = API.GetHId(obj)
@@ -183,7 +194,7 @@ function UpdateToStringData(obj)
 					scale = nodeData.transform:GetScale(),
 				})
 				h_idLookup[GetShortId(nodeData.obj)] = nodeData.h_id
-				Events.Broadcast("HarvestRespawn", nodeData)
+				Events.Broadcast("Harvest-Respawn", nodeData.h_id, nodeData.obj:GetReference())
 			else
 				if nodeData.obj ~= nil then
 					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then

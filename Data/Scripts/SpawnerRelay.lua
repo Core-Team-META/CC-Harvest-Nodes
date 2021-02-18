@@ -22,6 +22,13 @@ function SpawnFlyupText(text, pos, color)
 	end
 end
 
+function RespawnRelay(hid, objRef)
+	Events.BroadcastToAllPlayers("Harvest-Respawn", hid, objRef)
+end
+
 
 Events.Connect("Harvest-SpawnAsset", SpawnAsset)
 Events.Connect("Harvest-FlyupText", SpawnFlyupText)
+if Environment.IsSinglePlayerPreview() and not Environment.IsClient() then
+	Events.Connect("Harvest-Respawn", RespawnRelay)
+end
