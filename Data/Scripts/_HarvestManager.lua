@@ -200,13 +200,20 @@ function UpdateToStringData(obj)
 					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
 						--if nodeData.properties.DestroyEffect ~= nil and Environment.IsServer() then
 
-						Events.Broadcast("Harvest-SpawnAsset",
+						Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnAsset",
 								nodeData.properties.DestroyEffect,
 								nodeData.obj:GetWorldPosition(),
 								Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
 
 					end
-
+					if nodeData.properties.PickupSpawnMax > 0 then
+						Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnPickups",
+								nodeData.properties.PickupTemplate,
+								nodeData.obj:GetWorldPosition(),
+								math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
+								100
+								)
+					end
 
 
 					h_idLookup[GetShortId(nodeData.obj)] = nil
@@ -423,8 +430,22 @@ function NodeRespawner()
 	while true do
 		Task.Wait(1)
 		while #respawnList > 0 and respawnList[1].time < time() do
-			API.SetNodeState(respawnList[1].hid, true)
-			table.remove(respawnList, 1)
+			local pos = allNodes[respawnList[1].hid].transform:GetPosition()
+			local tooClose = false
+
+			for k, p in pairs(Game.GetPlayers()) do
+				if (p:GetWorldPosition() - pos).size < 500 then
+					tooClose = true
+					break
+				end
+			end
+			if not tooClose then
+				API.SetNodeState(respawnList[1].hid, true)
+				table.remove(respawnList, 1)
+			else
+				RegisterForRespawn(respawnList[1].hid, time() + math.random(5, 10))
+				table.remove(respawnList, 1)
+			end
 		end
 	end
 end

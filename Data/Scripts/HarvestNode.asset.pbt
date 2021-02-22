@@ -54,6 +54,20 @@ Assets {
         Name: "cs:RespawnTime"
         Float: 10
       }
+      Overrides {
+        Name: "cs:PickupSpawnMin"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:PickupSpawnMax"
+        Int: 0
+      }
+      Overrides {
+        Name: "cs:PickupTemplate"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
     }
   }
   SerializationVersion: 74

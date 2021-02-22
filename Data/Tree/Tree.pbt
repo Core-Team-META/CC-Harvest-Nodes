@@ -19,20 +19,12 @@ Objects {
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
   ChildIds: 13122367563676440083
-  ChildIds: 13762246887671800200
-  ChildIds: 15550618206306260798
-  ChildIds: 6831339810215125053
-  ChildIds: 9813487193253576098
-  ChildIds: 9993441039476849784
+  ChildIds: 18302167890738607010
   ChildIds: 16589965482293628526
   ChildIds: 5003576127518947190
-  ChildIds: 9901680513712714174
-  ChildIds: 17377517494351055562
-  ChildIds: 15925076577333130440
-  ChildIds: 13733910929916968523
-  ChildIds: 12255573312055294824
-  ChildIds: 1113578094554751039
+  ChildIds: 18334245025561281365
   ChildIds: 7739860303948702135
+  ChildIds: 8546847550335682123
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -42,6 +34,103 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8546847550335682123
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 8705025612508602434
+  ChildIds: 3120026482758765002
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 3120026482758765002
+  Name: "Gem Pickup VFX"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8546847550335682123
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1236597551726676605
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Gem Pickup VFX"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 18046577296843185921
+    }
+  }
+}
+Objects {
+  Id: 8705025612508602434
+  Name: "Gem Pickup"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8546847550335682123
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9884899984858387711
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Gem Pickup"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 309.627594
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6336426655816631665
+    }
   }
 }
 Objects {
@@ -72,7 +161,6 @@ Objects {
     TeamSettings {
     }
     AudioBP {
-      AutoPlay: true
       Repeat: true
       Volume: 1
       Falloff: 3600
@@ -81,12 +169,12 @@ Objects {
   }
 }
 Objects {
-  Id: 1113578094554751039
-  Name: "Axe Dispenser"
+  Id: 18334245025561281365
+  Name: "Tool Dispensers"
   Transform {
     Location {
-      X: -3546.18384
-      Y: 803.384399
+      X: -9301.64941
+      Y: 1037.49768
       Z: -1043.70117
     }
     Rotation {
@@ -98,6 +186,39 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 9901680513712714174
+  ChildIds: 17377517494351055562
+  ChildIds: 15925076577333130440
+  ChildIds: 13733910929916968523
+  ChildIds: 12255573312055294824
+  ChildIds: 1113578094554751039
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1113578094554751039
+  Name: "Axe Dispenser"
+  Transform {
+    Location {
+      X: 5755.46582
+      Y: -234.113281
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18334245025561281365
   ChildIds: 853874711998494474
   ChildIds: 1504001951060525569
   Collidable_v2 {
@@ -1715,9 +1836,8 @@ Objects {
   Name: "Mining Pick Dispenser"
   Transform {
     Location {
-      X: -3544.14478
-      Y: 1162.40356
-      Z: -1043.70117
+      X: 5757.50488
+      Y: 124.905884
     }
     Rotation {
     }
@@ -1727,7 +1847,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18334245025561281365
   ChildIds: 10174687226462621116
   ChildIds: 16795416609131847189
   Collidable_v2 {
@@ -4061,9 +4181,9 @@ Objects {
   Name: "Mining Pick Dispenser"
   Transform {
     Location {
-      X: -22483.543
-      Y: 1162.40356
-      Z: -869.628906
+      X: -13181.8936
+      Y: 124.905884
+      Z: 174.072266
     }
     Rotation {
     }
@@ -4073,7 +4193,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18334245025561281365
   ChildIds: 564911735635233159
   ChildIds: 15905754857119040223
   Collidable_v2 {
@@ -6407,9 +6527,9 @@ Objects {
   Name: "Axe Dispenser"
   Transform {
     Location {
-      X: -22485.582
-      Y: 803.384399
-      Z: -869.628906
+      X: -13183.9326
+      Y: -234.113281
+      Z: 174.072266
     }
     Rotation {
     }
@@ -6419,7 +6539,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18334245025561281365
   ChildIds: 12846450176342677369
   ChildIds: 15050856442475817979
   Collidable_v2 {
@@ -8037,9 +8157,9 @@ Objects {
   Name: "Mining Pick Dispenser"
   Transform {
     Location {
-      X: -1864.27295
-      Y: 997.002075
-      Z: 128.905319
+      X: 7437.37646
+      Y: -40.4956055
+      Z: 1172.60645
     }
     Rotation {
     }
@@ -8049,7 +8169,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18334245025561281365
   ChildIds: 4511657348478300657
   ChildIds: 16044024536493847333
   Collidable_v2 {
@@ -10383,9 +10503,9 @@ Objects {
   Name: "Axe Dispenser"
   Transform {
     Location {
-      X: -1886.16943
-      Y: 1296.40808
-      Z: 128.905319
+      X: 7415.48
+      Y: 258.9104
+      Z: 1172.60645
     }
     Rotation {
     }
@@ -10395,7 +10515,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18334245025561281365
   ChildIds: 18359264150265841957
   ChildIds: 13687778102885426490
   Collidable_v2 {
@@ -13792,12 +13912,12 @@ Objects {
   }
 }
 Objects {
-  Id: 9993441039476849784
-  Name: "!HarvestNodeGroup"
+  Id: 18302167890738607010
+  Name: "Harvest Nodes"
   Transform {
     Location {
-      X: -15121.1855
-      Y: 3268.47656
+      X: -10915.291
+      Y: 1961.08594
       Z: -1031.0896
     }
     Rotation {
@@ -13809,6 +13929,38 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 13762246887671800200
+  ChildIds: 15550618206306260798
+  ChildIds: 6831339810215125053
+  ChildIds: 9813487193253576098
+  ChildIds: 9993441039476849784
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9993441039476849784
+  Name: "!HarvestNodeGroup"
+  Transform {
+    Location {
+      X: -4205.89453
+      Y: 1307.39063
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18302167890738607010
   ChildIds: 15359280146240140985
   ChildIds: 10913271192344635490
   UnregisteredParameters {
@@ -15442,9 +15594,8 @@ Objects {
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: -15121.1855
-      Y: 3268.47656
-      Z: -1031.0896
+      X: -4205.89453
+      Y: 1307.39063
     }
     Rotation {
     }
@@ -15454,7 +15605,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18302167890738607010
   ChildIds: 11570452216152809298
   ChildIds: 16607946069342567930
   UnregisteredParameters {
@@ -21456,9 +21607,8 @@ Objects {
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: -15121.1855
-      Y: 3268.47656
-      Z: -1031.0896
+      X: -4205.89453
+      Y: 1307.39063
     }
     Rotation {
     }
@@ -21468,7 +21618,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18302167890738607010
   ChildIds: 13725675648741850972
   ChildIds: 3398062865173634191
   UnregisteredParameters {
@@ -26890,8 +27040,8 @@ Objects {
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: -9212.89355
-      Z: -1031.0896
+      X: 1702.39746
+      Y: -1961.08594
     }
     Rotation {
     }
@@ -26901,7 +27051,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18302167890738607010
   ChildIds: 7533156444823686379
   ChildIds: 10574757374039149812
   UnregisteredParameters {
@@ -30494,7 +30644,9 @@ Objects {
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      Z: 300.683899
+      X: 10915.291
+      Y: -1961.08594
+      Z: 1331.77344
     }
     Rotation {
     }
@@ -30504,7 +30656,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4781671109827199097
+  ParentId: 18302167890738607010
   ChildIds: 5949526791574331083
   ChildIds: 8270882688003474880
   UnregisteredParameters {
@@ -30548,6 +30700,7 @@ Objects {
   ParentId: 13762246887671800200
   ChildIds: 14252740872353124717
   ChildIds: 5678575769375308921
+  ChildIds: 8541304033345480359
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30558,6 +30711,86 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 8541304033345480359
+  Name: "GemstoneRock"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4724397547425144780
+      value {
+        Overrides {
+          Name: "Name"
+          String: "GemRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1239.4585
+            Y: 669.173889
+            Z: -0.000183105469
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3748322
+          }
+        }
+        Overrides {
+          Name: "cs:PickupTemplate"
+          AssetReference {
+            Id: 6336426655816631665
+          }
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMin"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMax"
+          Int: 15
+        }
+        Overrides {
+          Name: "cs:NodeName"
+          String: "Gem Rock"
+        }
+        Overrides {
+          Name: "cs:HarvestMessage"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:HarvestResourceMin"
+          Int: 0
+        }
+        Overrides {
+          Name: "cs:HarvestResourceMax"
+          Int: 0
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10217996496617966504
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1570089016767294935
+    }
   }
 }
 Objects {
@@ -30589,8 +30822,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1466.5564
-            Y: 765.539734
+            X: -1281.57361
+            Y: 158.92218
             Z: -6.10351563e-05
           }
         }
@@ -30614,7 +30847,7 @@ Objects {
         }
         Overrides {
           Name: "cs:RespawnTime"
-          Float: 2
+          Float: 5
         }
       }
     }
@@ -30656,11 +30889,7 @@ Objects {
         }
         Overrides {
           Name: "cs:RespawnTime"
-          Float: 2
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 70
+          Float: 5
         }
       }
     }

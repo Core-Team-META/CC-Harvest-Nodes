@@ -95,7 +95,7 @@ Assets {
             ReloadAbility {
               SubObjectId: 2429667060356643935
             }
-            Damage: 20
+            Damage: 3
             WeaponTrajectoryMode {
               Value: "mc:eweapontrajectorymode:followlookvector"
             }
