@@ -48,7 +48,11 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxHealth"
-            Int: 10
+            Int: 2
+          }
+          Overrides {
+            Name: "cs:RespawnTime"
+            Float: 5
           }
         }
         Collidable_v2 {

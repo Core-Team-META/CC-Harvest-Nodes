@@ -197,16 +197,17 @@ function UpdateToStringData(obj)
 				Events.Broadcast("Harvest-Respawn", nodeData.h_id, nodeData.obj:GetReference())
 			else
 				if nodeData.obj ~= nil then
-					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
-						--if nodeData.properties.DestroyEffect ~= nil and Environment.IsServer() then
-
+					print("Something destroyed!", Environment.IsClient(), Environment.IsServer(), Environment.IsSinglePlayerPreview())
+					--if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
+					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
 						Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnAsset",
 								nodeData.properties.DestroyEffect,
 								nodeData.obj:GetWorldPosition(),
-								Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
+								--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
+								nodeData.obj:GetWorldRotation())
 
 					end
-					if nodeData.properties.PickupSpawnMax > 0 then
+					if nodeData.properties.PickupSpawnMax > 0 and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
 						Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnPickups",
 								nodeData.properties.PickupTemplate,
 								nodeData.obj:GetWorldPosition(),

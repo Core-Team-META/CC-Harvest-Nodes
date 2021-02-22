@@ -51,8 +51,6 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 8705025612508602434
-  ChildIds: 3120026482758765002
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -60,77 +58,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 3120026482758765002
-  Name: "Gem Pickup VFX"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8546847550335682123
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1236597551726676605
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Gem Pickup VFX"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 18046577296843185921
-    }
-  }
-}
-Objects {
-  Id: 8705025612508602434
-  Name: "Gem Pickup"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8546847550335682123
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 9884899984858387711
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Gem Pickup"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Z: 309.627594
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6336426655816631665
-    }
   }
 }
 Objects {
@@ -161,6 +88,7 @@ Objects {
     TeamSettings {
     }
     AudioBP {
+      AutoPlay: true
       Repeat: true
       Volume: 1
       Falloff: 3600
@@ -12174,6 +12102,7 @@ Objects {
   ChildIds: 7004520203032736650
   ChildIds: 17347974778176159226
   ChildIds: 18439732279330846942
+  ChildIds: 14619037269537170
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12182,6 +12111,61 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 14619037269537170
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: -823.844849
+      Y: -3463.31348
+      Z: 384.077179
+    }
+    Rotation {
+    }
+    Scale {
+      X: 14.9951935
+      Y: 15.685955
+      Z: 3.44062543
+    }
+  }
+  ParentId: 5003576127518947190
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1450856503829411012
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.87
+        G: 0.138278171
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -30701,6 +30685,7 @@ Objects {
   ChildIds: 14252740872353124717
   ChildIds: 5678575769375308921
   ChildIds: 8541304033345480359
+  ChildIds: 13286908599451979449
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30711,6 +30696,69 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 13286908599451979449
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -1110.45837
+      Y: 1329.95215
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1110.45837
+            Y: 2117.09766
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "cs:MaxHealth"
+          Int: 10
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:DestroyEffect"
+          AssetReference {
+            Id: 16586940124174979573
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
   }
 }
 Objects {
@@ -30888,8 +30936,8 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:RespawnTime"
-          Float: 5
+          Name: "cs:MaxHealth"
+          Int: 10
         }
       }
     }
