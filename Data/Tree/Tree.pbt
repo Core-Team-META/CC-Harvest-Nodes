@@ -13991,11 +13991,11 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 13762246887671800200
-  ChildIds: 15550618206306260798
-  ChildIds: 6831339810215125053
-  ChildIds: 9813487193253576098
-  ChildIds: 9993441039476849784
+  ChildIds: 16583243992933252166
+  ChildIds: 8606214403253492376
+  ChildIds: 14790990564100789479
+  ChildIds: 5911769606762057419
+  ChildIds: 14361770514795109306
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14007,12 +14007,13 @@ Objects {
   }
 }
 Objects {
-  Id: 9993441039476849784
+  Id: 14361770514795109306
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: -4205.89453
-      Y: 1307.39063
+      X: 10915.291
+      Y: -1961.08594
+      Z: 1031.0896
     }
     Rotation {
     }
@@ -14045,8 +14046,10 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsGroup: true
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
   }
 }
 Objects {
@@ -14054,9 +14057,9 @@ Objects {
   Name: "StaticContext"
   Transform {
     Location {
-      X: -2446.73242
-      Y: -3390.27539
-      Z: 581.005371
+      X: -17567.918
+      Y: -121.798828
+      Z: -450.084229
     }
     Rotation {
     }
@@ -14066,7 +14069,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9993441039476849784
+  ParentId: 14361770514795109306
   ChildIds: 8292921853974496711
   ChildIds: 9247545764269268905
   ChildIds: 5237699962935972479
@@ -15620,6 +15623,9 @@ Objects {
   Name: "NodeDataObj"
   Transform {
     Location {
+      X: -15121.1855
+      Y: 3268.47656
+      Z: -1031.0896
     }
     Rotation {
     }
@@ -15629,7 +15635,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9993441039476849784
+  ParentId: 14361770514795109306
   UnregisteredParameters {
     Overrides {
       Name: "cs:NodeData"
@@ -15652,12 +15658,10 @@ Objects {
   }
 }
 Objects {
-  Id: 9813487193253576098
+  Id: 5911769606762057419
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: -4205.89453
-      Y: 1307.39063
     }
     Rotation {
     }
@@ -15690,8 +15694,10 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsGroup: true
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
   }
 }
 Objects {
@@ -15699,8 +15705,8 @@ Objects {
   Name: "StaticContext"
   Transform {
     Location {
-      X: -2446.73242
-      Y: -3390.27539
+      X: -6652.62695
+      Y: -2082.88477
       Z: 581.005371
     }
     Rotation {
@@ -15711,7 +15717,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9813487193253576098
+  ParentId: 5911769606762057419
   ChildIds: 6497092100512966898
   ChildIds: 599681898079675729
   ChildIds: 9786446699137053040
@@ -21633,6 +21639,8 @@ Objects {
   Name: "NodeDataObj"
   Transform {
     Location {
+      X: -4205.89453
+      Y: 1307.39063
     }
     Rotation {
     }
@@ -21642,7 +21650,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9813487193253576098
+  ParentId: 5911769606762057419
   UnregisteredParameters {
     Overrides {
       Name: "cs:NodeData"
@@ -21665,12 +21673,10 @@ Objects {
   }
 }
 Objects {
-  Id: 6831339810215125053
+  Id: 14790990564100789479
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: -4205.89453
-      Y: 1307.39063
     }
     Rotation {
     }
@@ -21703,8 +21709,10 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsGroup: true
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
   }
 }
 Objects {
@@ -21712,6 +21720,8 @@ Objects {
   Name: "StaticContext"
   Transform {
     Location {
+      X: -4205.89453
+      Y: 1307.39063
     }
     Rotation {
     }
@@ -21721,7 +21731,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6831339810215125053
+  ParentId: 14790990564100789479
   ChildIds: 2982517839322964761
   ChildIds: 14986817931013439988
   ChildIds: 1964416297181754174
@@ -27066,6 +27076,8 @@ Objects {
   Name: "NodeDataObj"
   Transform {
     Location {
+      X: -4205.89453
+      Y: 1307.39063
     }
     Rotation {
     }
@@ -27075,7 +27087,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6831339810215125053
+  ParentId: 14790990564100789479
   UnregisteredParameters {
     Overrides {
       Name: "cs:NodeData"
@@ -27098,12 +27110,376 @@ Objects {
   }
 }
 Objects {
-  Id: 15550618206306260798
+  Id: 8606214403253492376
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: 1702.39746
+      X: 10915.291
       Y: -1961.08594
+      Z: 1031.0896
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18302167890738607010
+  ChildIds: 5949526791574331083
+  ChildIds: 8270882688003474880
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeDataObj"
+      ObjectReference {
+        SelfId: 5949526791574331083
+      }
+    }
+    Overrides {
+      Name: "cs:StaticContext"
+      ObjectReference {
+        SelfId: 8270882688003474880
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
+  }
+}
+Objects {
+  Id: 8270882688003474880
+  Name: "StaticContext"
+  Transform {
+    Location {
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8606214403253492376
+  ChildIds: 14252740872353124717
+  ChildIds: 5678575769375308921
+  ChildIds: 8541304033345480359
+  ChildIds: 13286908599451979449
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 13286908599451979449
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -1110.45837
+      Y: 1329.95215
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1110.45837
+            Y: 2117.09766
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "cs:MaxHealth"
+          Int: 10
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:DestroyEffect"
+          AssetReference {
+            Id: 16586940124174979573
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 8541304033345480359
+  Name: "GemstoneRock"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4724397547425144780
+      value {
+        Overrides {
+          Name: "Name"
+          String: "GemRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1239.4585
+            Y: 669.173889
+            Z: -0.000183105469
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3748322
+          }
+        }
+        Overrides {
+          Name: "cs:PickupTemplate"
+          AssetReference {
+            Id: 6336426655816631665
+          }
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMin"
+          Int: 20
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMax"
+          Int: 30
+        }
+        Overrides {
+          Name: "cs:NodeName"
+          String: "Gem Rock"
+        }
+        Overrides {
+          Name: "cs:HarvestMessage"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:HarvestResourceMin"
+          Int: 0
+        }
+        Overrides {
+          Name: "cs:HarvestResourceMax"
+          Int: 0
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10217996496617966504
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1570089016767294935
+    }
+  }
+}
+Objects {
+  Id: 5678575769375308921
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -108.667328
+      Y: 986.383484
+      Z: -6.10351563e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1281.57361
+            Y: 158.92218
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3748932
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:RequiredHarvestTags"
+          String: "mining"
+        }
+        Overrides {
+          Name: "cs:RespawnTime"
+          Float: 5
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 14252740872353124717
+  Name: "BasicTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1110.45837
+            Y: 1329.95215
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "cs:MaxHealth"
+          Int: 10
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 5949526791574331083
+  Name: "NodeDataObj"
+  Transform {
+    Location {
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8606214403253492376
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeData"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:NodeData:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16583243992933252166
+  Name: "!HarvestNodeGroup"
+  Transform {
+    Location {
+      X: 10915.291
+      Y: -1961.08594
+      Z: 1031.0896
     }
     Rotation {
     }
@@ -27136,8 +27512,10 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Folder {
-    IsGroup: true
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
   }
 }
 Objects {
@@ -27145,6 +27523,8 @@ Objects {
   Name: "StaticContext"
   Transform {
     Location {
+      X: -9212.89355
+      Z: -1031.0896
     }
     Rotation {
     }
@@ -27154,7 +27534,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15550618206306260798
+  ParentId: 16583243992933252166
   ChildIds: 1314939845456336242
   ChildIds: 4321785480802809031
   ChildIds: 9519502660060798912
@@ -30670,6 +31050,8 @@ Objects {
   Name: "NodeDataObj"
   Transform {
     Location {
+      X: -9212.89355
+      Z: -1031.0896
     }
     Rotation {
     }
@@ -30679,366 +31061,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15550618206306260798
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:NodeData"
-      String: ""
-    }
-    Overrides {
-      Name: "cs:NodeData:isrep"
-      Bool: true
-    }
-  }
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 13762246887671800200
-  Name: "!HarvestNodeGroup"
-  Transform {
-    Location {
-      X: 10915.291
-      Y: -1961.08594
-      Z: 1331.77344
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 18302167890738607010
-  ChildIds: 5949526791574331083
-  ChildIds: 8270882688003474880
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:NodeDataObj"
-      ObjectReference {
-        SelfId: 5949526791574331083
-      }
-    }
-    Overrides {
-      Name: "cs:StaticContext"
-      ObjectReference {
-        SelfId: 8270882688003474880
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 8270882688003474880
-  Name: "StaticContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13762246887671800200
-  ChildIds: 14252740872353124717
-  ChildIds: 5678575769375308921
-  ChildIds: 8541304033345480359
-  ChildIds: 13286908599451979449
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: RuntimeStatic
-  }
-}
-Objects {
-  Id: 13286908599451979449
-  Name: "BasicTree"
-  Transform {
-    Location {
-      X: -1110.45837
-      Y: 1329.95215
-      Z: 300.683838
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8270882688003474880
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3425220369186122994
-      value {
-        Overrides {
-          Name: "Name"
-          String: "BasicTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1110.45837
-            Y: 2117.09766
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 10
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:DestroyEffect"
-          AssetReference {
-            Id: 16586940124174979573
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15943661245242096667
-    }
-  }
-}
-Objects {
-  Id: 8541304033345480359
-  Name: "GemstoneRock"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8270882688003474880
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4724397547425144780
-      value {
-        Overrides {
-          Name: "Name"
-          String: "GemRock"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1239.4585
-            Y: 669.173889
-            Z: -0.000183105469
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 73.3748322
-          }
-        }
-        Overrides {
-          Name: "cs:PickupTemplate"
-          AssetReference {
-            Id: 6336426655816631665
-          }
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMin"
-          Int: 20
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMax"
-          Int: 30
-        }
-        Overrides {
-          Name: "cs:NodeName"
-          String: "Gem Rock"
-        }
-        Overrides {
-          Name: "cs:HarvestMessage"
-          String: ""
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMax"
-          Int: 0
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10217996496617966504
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1570089016767294935
-    }
-  }
-}
-Objects {
-  Id: 5678575769375308921
-  Name: "BasicRock"
-  Transform {
-    Location {
-      X: -108.667328
-      Y: 986.383484
-      Z: -6.10351563e-05
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8270882688003474880
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5032801462570562361
-      value {
-        Overrides {
-          Name: "Name"
-          String: "BasicRock"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1281.57361
-            Y: 158.92218
-            Z: -6.10351563e-05
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 73.3748932
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:RequiredHarvestTags"
-          String: "mining"
-        }
-        Overrides {
-          Name: "cs:RespawnTime"
-          Float: 5
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1876360131157000047
-    }
-  }
-}
-Objects {
-  Id: 14252740872353124717
-  Name: "BasicTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8270882688003474880
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3425220369186122994
-      value {
-        Overrides {
-          Name: "Name"
-          String: "BasicTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1110.45837
-            Y: 1329.95215
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 10
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15943661245242096667
-    }
-  }
-}
-Objects {
-  Id: 5949526791574331083
-  Name: "NodeDataObj"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13762246887671800200
+  ParentId: 16583243992933252166
   UnregisteredParameters {
     Overrides {
       Name: "cs:NodeData"
