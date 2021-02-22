@@ -51,6 +51,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 2819397873068632149
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -58,6 +59,83 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 2819397873068632149
+  Name: "Sphere"
+  Transform {
+    Location {
+      X: -1142.6405
+      Y: -850.716187
+      Z: 472.228027
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8546847550335682123
+  ChildIds: 332216250122554753
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10237891814767530690
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 332216250122554753
+  Name: "BP_Test"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2819397873068632149
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BasicProjectiles"
+      AssetReference {
+        Id: 9610088959209916923
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1216215945309616980
+    }
   }
 }
 Objects {
@@ -30802,11 +30880,11 @@ Objects {
         }
         Overrides {
           Name: "cs:PickupSpawnMin"
-          Int: 10
+          Int: 20
         }
         Overrides {
           Name: "cs:PickupSpawnMax"
-          Int: 15
+          Int: 30
         }
         Overrides {
           Name: "cs:NodeName"

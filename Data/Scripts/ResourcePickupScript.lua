@@ -22,6 +22,10 @@ propPickupTrigger.beginOverlapEvent:Connect(OnPickup)
 Task.Wait()
 Task.Wait()
 propObjectRoot.isSimulatingDebrisPhysics = true
+local rs = RandomStream.New()
+local vel = rs:GetVector3()
+vel.z = math.abs(vel.z)
+propObjectRoot:SetVelocity(vel * 540)
 --propObjectRoot:SetWorldPosition(Vector3.ZERO)
 
 --propObjectRoot.isSimulatingDebrisPhysics = true

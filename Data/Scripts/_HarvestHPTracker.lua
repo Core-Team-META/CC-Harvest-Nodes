@@ -45,7 +45,6 @@ end
 
 
 function OnRespawn(hid, objRef)
-	print("Object respawned!")
 	damagedObjects[hid] = nil
 end
 

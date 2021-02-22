@@ -197,7 +197,7 @@ function UpdateToStringData(obj)
 				Events.Broadcast("Harvest-Respawn", nodeData.h_id, nodeData.obj:GetReference())
 			else
 				if nodeData.obj ~= nil then
-					print("Something destroyed!", Environment.IsClient(), Environment.IsServer(), Environment.IsSinglePlayerPreview())
+					--print("Something destroyed!", Environment.IsClient(), Environment.IsServer(), Environment.IsSinglePlayerPreview())
 					--if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
 					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
 						Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnAsset",
