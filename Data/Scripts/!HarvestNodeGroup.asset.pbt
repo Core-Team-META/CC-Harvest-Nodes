@@ -14,6 +14,10 @@ Assets {
         ObjectReference {
         }
       }
+      Overrides {
+        Name: "cs:MaxActiveNodes"
+        Int: -1
+      }
     }
   }
   SerializationVersion: 74
