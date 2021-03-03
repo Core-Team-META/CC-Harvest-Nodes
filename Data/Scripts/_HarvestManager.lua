@@ -539,9 +539,19 @@ function NodeRespawner()
 					if nodesToSpawn > 0 then
 						for i = 1, nodesToSpawn do
 							local nodeData = GetRandomNode(nodeDataObj, false)
-							print("Spawning a node!", nodeData.h_id)
-							-- TODO - verify that the node is not too close to a player!
-							API.SetNodeState(nodeData.h_id, true)
+							-- make sure that we're not spawning something too close to a player.
+							local tooClose = false
+
+							local pos = nodeData.transform:GetPosition()
+							for k, p in pairs(Game.GetPlayers()) do
+								if (p:GetWorldPosition() - pos).size < data.properties.RespawnMinPlayerDistance then
+									tooClose = true
+									break
+								end
+							end
+							if not tooClose then
+								API.SetNodeState(nodeData.h_id, true)
+							end
 						end
 					end
 				end
