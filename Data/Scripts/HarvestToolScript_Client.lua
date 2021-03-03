@@ -11,12 +11,16 @@ local CAMERA_DIST = 400 -- TODO - read this directly or something
 function OnToolHit(ability)
 	--print("Client tool hit!")
 
+	local player = Game.GetLocalPlayer()
+	-- This check is important because even though we're in a
+	-- client context, we still have local copies of other players'
+	-- tools, and will get events when they execute.
+	if ability.owner ~= player then return end
+
 	-- We have to do our own raycast to figure out what we hit
 	-- because we are firing off of Ability.ExecuteEvent.
-	local player = Game.GetLocalPlayer()
 	local cameraPos = player:GetViewWorldPosition()
 	local cameraAim = player:GetViewWorldRotation()
-	
 	local aimVector = cameraAim * Vector3.FORWARD
 
 	local hr = World.Raycast(cameraPos, cameraPos + aimVector * (propToolRoot.range + CAMERA_DIST), {
