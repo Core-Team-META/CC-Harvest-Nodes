@@ -8,6 +8,7 @@ local CUSTOM_PROPERTY_NAME = "NodeData"
 local allNodes = {} -- key is the top level node object.  Indexed by ID.
 local bitfields = {} -- key is the node data obj that the networked custom property is on
 local nodeGroups = {} -- key is also the node data obj that the networked custom property is on
+local nodeGroupData = {} -- Let's kee this one off the data obj too.
 local h_idLookup = {}
 
 local respawnList = {}
@@ -62,6 +63,10 @@ function API.Init()
 	--Events.Connect("ObjectLookup", PerformObjectLookup)
 
 	if Environment.IsServer() then
+		Task.Wait()
+		for nodeDataObj,v in pairs(nodeGroupData) do
+			SetStartingNodeDistrbution(nodeDataObj)
+		end
 		Task.Spawn(NodeRespawner)
 	end
 end
@@ -117,6 +122,18 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 	local nodeDataObj = groupRoot:GetCustomProperty("NodeDataObj"):WaitForObject()
 	bitfields[nodeDataObj] = bitfield
 	nodeGroups[nodeDataObj] = {}
+
+	-- Top level data about the node
+	nodeGroupData[nodeDataObj] = {
+		nodes = newNodeList,
+		nodeCount = #newNodeList,
+		activeNodeCount = #newNodeList,
+		properties = groupRoot:GetCustomProperties(),
+		root = groupRoot,
+		inited = false,
+	}
+
+
 	for k,v in pairs(newNodeList) do
 
 		local tagList = nil
@@ -179,11 +196,11 @@ function UpdateToStringData(obj)
 	if newStringData:len() == 0 then return end
 	bitfields[obj].raw = newStringData
 	--print("Something changed!", newStringData)
-
+	local activeNodeCount = 0
 	for k,nodeData in pairs(nodeGroups[obj]) do
-
 		local currentState = nodeData.active
 		local newState = bitfields[obj]:Get(k - 1)
+		if newState then activeNodeCount = activeNodeCount + 1 end
 		if newState ~= currentState then
 			nodeData.active = newState
 			if newState == true then
@@ -224,6 +241,9 @@ function UpdateToStringData(obj)
 			end
 		end
 	end
+
+	--print("Active Node count = ",activeNodeCount, "/", nodeGroupData[obj].nodeCount)
+	nodeGroupData[obj].activeNodeCount = activeNodeCount
 end
 
 -- Helper function for the logic to determine if a tool can
@@ -296,7 +316,7 @@ function OnNodeHarvested(player, hid)
 
 	API.SetNodeState(nodeData.h_id, false)
 
-	RegisterForRespawn(hid, time() + nodeData.properties.RespawnTime)
+	--RegisterForRespawn(hid, time() + nodeData.properties.RespawnTime)
 end
 
 
@@ -427,7 +447,7 @@ function RegisterForRespawn(hid, time)
 end
 
 
-function NodeRespawner()
+function old_NodeRespawner()
 	while true do
 		Task.Wait(1)
 		while #respawnList > 0 and respawnList[1].time < time() do
@@ -450,6 +470,86 @@ function NodeRespawner()
 		end
 	end
 end
+
+-- gets a random node from the group that uses obj as its data object,
+-- and has the given state.
+function GetRandomNode(obj, state)
+	local groupData = nodeGroupData[obj]
+	-- if there are no nodes with the requested state, just error out.
+	local relativeIndex = -1
+	if state == true then
+		--print("state is true", groupData.activeNodeCount)
+		if groupData.activeNodeCount > 0 then 
+			relativeIndex = math.random(groupData.activeNodeCount)
+		end
+	else
+		if groupData.activeNodeCount < groupData.nodeCount then 
+			relativeIndex = math.random(groupData.nodeCount - groupData.activeNodeCount)
+		end
+	end
+	--print("relativeindex = ", relativeIndex)
+	if relativeIndex == -1 then return nil end
+
+	--for i = 0, #nodeGroups[obj] do
+	for k,v in ipairs(nodeGroups[obj]) do
+		if v.active == state then
+			relativeIndex = relativeIndex - 1
+			if relativeIndex == 0 then
+				--print("Returning ", v, v.h_id)
+				return v
+			end
+		end
+	end
+	warning("Not sure how we got here, but GetRandomNode found nothing.")
+	return nil
+end
+
+
+function SetStartingNodeDistrbution(nodeDataObj)
+	--print("in server space?", Environment.IsServer())
+	--if true then return end
+	data = nodeGroupData[nodeDataObj]
+	local maxActiveNodes = data.properties.MaxActiveNodes
+	if maxActiveNodes == -1 then maxActiveNodes = data.nodeCount end
+
+	while data.activeNodeCount > maxActiveNodes do
+		--print("active/max" , data.activeNodeCount, maxActiveNodes)
+		local nodeData = GetRandomNode(nodeDataObj, true)
+		print("despawning a node!", nodeData.h_id)
+		-- TODO - verify that the node is not too close to a player!
+		API.SetNodeState(nodeData.h_id, false)
+	end
+end
+
+
+
+function NodeRespawner()
+	while true do
+		Task.Wait(1)
+		local currentTime = math.floor(time())
+		for nodeDataObj, data in pairs(nodeGroupData) do
+			if currentTime % data.properties.RespawnFrequency == 0 then
+				local maxActiveNodes = data.properties.MaxActiveNodes
+				if maxActiveNodes == -1 then maxActiveNodes = data.nodeCount end
+
+				if data.activeNodeCount < maxActiveNodes then
+					local nodesToSpawn = math.min(data.properties.MaxRespawnsPerUpdate,
+												  maxActiveNodes - data.activeNodeCount)
+
+					if nodesToSpawn > 0 then
+						for i = 1, nodesToSpawn do
+							local nodeData = GetRandomNode(nodeDataObj, false)
+							print("Spawning a node!", nodeData.h_id)
+							-- TODO - verify that the node is not too close to a player!
+							API.SetNodeState(nodeData.h_id, true)
+						end
+					end
+				end
+			end
+		end
+	end
+end
+
 
 
 return API

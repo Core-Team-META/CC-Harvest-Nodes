@@ -52,7 +52,7 @@ Assets {
       }
       Overrides {
         Name: "cs:RespawnTime"
-        Float: 10
+        Float: 60
       }
       Overrides {
         Name: "cs:PickupSpawnMin"
@@ -70,5 +70,5 @@ Assets {
       }
     }
   }
-  SerializationVersion: 74
+  SerializationVersion: 76
 }

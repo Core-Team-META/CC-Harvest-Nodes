@@ -18,7 +18,19 @@ Assets {
         Name: "cs:MaxActiveNodes"
         Int: -1
       }
+      Overrides {
+        Name: "cs:RespawnFrequency"
+        Float: 10
+      }
+      Overrides {
+        Name: "cs:MaxRespawnsPerUpdate"
+        Int: 5
+      }
+      Overrides {
+        Name: "cs:RespawnMinPlayerDistance"
+        Float: 1000
+      }
     }
   }
-  SerializationVersion: 74
+  SerializationVersion: 76
 }
