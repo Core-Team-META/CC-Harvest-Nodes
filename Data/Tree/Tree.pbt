@@ -15206,27 +15206,8 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:PickupSpawnMin"
-          Int: 3
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMax"
-          Int: 8
-        }
-        Overrides {
-          Name: "cs:PickupTemplate"
-          AssetReference {
-            Id: 7760420973341241106
-          }
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 4
-        }
-        Overrides {
-          Name: "cs:DestroyEffect"
-          AssetReference {
-            Id: 17873607046632590361
+          Name: "Rotation"
+          Rotator {
           }
         }
       }

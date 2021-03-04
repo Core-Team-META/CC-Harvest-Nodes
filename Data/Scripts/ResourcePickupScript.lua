@@ -9,14 +9,16 @@ local propFlingSpeedMax = script:GetCustomProperty("FlingSpeedMax")
 
 local propSpawnOffset = script:GetCustomProperty("SpawnOffset")
 
+local player = Game.GetLocalPlayer()
+
 
 function OnPickup(trigger, other)
-	if other:IsA("Player") then
+	if other == player then
 		World.SpawnAsset(propPickupEffect, {position = propObjectRoot:GetWorldPosition()})
-		propObjectRoot:Destroy()
+		local root = propObjectRoot:FindTemplateRoot()
+		root:Destroy()
 	end
 end
-
 
 
 propPickupTrigger.beginOverlapEvent:Connect(OnPickup)
@@ -42,5 +44,26 @@ propObjectRoot:SetWorldPosition(propObjectRoot:GetWorldPosition() + propSpawnOff
 
 
 
-Task.Wait(10)
+Task.Wait(4)
 propObjectRoot.isSimulatingDebrisPhysics = false
+
+local maxVelocity = 30
+local currentVelocity = vel * 100
+local homingSpeed = 1
+
+while true do
+	local pos = propObjectRoot:GetWorldPosition() + currentVelocity
+	propObjectRoot:SetWorldPosition(pos)
+	local vecToPlayer = (player:GetWorldPosition() - pos):GetNormalized()
+	--print(vecToPlayer)
+	currentVelocity = currentVelocity + vecToPlayer * homingSpeed
+	if currentVelocity.size > maxVelocity then
+		currentVelocity = currentVelocity:GetNormalized() * maxVelocity
+	end
+	homingSpeed = homingSpeed * 1.04
+	Task.Wait()
+end
+
+
+
+

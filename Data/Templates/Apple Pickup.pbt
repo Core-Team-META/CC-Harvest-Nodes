@@ -496,7 +496,7 @@ Assets {
           Overrides {
             Name: "cs:SpawnOffset"
             Vector {
-              Z: 500
+              Z: 300
             }
           }
         }

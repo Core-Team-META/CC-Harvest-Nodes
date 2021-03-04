@@ -12,7 +12,7 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 0.8
           }
         }
         ParentId: 4781671109827199097
@@ -79,7 +79,7 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 1.25
           }
         }
         ParentId: 2536558113603378097
@@ -120,7 +120,7 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 1.25
           }
         }
         ParentId: 2536558113603378097
@@ -154,7 +154,7 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 1.25
           }
         }
         ParentId: 2536558113603378097

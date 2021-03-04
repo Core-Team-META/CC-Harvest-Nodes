@@ -29,7 +29,7 @@ Assets {
           Overrides {
             Name: "cs:DestroyEffect"
             AssetReference {
-              Id: 16350646330474712341
+              Id: 17873607046632590361
             }
           }
           Overrides {
@@ -50,11 +50,25 @@ Assets {
           }
           Overrides {
             Name: "cs:MaxHealth"
-            Int: 10
+            Int: 4
           }
           Overrides {
             Name: "cs:RespawnTime"
             Float: 5
+          }
+          Overrides {
+            Name: "cs:PickupSpawnMin"
+            Int: 3
+          }
+          Overrides {
+            Name: "cs:PickupSpawnMax"
+            Int: 8
+          }
+          Overrides {
+            Name: "cs:PickupTemplate"
+            AssetReference {
+              Id: 7760420973341241106
+            }
           }
         }
         Collidable_v2 {
@@ -82,7 +96,7 @@ Assets {
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 0.8
           }
         }
         ParentId: 4999618581829294618
@@ -140,9 +154,9 @@ Assets {
         Name: "Apples1"
         Transform {
           Location {
-            X: 71.8273087
-            Y: 24.7039394
-            Z: 424.628
+            X: 71.8273315
+            Y: 24.7039795
+            Z: 349.744141
           }
           Rotation {
           }
@@ -2582,7 +2596,7 @@ Assets {
           Location {
             X: 71.8272705
             Y: 24.7039795
-            Z: 290.055359
+            Z: 215.171509
           }
           Rotation {
           }
