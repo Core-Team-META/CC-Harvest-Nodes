@@ -44,7 +44,7 @@ propObjectRoot:SetWorldPosition(propObjectRoot:GetWorldPosition() + propSpawnOff
 
 
 
-Task.Wait(4)
+Task.Wait(3)
 propObjectRoot.isSimulatingDebrisPhysics = false
 
 local maxVelocity = 30

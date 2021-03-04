@@ -7,7 +7,7 @@ Assets {
       RootId: 4724397547425144780
       Objects {
         Id: 4724397547425144780
-        Name: "GemstoneRock"
+        Name: "GemRock"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8270882688003474880
+        ParentId: 3171907511485994093
         ChildIds: 10217996496617966504
         ChildIds: 17866597214746089813
         ChildIds: 9329229708531601653
@@ -25,6 +25,7 @@ Assets {
         ChildIds: 12221057737622781172
         ChildIds: 1264749279081320736
         ChildIds: 9946069819660438487
+        ChildIds: 7612411496010488403
         UnregisteredParameters {
           Overrides {
             Name: "cs:HitEffect"
@@ -45,6 +46,40 @@ Assets {
           Overrides {
             Name: "cs:RespawnTime"
             Float: 5
+          }
+          Overrides {
+            Name: "cs:PickupTemplate"
+            AssetReference {
+              Id: 6336426655816631665
+            }
+          }
+          Overrides {
+            Name: "cs:PickupSpawnMin"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:PickupSpawnMax"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:NodeName"
+            String: "Gem Rock"
+          }
+          Overrides {
+            Name: "cs:HarvestMessage"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:HarvestResourceMin"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:HarvestResourceMax"
+            Int: 0
+          }
+          Overrides {
+            Name: "cs:MaxHealth"
+            Int: 1
           }
         }
         Collidable_v2 {
@@ -519,6 +554,46 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 7612411496010488403
+        Name: "Cone"
+        Transform {
+          Location {
+            Z: 39.1166687
+          }
+          Rotation {
+            Yaw: -128.374649
+          }
+          Scale {
+            X: 3
+            Y: 3
+            Z: 1.7
+          }
+        }
+        ParentId: 4724397547425144780
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12334114005901394561
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 2051997317313879675
@@ -545,6 +620,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_clear-coat_001"
+      }
+    }
+    Assets {
+      Id: 12334114005901394561
+      Name: "Cone"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cone_001"
       }
     }
     PrimaryAssetId {

@@ -179,8 +179,10 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 
 	if not dataOnly then
 		nodeDataObj.networkedPropertyChangedEvent:Connect(OnNodeDataUpdate)
-		ForceStringBroadcast(nodeDataObj)
-		--UpdateToStringData(nodeDataObj)
+		if Environment.IsServer() then
+			ForceStringBroadcast(nodeDataObj)
+		end
+		UpdateToStringData(nodeDataObj)
 	end
 	--OnNodeDataUpdate(nodeDataObj, CUSTOM_PROPERTY_NAME)
 end

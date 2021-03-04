@@ -14225,58 +14225,6 @@ Objects {
             Yaw: 103.374565
           }
         }
-        Overrides {
-          Name: "cs:PickupTemplate"
-          AssetReference {
-            Id: 6336426655816631665
-          }
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMax"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:NodeName"
-          String: "Gem Rock"
-        }
-        Overrides {
-          Name: "cs:HarvestMessage"
-          String: ""
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMax"
-          Int: 0
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 1
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10217996496617966504
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
       }
     }
     TemplateAsset {
@@ -14286,16 +14234,8 @@ Objects {
 }
 Objects {
   Id: 5608231755737504738
-  Name: "GemstoneRock"
+  Name: "GemRock"
   Transform {
-    Location {
-      X: 1450
-      Y: 175
-      Z: 300.683899
-    }
-    Rotation {
-      Yaw: 28.3747616
-    }
     Scale {
       X: 1
       Y: 1
@@ -14303,6 +14243,12 @@ Objects {
     }
   }
   ParentId: 3171907511485994093
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 4724397547425144780
@@ -14323,58 +14269,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 128.37471
-          }
-        }
-        Overrides {
-          Name: "cs:PickupTemplate"
-          AssetReference {
-            Id: 6336426655816631665
-          }
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMax"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:NodeName"
-          String: "Gem Rock"
-        }
-        Overrides {
-          Name: "cs:HarvestMessage"
-          String: ""
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMax"
-          Int: 0
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 1
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10217996496617966504
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
           }
         }
       }
