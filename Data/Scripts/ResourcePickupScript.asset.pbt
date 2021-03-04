@@ -23,9 +23,22 @@ Assets {
         Int: 1
       }
       Overrides {
+        Name: "cs:FlingSpeedMin"
+        Float: 300
+      }
+      Overrides {
+        Name: "cs:FlingSpeedMax"
+        Float: 500
+      }
+      Overrides {
         Name: "cs:PickupEffect"
         AssetReference {
           Id: 841534158063459245
+        }
+      }
+      Overrides {
+        Name: "cs:SpawnOffset"
+        Vector {
         }
       }
     }

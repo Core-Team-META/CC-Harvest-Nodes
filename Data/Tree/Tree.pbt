@@ -15269,6 +15269,7 @@ Objects {
   ChildIds: 5678575769375308921
   ChildIds: 8541304033345480359
   ChildIds: 13286908599451979449
+  ChildIds: 8946871210132767668
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15279,6 +15280,64 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 8946871210132767668
+  Name: "AppleTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2813.99146
+            Y: 1661.52368
+            Z: 0.000122070313
+          }
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMin"
+          Int: 3
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMax"
+          Int: 8
+        }
+        Overrides {
+          Name: "cs:PickupTemplate"
+          AssetReference {
+            Id: 7760420973341241106
+          }
+        }
+        Overrides {
+          Name: "cs:MaxHealth"
+          Int: 4
+        }
+        Overrides {
+          Name: "cs:DestroyEffect"
+          AssetReference {
+            Id: 17873607046632590361
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
   }
 }
 Objects {
