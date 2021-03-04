@@ -164,6 +164,7 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 			nodeDataObj = nodeDataObj,
 			templateId = v.sourceTemplateId,
 			transform = v:GetTransform(),
+			worldTransform = v:GetWorldTransform(),
 			parent = v.parent,
 			requiredTags = tagList
 		}
@@ -554,7 +555,7 @@ function NodeRespawner()
 							-- make sure that we're not spawning something too close to a player.
 							local tooClose = false
 
-							local pos = nodeData.transform:GetPosition()
+							local pos = nodeData.worldTransform:GetPosition()
 							for k, p in pairs(Game.GetPlayers()) do
 								if (p:GetWorldPosition() - pos).size < data.properties.RespawnMinPlayerDistance then
 									tooClose = true
