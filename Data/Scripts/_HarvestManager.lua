@@ -130,7 +130,7 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 		activeNodeCount = #newNodeList,
 		properties = groupRoot:GetCustomProperties(),
 		root = groupRoot,
-		inited = false,
+		firstUpdateTime = time(),
 	}
 
 
@@ -178,7 +178,8 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 
 	if not dataOnly then
 		nodeDataObj.networkedPropertyChangedEvent:Connect(OnNodeDataUpdate)
-		UpdateToStringData(nodeDataObj)
+		ForceStringBroadcast(nodeDataObj)
+		--UpdateToStringData(nodeDataObj)
 	end
 	--OnNodeDataUpdate(nodeDataObj, CUSTOM_PROPERTY_NAME)
 end
@@ -214,23 +215,29 @@ function UpdateToStringData(obj)
 				Events.Broadcast("Harvest-Respawn", nodeData.h_id, nodeData.obj:GetReference())
 			else
 				if nodeData.obj ~= nil then
-					--print("Something destroyed!", Environment.IsClient(), Environment.IsServer(), Environment.IsSinglePlayerPreview())
-					--if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
-					if nodeData.properties.DestroyEffect ~= nil and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
-						Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnAsset",
-								nodeData.properties.DestroyEffect,
-								nodeData.obj:GetWorldPosition(),
-								--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
-								nodeData.obj:GetWorldRotation())
+					--if nodeGroupData[obj].firstUpdateTime ~= -1 and nodeGroupData[obj].firstUpdateTime + 1 < time() then
+						if nodeGroupData[obj].firstUpdateTime + 1 < time() then
+						print(nodeGroupData[obj].firstUpdateTime, time())
+						--print("Something destroyed!", Environment.IsClient(), Environment.IsServer(), Environment.IsSinglePlayerPreview())
+						--if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
+						if nodeData.properties.DestroyEffect ~= nil and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
+							Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnAsset",
+									nodeData.properties.DestroyEffect,
+									nodeData.obj:GetWorldPosition(),
+									--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
+									nodeData.obj:GetWorldRotation())
 
-					end
-					if nodeData.properties.PickupSpawnMax > 0 and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
-						Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnPickups",
-								nodeData.properties.PickupTemplate,
-								nodeData.obj:GetWorldPosition(),
-								math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
-								100
-								)
+						end
+						if nodeData.properties.PickupSpawnMax > 0 and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
+							Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnPickups",
+									nodeData.properties.PickupTemplate,
+									nodeData.obj:GetWorldPosition(),
+									math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
+									100
+									)
+						end
+					else
+						nodeGroupData[obj].firstUpdateTime = time()
 					end
 
 
@@ -316,7 +323,6 @@ function OnNodeHarvested(player, hid)
 
 	API.SetNodeState(nodeData.h_id, false)
 
-	--RegisterForRespawn(hid, time() + nodeData.properties.RespawnTime)
 end
 
 
@@ -429,8 +435,14 @@ function API.SetNodeState(h_id, newState)
 	end
 	nodeData.bitfield:Set(nodeData.index - 1, newState)
 	--nodeData.active = newState
-	nodeData.nodeDataObj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, nodeData.bitfield.raw)
+	--nodeData.nodeDataObj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, nodeData.bitfield.raw)
+	ForceStringBroadcast(nodeData.nodeDataObj)
 	--Events.Broadcast("HN-Update", nodeData.bitfield.raw)
+end
+
+
+function ForceStringBroadcast(obj)
+	obj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, bitfields[obj].raw)
 end
 
 
