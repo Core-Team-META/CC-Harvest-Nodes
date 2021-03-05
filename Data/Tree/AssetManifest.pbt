@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2890724451351781859
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
   Id: 1943848901426182074
   Name: "Grass Clumps"
   PlatformAssetType: 2

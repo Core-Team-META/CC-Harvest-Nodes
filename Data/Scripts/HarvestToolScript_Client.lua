@@ -53,12 +53,14 @@ function OnToolHit(ability)
 
 	-- Verify that they have a tool that works here
 	if not mgr.CanHarvest(obj, tool) then
+		--[[
 		UI.ShowFlyUpText("You need a different tool.", 
 			nodeData.obj:GetWorldPosition() + Vector3.UP * 100, {
 			color = Color.RED,
 			duration = 2,
 			isBig = true,
-		})
+		})]]
+		Events.Broadcast("WrongTool", hr:GetImpactPosition())
 		return
 	else
 		if not hpTracker.IsDestroyed(obj) then
