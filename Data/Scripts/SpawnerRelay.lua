@@ -38,23 +38,36 @@ function SpawnPickups(assetId, position, count, radius)
 end
 
 
+
+
 -- Used to pass messages to the client context.
 -- Necessary because you can't call BroadcastToAllPlayers
 -- from within a static context.
-function RelayToClient(...)
+function RelayToClients(...)
 	print(table.unpack({...}))
 	if Environment.IsServer() then
 		Events.BroadcastToAllPlayers(table.unpack({...}))
+	else
+		warn("Relay to clients somehow called on client?")
+	end
+end
+
+function RelayToClient(...)
+	print(table.unpack({...}))
+	if Environment.IsServer() then
+		Events.BroadcastToPlayer(table.unpack({...}))
 	else
 		warn("Relay to client somehow called on client?")
 	end
 end
 
 
+
 Events.Connect("Harvest-SpawnAsset", SpawnAsset)
 Events.Connect("Harvest-FlyupText", SpawnFlyupText)
 Events.Connect("Harvest-SpawnPickups", SpawnPickups)
-Events.Connect("Harvest-RelayToClient", RelayToClient)
+Events.Connect("Harvest-RelayToAllClients", RelayToClients)
+Events.Connect("Harvest-RelayToOneClient", RelayToClient)
 
 -- This one is a hack to make it work while playing in single player preview mode.
 if Environment.IsSinglePlayerPreview() and not Environment.IsClient() then

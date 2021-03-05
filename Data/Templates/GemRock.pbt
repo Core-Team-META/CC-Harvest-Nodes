@@ -55,11 +55,11 @@ Assets {
           }
           Overrides {
             Name: "cs:PickupSpawnMin"
-            Int: 0
+            Int: 20
           }
           Overrides {
             Name: "cs:PickupSpawnMax"
-            Int: 0
+            Int: 30
           }
           Overrides {
             Name: "cs:NodeName"

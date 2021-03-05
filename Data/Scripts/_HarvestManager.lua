@@ -224,7 +224,7 @@ function UpdateToStringData(obj)
 						--print("Something destroyed!", Environment.IsClient(), Environment.IsServer(), Environment.IsSinglePlayerPreview())
 						--if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
 						if nodeData.properties.DestroyEffect ~= nil and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
-							Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnAsset",
+							Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnAsset",
 									nodeData.properties.DestroyEffect,
 									nodeData.obj:GetWorldPosition(),
 									--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
@@ -232,7 +232,7 @@ function UpdateToStringData(obj)
 
 						end
 						if nodeData.properties.PickupSpawnMax > 0 and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
-							Events.Broadcast("Harvest-RelayToClient", "Harvest-SpawnPickups",
+							Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnPickups",
 									nodeData.properties.PickupTemplate,
 									nodeData.obj:GetWorldPosition(),
 									math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
@@ -317,12 +317,20 @@ function OnNodeHarvested(player, hid)
 	end
 	local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
 
+--[[
 	Events.BroadcastToPlayer(player, "Harvest-FlyupText",
 		string.format(nodeData.properties.HarvestMessage, harvestAmount),
 		nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
 		Color.GREEN)
+		]]
+	if harvestAmount > 0 then
+		Events.Broadcast("Harvest-RelayToOneClient",
+			player, "Harvest-SpawnResourceFlyup",
+			nodeData.properties.HarvestResource, harvestAmount,
+			nodeData.obj:GetWorldPosition() + Vector3.UP * 100)
 
-	player:AddResource(nodeData.properties.HarvestResource, harvestAmount)
+		player:AddResource(nodeData.properties.HarvestResource, harvestAmount)
+	end
 
 	API.SetNodeState(nodeData.h_id, false)
 

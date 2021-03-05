@@ -9,6 +9,11 @@ local propFlingSpeedMax = script:GetCustomProperty("FlingSpeedMax")
 
 local propSpawnOffset = script:GetCustomProperty("SpawnOffset")
 
+
+local propResourceName = script:GetCustomProperty("ResourceName")
+local propResourceAmount = script:GetCustomProperty("ResourceAmount")
+
+
 local player = Game.GetLocalPlayer()
 
 
@@ -17,6 +22,12 @@ function OnPickup(trigger, other)
 		World.SpawnAsset(propPickupEffect, {position = propObjectRoot:GetWorldPosition()})
 		local root = propObjectRoot:FindTemplateRoot()
 		root:Destroy()
+		
+		
+		if propResourceName~= nil and propResourceName ~= "" then
+			Events.Broadcast("Harvest-SpawnResourceFlyup", propResourceName, propResourceAmount, 
+				player:GetWorldPosition() + Vector3.UP * 100 + RandomStream.New():GetVector3() * 50)
+		end
 	end
 end
 

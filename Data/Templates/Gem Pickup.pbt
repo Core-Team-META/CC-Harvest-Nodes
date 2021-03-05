@@ -158,6 +158,14 @@ Assets {
               Id: 18046577296843185921
             }
           }
+          Overrides {
+            Name: "cs:ResourceName"
+            String: "gems"
+          }
+          Overrides {
+            Name: "cs:ResourceAmount"
+            Int: 1
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

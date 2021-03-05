@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16724257562626012689
+  Name: "Fantasy Fruit 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Food_Fruit_001"
+  }
+}
+Assets {
   Id: 16254281410732861046
   Name: "Metal Steel Brushed"
   PlatformAssetType: 2

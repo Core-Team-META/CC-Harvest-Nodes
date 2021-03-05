@@ -15335,44 +15335,12 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:PickupTemplate"
-          AssetReference {
-            Id: 6336426655816631665
-          }
-        }
-        Overrides {
           Name: "cs:PickupSpawnMin"
-          Int: 20
+          Int: 10
         }
         Overrides {
           Name: "cs:PickupSpawnMax"
-          Int: 30
-        }
-        Overrides {
-          Name: "cs:NodeName"
-          String: "Gem Rock"
-        }
-        Overrides {
-          Name: "cs:HarvestMessage"
-          String: ""
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMax"
-          Int: 0
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10217996496617966504
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
+          Int: 20
         }
       }
     }
@@ -15570,6 +15538,12 @@ Objects {
         Id: 17957934994848271909
       }
     }
+    Overrides {
+      Name: "cs:apples"
+      AssetReference {
+        Id: 16724257562626012689
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15644,6 +15618,7 @@ Objects {
   ChildIds: 2884405984038665649
   ChildIds: 12870491331185582683
   ChildIds: 3812140626673426485
+  ChildIds: 8727754450971967396
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -15651,6 +15626,76 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 8727754450971967396
+  Name: "Flyups"
+  Transform {
+    Location {
+      X: 3432.87402
+      Y: -1907.27173
+      Z: 7.62939453e-06
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9513753132090586738
+  ChildIds: 4377364255468615969
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4377364255468615969
+  Name: "ResourceFlyupSpawner"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8727754450971967396
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ResourceFlyup"
+      AssetReference {
+        Id: 6646616631939457785
+      }
+    }
+    Overrides {
+      Name: "cs:IconDirectory"
+      ObjectReference {
+        SelfId: 5684842202126429078
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1968977267299063670
+    }
   }
 }
 Objects {
