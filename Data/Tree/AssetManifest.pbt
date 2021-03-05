@@ -98,6 +98,24 @@ Assets {
   }
 }
 Assets {
+  Id: 9576508384903503500
+  Name: "Resurrection VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_resurrection"
+  }
+}
+Assets {
+  Id: 9532546218447693210
+  Name: "Chest Small Opened"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chest_002"
+  }
+}
+Assets {
   Id: 7887238662729938253
   Name: "Sky Dome"
   PlatformAssetType: 6
@@ -167,6 +185,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 994219789478880756
+  Name: "Level Up VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_Level_Up"
+  }
+}
+Assets {
+  Id: 378487681999191384
+  Name: "Chest Small Closed"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chest_001"
   }
 }
 Assets {

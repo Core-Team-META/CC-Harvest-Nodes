@@ -24,6 +24,7 @@ Objects {
   ChildIds: 5003576127518947190
   ChildIds: 18334245025561281365
   ChildIds: 7739860303948702135
+  ChildIds: 17440296569484350214
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -33,6 +34,184 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17440296569484350214
+  Name: "OpeningChest"
+  Transform {
+    Location {
+      X: -2094.45874
+      Y: 2535.87207
+      Z: 124.311539
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  ChildIds: 4856119689686280486
+  ChildIds: 17787025207254296840
+  ChildIds: 17061129295218692800
+  ChildIds: 2301315278747624832
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2301315278747624832
+  Name: "Level Up VFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17440296569484350214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 994219789478880756
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+      Relevance {
+        Value: "mc:evfxrelevance:medium"
+      }
+    }
+  }
+}
+Objects {
+  Id: 17061129295218692800
+  Name: "Resurrection VFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2
+      Y: 2
+      Z: 2
+    }
+  }
+  ParentId: 17440296569484350214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 9576508384903503500
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+      Relevance {
+        Value: "mc:evfxrelevance:medium"
+      }
+    }
+  }
+}
+Objects {
+  Id: 17787025207254296840
+  Name: "Chest Small Opened"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17440296569484350214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9532546218447693210
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 4856119689686280486
+  Name: "Chest Small Closed"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17440296569484350214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 378487681999191384
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
   }
 }
 Objects {
@@ -15345,7 +15524,6 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 6148008806011559126
   ChildIds: 9513753132090586738
-  ChildIds: 8947800228755282531
   ChildIds: 4576134389465926228
   ChildIds: 5684842202126429078
   Collidable_v2 {
@@ -15448,13 +15626,10 @@ Objects {
   }
 }
 Objects {
-  Id: 8947800228755282531
-  Name: "Harvest UI ClientContext"
+  Id: 9513753132090586738
+  Name: "ClientContext"
   Transform {
     Location {
-      X: 1716.43701
-      Y: -953.635864
-      Z: 3.81469727e-06
     }
     Rotation {
     }
@@ -15465,8 +15640,10 @@ Objects {
     }
   }
   ParentId: 13122367563676440083
+  ChildIds: 7891929943282135475
   ChildIds: 2884405984038665649
-  ChildIds: 7623271140016867444
+  ChildIds: 12870491331185582683
+  ChildIds: 3812140626673426485
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -15474,6 +15651,35 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 3812140626673426485
+  Name: "Target Display"
+  Transform {
+    Location {
+      X: 3432.87402
+      Y: -1907.27173
+      Z: 7.62939453e-06
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9513753132090586738
+  ChildIds: 7623271140016867444
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {
@@ -15494,7 +15700,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8947800228755282531
+  ParentId: 3812140626673426485
   ChildIds: 4531640310636008459
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15873,106 +16079,6 @@ Objects {
         }
       }
     }
-  }
-}
-Objects {
-  Id: 2884405984038665649
-  Name: "HarvestUIScript"
-  Transform {
-    Location {
-      X: -1716.43701
-      Y: 953.635864
-      Z: -3.81469727e-06
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8947800228755282531
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:_HarvestManager"
-      AssetReference {
-        Id: 4832434136466344299
-      }
-    }
-    Overrides {
-      Name: "cs:_HarvestHPTracker"
-      AssetReference {
-        Id: 2545808778274277438
-      }
-    }
-    Overrides {
-      Name: "cs:TargetDisplayPanel"
-      ObjectReference {
-        SelfId: 4531640310636008459
-      }
-    }
-    Overrides {
-      Name: "cs:TargetHPBar"
-      ObjectReference {
-        SelfId: 897293308262207425
-      }
-    }
-    Overrides {
-      Name: "cs:TargetName"
-      ObjectReference {
-        SelfId: 17903247190591386627
-      }
-    }
-    Overrides {
-      Name: "cs:ResourceImage"
-      ObjectReference {
-        SelfId: 9838328007806749494
-      }
-    }
-    Overrides {
-      Name: "cs:IconDirectory"
-      ObjectReference {
-        SelfId: 5684842202126429078
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 17316492406392494794
-    }
-  }
-}
-Objects {
-  Id: 9513753132090586738
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13122367563676440083
-  ChildIds: 7891929943282135475
-  ChildIds: 12870491331185582683
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
   }
 }
 Objects {
@@ -16357,6 +16463,77 @@ Objects {
           Value: "mc:euianchor:middlecenter"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 2884405984038665649
+  Name: "HarvestUIScript"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9513753132090586738
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:_HarvestManager"
+      AssetReference {
+        Id: 4832434136466344299
+      }
+    }
+    Overrides {
+      Name: "cs:_HarvestHPTracker"
+      AssetReference {
+        Id: 2545808778274277438
+      }
+    }
+    Overrides {
+      Name: "cs:TargetDisplayPanel"
+      ObjectReference {
+        SelfId: 4531640310636008459
+      }
+    }
+    Overrides {
+      Name: "cs:TargetHPBar"
+      ObjectReference {
+        SelfId: 897293308262207425
+      }
+    }
+    Overrides {
+      Name: "cs:TargetName"
+      ObjectReference {
+        SelfId: 17903247190591386627
+      }
+    }
+    Overrides {
+      Name: "cs:ResourceImage"
+      ObjectReference {
+        SelfId: 9838328007806749494
+      }
+    }
+    Overrides {
+      Name: "cs:IconDirectory"
+      ObjectReference {
+        SelfId: 5684842202126429078
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17316492406392494794
     }
   }
 }
