@@ -7,7 +7,7 @@ Assets {
       RootId: 5032801462570562361
       Objects {
         Id: 5032801462570562361
-        Name: "First Rock"
+        Name: "BasicRock"
         Transform {
           Scale {
             X: 1
@@ -29,6 +29,18 @@ Assets {
             AssetReference {
               Id: 8170435218190728286
             }
+          }
+          Overrides {
+            Name: "cs:RequiredHarvestTags"
+            String: "mining"
+          }
+          Overrides {
+            Name: "cs:RespawnTime"
+            Float: 5
+          }
+          Overrides {
+            Name: "cs:HarvestResource"
+            String: "stone"
           }
         }
         Collidable_v2 {

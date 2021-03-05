@@ -14815,58 +14815,6 @@ Objects {
             Yaw: 28.3747826
           }
         }
-        Overrides {
-          Name: "cs:PickupTemplate"
-          AssetReference {
-            Id: 6336426655816631665
-          }
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:PickupSpawnMax"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:NodeName"
-          String: "Gem Rock"
-        }
-        Overrides {
-          Name: "cs:HarvestMessage"
-          String: ""
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMin"
-          Int: 0
-        }
-        Overrides {
-          Name: "cs:HarvestResourceMax"
-          Int: 0
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 1
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 10217996496617966504
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
       }
     }
     TemplateAsset {
@@ -15294,22 +15242,6 @@ Objects {
             Yaw: 73.3748932
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:RequiredHarvestTags"
-          String: "mining"
-        }
-        Overrides {
-          Name: "cs:RespawnTime"
-          Float: 5
-        }
       }
     }
     TemplateAsset {
@@ -15415,6 +15347,52 @@ Objects {
   ChildIds: 9513753132090586738
   ChildIds: 8947800228755282531
   ChildIds: 4576134389465926228
+  ChildIds: 5684842202126429078
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5684842202126429078
+  Name: "IconDirectory"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13122367563676440083
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:stone"
+      AssetReference {
+        Id: 14129602164682603435
+      }
+    }
+    Overrides {
+      Name: "cs:wood"
+      AssetReference {
+        Id: 3484742119237176239
+      }
+    }
+    Overrides {
+      Name: "cs:gems"
+      AssetReference {
+        Id: 17957934994848271909
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -15562,8 +15540,11 @@ Objects {
     }
   }
   ParentId: 7623271140016867444
+  ChildIds: 6991844505941697855
+  ChildIds: 10285699321836565284
   ChildIds: 897293308262207425
   ChildIds: 17903247190591386627
+  ChildIds: 9838328007806749494
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -15572,7 +15553,8 @@ Objects {
   }
   Control {
     Width: 383
-    Height: 100
+    Height: 210
+    UIY: 20.2822266
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15589,6 +15571,68 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 9838328007806749494
+  Name: "Resource Image"
+  Transform {
+    Location {
+      X: -3912.48291
+      Y: -338.800232
+      Z: -7.62939453e-06
+    }
+    Rotation {
+      Yaw: 34.0053215
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4531640310636008459
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 70
+    Height: 70
+    UIX: 387.526
+    UIY: -18.028656
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 17957934994848271909
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -15622,6 +15666,7 @@ Objects {
   Control {
     Width: 713
     Height: 91
+    UIY: -13.5214691
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15646,12 +15691,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -15679,9 +15724,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 787
-    Height: 73
-    UIY: 6.57964325
+    Width: 810
+    Height: 28
+    UIY: 40.3833237
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -15689,13 +15734,12 @@ Objects {
     }
     StatBar {
       Color {
-        R: 0.289735079
+        R: 1
         G: 1
-        B: 0.25
+        B: 1
         A: 1
       }
       BackgroundColor {
-        R: 0.264
         A: 1
       }
       Percent: 0.540604413
@@ -15703,12 +15747,129 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:topcenter"
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10285699321836565284
+  Name: "Frame Image"
+  Transform {
+    Location {
+      X: -3912.48291
+      Y: -338.800232
+      Z: -7.62939453e-06
+    }
+    Rotation {
+      Yaw: 34.0053062
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4531640310636008459
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 962
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 185451892747872889
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6991844505941697855
+  Name: "BG Image"
+  Transform {
+    Location {
+      X: -3912.48291
+      Y: -338.800232
+      Z: -7.62939453e-06
+    }
+    Rotation {
+      Yaw: 34.0053215
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4531640310636008459
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 962
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 17440039210323674857
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -15761,6 +15922,18 @@ Objects {
       Name: "cs:TargetName"
       ObjectReference {
         SelfId: 17903247190591386627
+      }
+    }
+    Overrides {
+      Name: "cs:ResourceImage"
+      ObjectReference {
+        SelfId: 9838328007806749494
+      }
+    }
+    Overrides {
+      Name: "cs:IconDirectory"
+      ObjectReference {
+        SelfId: 5684842202126429078
       }
     }
   }

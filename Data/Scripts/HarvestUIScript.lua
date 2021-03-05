@@ -3,6 +3,10 @@ local prop_HarvestHPTracker = script:GetCustomProperty("_HarvestHPTracker")
 local propTargetDisplayPanel = script:GetCustomProperty("TargetDisplayPanel"):WaitForObject()
 local propTargetHPBar = script:GetCustomProperty("TargetHPBar"):WaitForObject()
 local propTargetName = script:GetCustomProperty("TargetName"):WaitForObject()
+local propResourceImage = script:GetCustomProperty("ResourceImage"):WaitForObject()
+
+local propResourceImage = script:GetCustomProperty("ResourceImage"):WaitForObject()
+local propIconDirectory = script:GetCustomProperty("IconDirectory"):WaitForObject()
 
 
 
@@ -11,6 +15,9 @@ local hpTracker = require(prop_HarvestHPTracker)
 
 
 propTargetDisplayPanel.isEnabled = false
+
+
+
 
 local EXAMINE_DIST = 1000
 function Tick()
@@ -32,18 +39,30 @@ function Tick()
 	if data ~= nil then
 		propTargetDisplayPanel.isEnabled = true
 
-		local currentHp = hpTracker.GetNodeHealth(hr.other)
-		local maxHp = hpTracker.GetNodeMaxHealth(hr.other)
-		propTargetName.text = string.format("%s (%d/%d)", data.properties.NodeName, currentHp, maxHp)
-
-		propTargetHPBar.progress = CoreMath.Clamp(currentHp/maxHp)
-
+		UpdateUI(data, hr.other)
 	else
 		propTargetDisplayPanel.isEnabled = false
 	end
 
 	Task.Wait()
-
-
 end
+
+
+function UpdateUI(data, other)
+	local currentHp = hpTracker.GetNodeHealth(other)
+	local maxHp = hpTracker.GetNodeMaxHealth(other)
+	propTargetName.text = string.format("%s (%d/%d)", data.properties.NodeName, currentHp, maxHp)
+
+	propTargetHPBar.progress = CoreMath.Clamp(currentHp/maxHp)
+	
+	local iconImage = propIconDirectory:GetCustomProperty(data.properties.HarvestResource)
+	if iconImage ~= nil then
+		propResourceImage.isEnabled = true
+		propResourceImage:SetImage(iconImage)
+
+	else
+		propResourceImage.isEnabled = false
+	end
+end
+
 

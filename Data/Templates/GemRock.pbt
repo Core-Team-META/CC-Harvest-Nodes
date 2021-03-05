@@ -81,6 +81,10 @@ Assets {
             Name: "cs:MaxHealth"
             Int: 1
           }
+          Overrides {
+            Name: "cs:HarvestResource"
+            String: "gems"
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

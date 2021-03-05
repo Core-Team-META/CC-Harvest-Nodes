@@ -8,12 +8,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17957934994848271909
+  Name: "Fantasy Craft Gem 012"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Gem_012"
+  }
+}
+Assets {
   Id: 17486578884833630931
   Name: "Crescent - 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crescent_003"
+  }
+}
+Assets {
+  Id: 17440039210323674857
+  Name: "BG Flat 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_21"
   }
 }
 Assets {
@@ -50,6 +68,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
+  Id: 14129602164682603435
+  Name: "Fantasy Craft Stone 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Stone_006"
   }
 }
 Assets {
@@ -107,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3484742119237176239
+  Name: "Fantasy Wood 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Wood_003"
+  }
+}
+Assets {
   Id: 2890724451351781859
   Name: "BG Flat 001"
   PlatformAssetType: 9
@@ -131,5 +167,14 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 185451892747872889
+  Name: "Fantasy Frame 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_005"
   }
 }
