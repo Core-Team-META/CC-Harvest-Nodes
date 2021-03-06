@@ -85,7 +85,7 @@ function OnHarvestRespawn_PIE(hid, objRef)
 	print("Got a respawn event:", hid)
 	local obj = objRef:WaitForObject()
 	print(obj.name, obj)
-	print("Am I in the client context?", Environment.IsClient())
+	--print("Am I in the client context?", Environment.IsClient())
 	h_idLookup[GetShortId(obj)] = hid
 	allNodes[hid].obj = obj
 	-- This is so that the HP tracker gets it.  This is so convoluted... ;_;

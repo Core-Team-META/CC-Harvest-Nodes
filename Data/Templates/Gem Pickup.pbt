@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8546847550335682123
+        ParentId: 4781671109827199097
         ChildIds: 819465240230595765
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -157,14 +157,6 @@ Assets {
             AssetReference {
               Id: 18046577296843185921
             }
-          }
-          Overrides {
-            Name: "cs:ResourceName"
-            String: "gems"
-          }
-          Overrides {
-            Name: "cs:ResourceAmount"
-            Int: 1
           }
         }
         Collidable_v2 {
