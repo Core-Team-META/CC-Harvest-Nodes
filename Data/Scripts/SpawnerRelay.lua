@@ -6,10 +6,9 @@
 function SpawnAsset(assetId, position, rotation, scale)
 	World.SpawnAsset(assetId, {
 		position = position,
-		rotation = rotation or Vector3.ONE,
+		rotation = rotation or Rotation.ZERO,
 		scale = scale or Vector3.ONE
 	})
-
 end
 
 function SpawnFlyupText(text, pos, color)
@@ -44,7 +43,7 @@ end
 -- Necessary because you can't call BroadcastToAllPlayers
 -- from within a static context.
 function RelayToClients(...)
-	print(table.unpack({...}))
+	--print(table.unpack({...}))
 	if Environment.IsServer() then
 		Events.BroadcastToAllPlayers(table.unpack({...}))
 	else
@@ -53,6 +52,7 @@ function RelayToClients(...)
 end
 
 function RelayToClient(...)
+	print("relaying!")
 	print(table.unpack({...}))
 	if Environment.IsServer() then
 		Events.BroadcastToPlayer(table.unpack({...}))

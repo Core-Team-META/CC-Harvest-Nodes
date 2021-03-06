@@ -31,6 +31,10 @@ Assets {
         Float: 500
       }
       Overrides {
+        Name: "cs:AutoCollectFling"
+        Float: 50
+      }
+      Overrides {
         Name: "cs:PickupEffect"
         AssetReference {
           Id: 841534158063459245

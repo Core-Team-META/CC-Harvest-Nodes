@@ -166,7 +166,8 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 			transform = v:GetTransform(),
 			worldTransform = v:GetWorldTransform(),
 			parent = v.parent,
-			requiredTags = tagList
+			requiredTags = tagList,
+			groupRoot = groupRoot,
 		}
 		--print("destroy = ", newData.properties.DestroyEffect)
 		nodeGroups[nodeDataObj][k] = newData
@@ -333,7 +334,8 @@ function OnNodeHarvested(player, hid)
 	end
 
 	API.SetNodeState(nodeData.h_id, false)
-
+	print("Broadcasting Harvest-NodeHarvested!")
+	Events.Broadcast("Harvest-NodeHarvested", player, nodeData)
 end
 
 

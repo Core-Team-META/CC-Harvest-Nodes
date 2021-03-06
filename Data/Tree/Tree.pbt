@@ -24,7 +24,7 @@ Objects {
   ChildIds: 5003576127518947190
   ChildIds: 18334245025561281365
   ChildIds: 7739860303948702135
-  ChildIds: 17440296569484350214
+  ChildIds: 10009644893434204028
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,13 +37,10 @@ Objects {
   }
 }
 Objects {
-  Id: 17440296569484350214
-  Name: "OpeningChest"
+  Id: 10009644893434204028
+  Name: "Examples_HarvestEvents"
   Transform {
     Location {
-      X: -2094.45874
-      Y: 2535.87207
-      Z: 124.311539
     }
     Rotation {
     }
@@ -54,163 +51,33 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  ChildIds: 4856119689686280486
-  ChildIds: 17787025207254296840
-  ChildIds: 17061129295218692800
-  ChildIds: 2301315278747624832
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 2301315278747624832
-  Name: "Level Up VFX"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17440296569484350214
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 994219789478880756
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-      Relevance {
-        Value: "mc:evfxrelevance:medium"
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TreasureChest"
+      AssetReference {
+        Id: 16170000942968510707
       }
     }
-  }
-}
-Objects {
-  Id: 17061129295218692800
-  Name: "Resurrection VFX"
-  Transform {
-    Location {
+    Overrides {
+      Name: "cs:NodeGroup"
+      ObjectReference {
+        SelfId: 16578554612901537537
+      }
     }
-    Rotation {
-    }
-    Scale {
-      X: 2
-      Y: 2
-      Z: 2
+    Overrides {
+      Name: "cs:TreasureChance"
+      Float: 0.5
     }
   }
-  ParentId: 17440296569484350214
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 9576508384903503500
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-      Relevance {
-        Value: "mc:evfxrelevance:medium"
-      }
-    }
-  }
-}
-Objects {
-  Id: 17787025207254296840
-  Name: "Chest Small Opened"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17440296569484350214
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9532546218447693210
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 4856119689686280486
-  Name: "Chest Small Closed"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17440296569484350214
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 378487681999191384
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
+  Script {
+    ScriptAsset {
+      Id: 8866368349964939942
     }
   }
 }
@@ -14256,6 +14123,394 @@ Objects {
   ParentId: 4781671109827199097
   ChildIds: 8606214403253492376
   ChildIds: 15131470766251674605
+  ChildIds: 16578554612901537537
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16578554612901537537
+  Name: "!HarvestNodeGroup"
+  Transform {
+    Location {
+      X: 10202.3457
+      Y: 1322.96289
+      Z: 906.771484
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18302167890738607010
+  ChildIds: 11058372458916940084
+  ChildIds: 4642849674167832204
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeDataObj"
+      ObjectReference {
+        SelfId: 11058372458916940084
+      }
+    }
+    Overrides {
+      Name: "cs:StaticContext"
+      ObjectReference {
+        SelfId: 4642849674167832204
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
+  }
+}
+Objects {
+  Id: 4642849674167832204
+  Name: "StaticContext"
+  Transform {
+    Location {
+      Z: 268.814453
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16578554612901537537
+  ChildIds: 13999289788384163440
+  ChildIds: 14038187266238044924
+  ChildIds: 13551250321166032018
+  ChildIds: 7111729760799549773
+  ChildIds: 11428284140499424443
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 11428284140499424443
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -1602.52612
+      Y: 3462.05981
+      Z: 198.302917
+    }
+    Rotation {
+      Yaw: 73.3747559
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4642849674167832204
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1008.02454
+            Y: 575.54126
+            Z: -0.000305175781
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3747406
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 7111729760799549773
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -2146.52148
+      Y: 2910.98096
+      Z: 198.302917
+    }
+    Rotation {
+      Yaw: 73.374794
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4642849674167832204
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -889.580811
+            Y: 178.010986
+            Z: -0.000305175781
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3747787
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 13551250321166032018
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -1600.11707
+      Y: 2952.91187
+      Z: 198.302917
+    }
+    Rotation {
+      Yaw: 73.3748322
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4642849674167832204
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1433.57617
+            Y: -373.067871
+            Z: -0.000305175781
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3748093
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 14038187266238044924
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -1994.51855
+      Y: 3442.97095
+      Z: 198.303162
+    }
+    Rotation {
+      Yaw: 73.3748703
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4642849674167832204
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -887.171753
+            Y: -331.136963
+            Z: -0.000305175781
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.374855
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 13999289788384163440
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -108.667328
+      Y: 986.383484
+      Z: -6.10351563e-05
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4642849674167832204
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1281.57361
+            Y: 158.92218
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3748932
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 11058372458916940084
+  Name: "NodeDataObj"
+  Transform {
+    Location {
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16578554612901537537
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeData"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:NodeData:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14883,6 +15138,7 @@ Objects {
   ChildIds: 8541304033345480359
   ChildIds: 13286908599451979449
   ChildIds: 8946871210132767668
+  ChildIds: 17783731162864585770
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14893,6 +15149,76 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 17783731162864585770
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: 593.426392
+      Y: -41.0778198
+      Z: 300.683777
+    }
+    Rotation {
+      Yaw: 73.3748703
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3273.36865
+            Y: 1969.0072
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.374855
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:PickupTemplate"
+          AssetReference {
+            Id: 4823811350826276671
+          }
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMin"
+          Int: 5
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMax"
+          Int: 10
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
   }
 }
 Objects {
@@ -15238,6 +15564,12 @@ Objects {
       Name: "cs:apples"
       AssetReference {
         Id: 16724257562626012689
+      }
+    }
+    Overrides {
+      Name: "cs:coins"
+      AssetReference {
+        Id: 3097722784719198694
       }
     }
   }

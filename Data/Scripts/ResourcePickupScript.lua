@@ -9,7 +9,7 @@ local propFlingSpeedMax = script:GetCustomProperty("FlingSpeedMax")
 
 local propSpawnOffset = script:GetCustomProperty("SpawnOffset")
 
-
+local propAutoCollectFling = script:GetCustomProperty("AutoCollectFling")
 
 local player = Game.GetLocalPlayer()
 
@@ -55,8 +55,8 @@ Task.Wait(3)
 propObjectRoot.isSimulatingDebrisPhysics = false
 
 local maxVelocity = 30
-local currentVelocity = vel * 100
-local homingSpeed = 1
+local currentVelocity = vel * propAutoCollectFling
+local homingSpeed = 5
 
 while true do
 	local pos = propObjectRoot:GetWorldPosition() + currentVelocity
