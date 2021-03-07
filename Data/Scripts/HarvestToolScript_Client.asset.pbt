@@ -31,6 +31,12 @@ Assets {
         ObjectReference {
         }
       }
+      Overrides {
+        Name: "cs:AoETemplate"
+        AssetReference {
+          Id: 841534158063459245
+        }
+      }
     }
   }
   SerializationVersion: 76

@@ -25,6 +25,7 @@ Objects {
   ChildIds: 18334245025561281365
   ChildIds: 7739860303948702135
   ChildIds: 10009644893434204028
+  ChildIds: 10742745648011972545
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +35,46 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10742745648011972545
+  Name: "Tool - Axe"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8583049880314352059
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tool - Axe"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2191.98193
+            Y: 397.833252
+            Z: 124.311523
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15251422738044263284
+    }
   }
 }
 Objects {
