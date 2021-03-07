@@ -15230,19 +15230,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 24.5786667
-          }
-        }
-        Overrides {
-          Name: "cs:NodeName"
-          String: "Apple Tree"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            Yaw: 66.3095
           }
         }
       }
@@ -15282,12 +15270,8 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -23.9785767
+            Yaw: -63.6356506
           }
-        }
-        Overrides {
-          Name: "cs:NodeName"
-          String: "Apple Tree"
         }
       }
     }

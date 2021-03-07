@@ -43,13 +43,13 @@ Assets {
         Name: "Trigger"
         Transform {
           Location {
-            X: 66.9233398
+            X: 87.8677368
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 2.39463711
+            X: 1.4
+            Y: 2.5
             Z: 0.3
           }
         }
@@ -75,13 +75,13 @@ Assets {
         Name: "Cube"
         Transform {
           Location {
-            X: 66.9233398
+            X: 87.8677368
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 2.39463711
+            X: 1.4
+            Y: 2.5
             Z: 0.3
           }
         }
