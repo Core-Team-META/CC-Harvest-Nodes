@@ -232,14 +232,6 @@ function UpdateToStringData(obj)
 										nodeData.obj:GetWorldRotation())
 
 							end
-							if nodeData.properties.PickupSpawnMax > 0 then
-								Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnPickups",
-										nodeData.properties.PickupTemplate,
-										nodeData.obj:GetWorldPosition(),
-										math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
-										100
-										)
-							end
 						elseif Environment.IsClient() then
 							if nodeData.properties.DestroyEffect ~= nil then
 								Events.Broadcast("Harvest-SpawnAsset",
@@ -248,14 +240,6 @@ function UpdateToStringData(obj)
 										--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
 										nodeData.obj:GetWorldRotation())
 
-							end
-							if nodeData.properties.PickupSpawnMax > 0 then
-								Events.Broadcast("Harvest-SpawnPickups",
-										nodeData.properties.PickupTemplate,
-										nodeData.obj:GetWorldPosition(),
-										math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
-										100
-										)
 							end
 						end
 
@@ -322,10 +306,31 @@ function API.SpawnHarvestHitEffects(obj, tool, hitresult)
 end
 
 
+-- This is the client-side function that gets called.
 function API.HarvestNodeByPlayer(obj, player)
 	if not ClientCheck("HarvestNode") then return end
+	local hid = API.GetHId(obj)
 
-	Events.BroadcastToServer("NodeHarvested", API.GetHId(obj))
+	local nodeData = allNodes[hid]
+	if nodeData == nil then
+		warning("OnNodeHarvested: Got a bad hid:", hid)
+	end
+	local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
+
+	if harvestAmount > 0 then
+		Events.Broadcast("Harvest-SpawnResourceFlyup",
+			nodeData.properties.HarvestResource, harvestAmount,
+			nodeData.obj:GetWorldPosition() + Vector3.UP * 100)
+	end
+	if nodeData.properties.PickupSpawnMax > 0 then
+		Events.Broadcast("Harvest-SpawnPickups",
+				nodeData.properties.PickupTemplate,
+				nodeData.obj:GetWorldPosition(),
+				math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
+				100
+				)
+	end
+	Events.BroadcastToServer("NodeHarvested", hid)
 end
 
 
@@ -338,6 +343,9 @@ function OnNodeHarvested(player, hid)
 		warning("OnNodeHarvested: Got a bad hid:", hid)
 	end
 	local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
+	if harvestAmount > 0 then
+		player:AddResource(nodeData.properties.HarvestResource, harvestAmount)
+	end
 
 --[[
 	Events.BroadcastToPlayer(player, "Harvest-FlyupText",
@@ -345,14 +353,6 @@ function OnNodeHarvested(player, hid)
 		nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
 		Color.GREEN)
 		]]
-	if harvestAmount > 0 then
-		Events.Broadcast("Harvest-RelayToOneClient",
-			player, "Harvest-SpawnResourceFlyup",
-			nodeData.properties.HarvestResource, harvestAmount,
-			nodeData.obj:GetWorldPosition() + Vector3.UP * 100)
-
-		player:AddResource(nodeData.properties.HarvestResource, harvestAmount)
-	end
 
 	API.SetNodeState(nodeData.h_id, false)
 	Events.Broadcast("Harvest-NodeHarvested", player, nodeData)
