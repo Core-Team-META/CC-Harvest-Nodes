@@ -43,7 +43,8 @@ end
 -- Necessary because you can't call BroadcastToAllPlayers
 -- from within a static context.
 function RelayToClients(...)
-	--print(table.unpack({...}))
+	print("------------relaying!")
+	print(table.unpack({...}))
 	if Environment.IsServer() then
 		Events.BroadcastToAllPlayers(table.unpack({...}))
 	else
@@ -52,7 +53,7 @@ function RelayToClients(...)
 end
 
 function RelayToClient(...)
-	print("relaying!")
+	print("------------relaying!")
 	print(table.unpack({...}))
 	if Environment.IsServer() then
 		Events.BroadcastToPlayer(table.unpack({...}))

@@ -15178,8 +15178,9 @@ Objects {
   ChildIds: 5678575769375308921
   ChildIds: 8541304033345480359
   ChildIds: 13286908599451979449
-  ChildIds: 8946871210132767668
   ChildIds: 17783731162864585770
+  ChildIds: 8946871210132767668
+  ChildIds: 5543611084941500127
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15190,6 +15191,109 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 5543611084941500127
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -938.991455
+      Y: 1461.52368
+      Z: 300.68396
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2760.2605
+            Y: 1392.67639
+            Z: 0.000122070313
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 24.5786667
+          }
+        }
+        Overrides {
+          Name: "cs:NodeName"
+          String: "Apple Tree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 8946871210132767668
+  Name: "AppleTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2813.99146
+            Y: 1661.52368
+            Z: 0.000122070313
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -23.9785767
+          }
+        }
+        Overrides {
+          Name: "cs:NodeName"
+          String: "Apple Tree"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
   }
 }
 Objects {
@@ -15259,45 +15363,6 @@ Objects {
     }
     TemplateAsset {
       Id: 1876360131157000047
-    }
-  }
-}
-Objects {
-  Id: 8946871210132767668
-  Name: "AppleTree"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8270882688003474880
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4999618581829294618
-      value {
-        Overrides {
-          Name: "Name"
-          String: "AppleTree"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2813.99146
-            Y: 1661.52368
-            Z: 0.000122070313
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 11473937538949555759
     }
   }
 }

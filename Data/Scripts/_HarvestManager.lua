@@ -220,26 +220,47 @@ function UpdateToStringData(obj)
 			else
 				if nodeData.obj ~= nil then
 					--if nodeGroupData[obj].firstUpdateTime ~= -1 and nodeGroupData[obj].firstUpdateTime + 1 < time() then
-						if nodeGroupData[obj].firstUpdateTime + 1 < time() then
-						print(nodeGroupData[obj].firstUpdateTime, time())
-						--print("Something destroyed!", Environment.IsClient(), Environment.IsServer(), Environment.IsSinglePlayerPreview())
-						--if nodeData.properties.DestroyEffect ~= nil and (Environment.IsClient() or Environment.IsSinglePlayerPreview()) then
-						if nodeData.properties.DestroyEffect ~= nil and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
-							Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnAsset",
-									nodeData.properties.DestroyEffect,
-									nodeData.obj:GetWorldPosition(),
-									--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
-									nodeData.obj:GetWorldRotation())
+					if nodeGroupData[obj].firstUpdateTime + 1 < time() then
+					print(nodeGroupData[obj].firstUpdateTime, time())
+						-- UGH this is so messy.  But necessary for single player preview to work. >:(
+						if Environment.IsSinglePlayerPreview() then
+							if nodeData.properties.DestroyEffect ~= nil then
+								Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnAsset",
+										nodeData.properties.DestroyEffect,
+										nodeData.obj:GetWorldPosition(),
+										--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
+										nodeData.obj:GetWorldRotation())
 
+							end
+							if nodeData.properties.PickupSpawnMax > 0 then
+								Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnPickups",
+										nodeData.properties.PickupTemplate,
+										nodeData.obj:GetWorldPosition(),
+										math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
+										100
+										)
+							end
+						elseif Environment.IsClient() then
+							if nodeData.properties.DestroyEffect ~= nil then
+								Events.Broadcast("Harvest-SpawnAsset",
+										nodeData.properties.DestroyEffect,
+										nodeData.obj:GetWorldPosition(),
+										--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
+										nodeData.obj:GetWorldRotation())
+
+							end
+							if nodeData.properties.PickupSpawnMax > 0 then
+								Events.Broadcast("Harvest-SpawnPickups",
+										nodeData.properties.PickupTemplate,
+										nodeData.obj:GetWorldPosition(),
+										math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
+										100
+										)
+							end
 						end
-						if nodeData.properties.PickupSpawnMax > 0 and (Environment.IsServer() or Environment.IsSinglePlayerPreview()) then
-							Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnPickups",
-									nodeData.properties.PickupTemplate,
-									nodeData.obj:GetWorldPosition(),
-									math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
-									100
-									)
-						end
+
+
+
 					else
 						nodeGroupData[obj].firstUpdateTime = time()
 					end
@@ -334,7 +355,6 @@ function OnNodeHarvested(player, hid)
 	end
 
 	API.SetNodeState(nodeData.h_id, false)
-	print("Broadcasting Harvest-NodeHarvested!")
 	Events.Broadcast("Harvest-NodeHarvested", player, nodeData)
 end
 
