@@ -52,7 +52,7 @@ function OnToolHit(ability)
 			end
 		end
 	else
-		print("Doing the AOE thing!")
+		--print("Doing the AOE thing!")
 		for _, obj in pairs(propTrigger:GetOverlappingObjects()) do
 			if obj:IsA("StaticMesh") then
 				local nodeData = mgr.GetNodeData(obj)
@@ -73,10 +73,8 @@ function OnToolHit(ability)
 		local impactPos = data.impactPos
 		local nodeData = data.nodeData
 		local obj = nodeData.obj
-		print("data?", nodeData)
 		if nodeData ~= nil then 
 			-- Verify that they have a tool that works here
-			print(obj.name)
 			if mgr.CanHarvest(obj, tool) then
 				if not hpTracker.IsDestroyed(obj) then
 					hpTracker.ApplyDamage(obj, damage)

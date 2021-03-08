@@ -25,7 +25,6 @@ Objects {
   ChildIds: 18334245025561281365
   ChildIds: 7739860303948702135
   ChildIds: 10009644893434204028
-  ChildIds: 10742745648011972545
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -35,46 +34,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 10742745648011972545
-  Name: "Tool - Axe"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8583049880314352059
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Tool - Axe"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2191.98193
-            Y: 397.833252
-            Z: 124.311523
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15251422738044263284
-    }
   }
 }
 Objects {
@@ -14567,9 +14526,9 @@ Objects {
   Name: "!HarvestNodeGroup"
   Transform {
     Location {
-      X: 12965.291
-      Y: -2261.08594
-      Z: 1031.08984
+      X: 10856.0615
+      Y: 1777.83252
+      Z: 1168.68652
     }
     Rotation {
     }
@@ -14625,9 +14584,6 @@ Objects {
   Name: "StaticContext"
   Transform {
     Location {
-      X: -2100
-      Y: -175
-      Z: 300.683838
     }
     Rotation {
     }
@@ -14689,8 +14645,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1200
-            Y: 1000
+            X: -639.562866
+            Y: 494.170532
             Z: -0.000183105469
           }
         }
@@ -14735,8 +14691,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1200
-            Y: 475
+            X: -639.562866
+            Y: -30.8294678
             Z: -0.000183105469
           }
         }
@@ -14783,7 +14739,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1200
+            X: -639.562866
+            Y: -505.829468
             Z: -0.000183105469
           }
         }
@@ -14830,8 +14787,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -600
-            Y: 1000
+            X: -39.5627441
+            Y: 494.170532
             Z: -0.000183105469
           }
         }
@@ -14878,8 +14835,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -600
-            Y: 475
+            X: -39.5627441
+            Y: -30.8294678
             Z: -0.000183105469
           }
         }
@@ -14926,7 +14883,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -600
+            X: -39.5627441
+            Y: -505.829468
             Z: -0.000183105469
           }
         }
@@ -14973,7 +14931,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            Y: 1000
+            X: 560.437
+            Y: 494.170532
             Z: -0.000183105469
           }
         }
@@ -15020,7 +14979,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            Y: 475
+            X: 560.437
+            Y: -30.8294678
             Z: -0.000183105469
           }
         }
@@ -15059,6 +15019,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
+            X: 560.437
+            Y: -505.829468
             Z: -0.000183105469
           }
         }
