@@ -1,4 +1,3 @@
-local propPickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
 local propObjectRoot = script:GetCustomProperty("ObjectRoot"):WaitForObject()
 local propResource = script:GetCustomProperty("Resource")
 local propAmount = script:GetCustomProperty("Amount")
@@ -14,21 +13,25 @@ local propAutoCollectFling = script:GetCustomProperty("AutoCollectFling")
 local player = Game.GetLocalPlayer()
 
 
-function OnPickup(trigger, other)
-	if other == player then
-		World.SpawnAsset(propPickupEffect, {position = propObjectRoot:GetWorldPosition()})
-		local root = propObjectRoot:FindTemplateRoot()
-		root:Destroy()
-		
-		if propResource ~= nil and propResource ~= "" then
-			Events.Broadcast("Harvest-SpawnResourceFlyup", propResource, propAmount, 
-				player:GetWorldPosition() + Vector3.UP * 100 + RandomStream.New():GetVector3() * 50)
+
+
+
+function PickupCheckerTask()
+	while true do
+		if (propObjectRoot:GetWorldPosition() - player:GetWorldPosition()).size < 100 then
+			World.SpawnAsset(propPickupEffect, {position = propObjectRoot:GetWorldPosition()})
+			local root = propObjectRoot:FindTemplateRoot()
+			root:Destroy()
+			
+			if propResource ~= nil and propResource ~= "" then
+				Events.Broadcast("Harvest-SpawnResourceFlyup", propResource, propAmount, 
+					player:GetWorldPosition() + Vector3.UP * 100 + RandomStream.New():GetVector3() * 50)
+			end
+			return
 		end
+		Task.Wait()
 	end
 end
-
-
-propPickupTrigger.beginOverlapEvent:Connect(OnPickup)
 
 --propObjectRoot.isSimulatingDebrisPhysics = false
 Task.Wait()
@@ -50,6 +53,7 @@ propObjectRoot:SetWorldPosition(propObjectRoot:GetWorldPosition() + propSpawnOff
 
 
 
+Task.Spawn(PickupCheckerTask)
 
 Task.Wait(3)
 propObjectRoot.isSimulatingDebrisPhysics = false

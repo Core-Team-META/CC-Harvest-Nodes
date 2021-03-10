@@ -42,7 +42,6 @@ Assets {
           }
         }
         ParentId: 7100216968170631171
-        ChildIds: 6113252944141513285
         ChildIds: 9880506544533510810
         ChildIds: 7371954313445542811
         UnregisteredParameters {
@@ -77,37 +76,6 @@ Assets {
         }
       }
       Objects {
-        Id: 6113252944141513285
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.77199709
-            Y: 1.77199709
-            Z: 1.77199709
-          }
-        }
-        ParentId: 4341737222762496309
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
         Id: 9880506544533510810
         Name: "ResourcePickupScript"
         Transform {
@@ -126,12 +94,6 @@ Assets {
         }
         ParentId: 4341737222762496309
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:PickupTrigger"
-            ObjectReference {
-              SubObjectId: 6113252944141513285
-            }
-          }
           Overrides {
             Name: "cs:Resource"
             String: "coins"

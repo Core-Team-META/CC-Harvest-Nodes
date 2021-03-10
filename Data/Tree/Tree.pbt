@@ -25,6 +25,7 @@ Objects {
   ChildIds: 18334245025561281365
   ChildIds: 7739860303948702135
   ChildIds: 10009644893434204028
+  ChildIds: 5659283666776922109
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +35,76 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 5659283666776922109
+  Name: "Callout Sparkle"
+  Transform {
+    Location {
+      X: -1054.6084
+      Y: 375.914337
+      Z: 268.581604
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.4
+      Y: 0.4
+      Z: 0.4
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.470000029
+        G: 0.894701898
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 0.1
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 0.2
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Curl Variance"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Curl Speed"
+      Vector {
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11684139476308371752
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+      Relevance {
+        Value: "mc:evfxrelevance:critical"
+      }
+    }
   }
 }
 Objects {

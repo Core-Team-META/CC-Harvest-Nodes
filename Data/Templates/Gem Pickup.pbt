@@ -42,7 +42,6 @@ Assets {
           }
         }
         ParentId: 9884899984858387711
-        ChildIds: 18276159586545897260
         ChildIds: 18073531468115279490
         ChildIds: 9001199440900599256
         UnregisteredParameters {
@@ -76,43 +75,11 @@ Assets {
             IsEnemyCollisionEnabled: true
           }
           EnableCameraCollision: true
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
               Mass: 100
               LinearDamping: 0.01
             }
-          }
-        }
-      }
-      Objects {
-        Id: 18276159586545897260
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 819465240230595765
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
           }
         }
       }
@@ -132,12 +99,6 @@ Assets {
         }
         ParentId: 819465240230595765
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:PickupTrigger"
-            ObjectReference {
-              SubObjectId: 18276159586545897260
-            }
-          }
           Overrides {
             Name: "cs:ObjectRoot"
             ObjectReference {

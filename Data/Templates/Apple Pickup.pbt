@@ -97,7 +97,6 @@ Assets {
         ChildIds: 1210625941647274635
         ChildIds: 12726135109388008130
         ChildIds: 12178690412836971724
-        ChildIds: 5144553105201317856
         ChildIds: 13318791701691517248
         ChildIds: 16286552392063280253
         Collidable_v2 {
@@ -346,37 +345,6 @@ Assets {
         }
       }
       Objects {
-        Id: 5144553105201317856
-        Name: "Trigger"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.8
-            Y: 0.8
-            Z: 0.8
-          }
-        }
-        ParentId: 9285699464146572775
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
         Id: 13318791701691517248
         Name: "Callout Sparkle"
         Transform {
@@ -459,12 +427,6 @@ Assets {
         }
         ParentId: 9285699464146572775
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:PickupTrigger"
-            ObjectReference {
-              SubObjectId: 5144553105201317856
-            }
-          }
           Overrides {
             Name: "cs:ObjectRoot"
             ObjectReference {

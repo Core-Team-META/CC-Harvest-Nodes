@@ -5,11 +5,6 @@ Assets {
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:PickupTrigger"
-        ObjectReference {
-        }
-      }
-      Overrides {
         Name: "cs:ObjectRoot"
         ObjectReference {
         }
