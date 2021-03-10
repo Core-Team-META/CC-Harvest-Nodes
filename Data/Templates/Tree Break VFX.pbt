@@ -505,7 +505,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -514,11 +514,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -568,7 +568,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -577,11 +577,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -632,7 +632,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -641,11 +641,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -695,7 +695,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -704,11 +704,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -758,7 +758,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -767,11 +767,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -822,7 +822,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -831,11 +831,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -886,7 +886,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -895,11 +895,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -948,7 +948,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -957,11 +957,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -1012,7 +1012,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -1021,11 +1021,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -1076,7 +1076,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -1085,11 +1085,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -1140,7 +1140,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -1149,11 +1149,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -1202,7 +1202,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 2764328355537383799
             }
           }
           Overrides {
@@ -1211,11 +1211,11 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.125
+            Float: 0.203851908
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.494776815
+            Float: 0.498592079
           }
         }
         Collidable_v2 {
@@ -1291,6 +1291,7 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 6.83018879e-06
           }
           Scale {
             X: 0.262374401
@@ -1372,6 +1373,7 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 6.83018879e-06
           }
           Scale {
             X: 0.407616913
@@ -1453,6 +1455,7 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 6.83018879e-06
           }
           Scale {
             X: 0.897789836
@@ -1534,6 +1537,7 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 2.04905664e-05
           }
           Scale {
             X: 0.262374401
@@ -1615,6 +1619,7 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 2.04905664e-05
           }
           Scale {
             X: 0.407616913
@@ -1696,6 +1701,7 @@ Assets {
           Location {
           }
           Rotation {
+            Yaw: 2.04905664e-05
           }
           Scale {
             X: 0.897789836
@@ -1789,15 +1795,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_wedge_curved_convex_hq_001"
-      }
-    }
-    Assets {
-      Id: 7966216967903090834
-      Name: "Bark Birch 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_bark_birch_001_uv"
       }
     }
     PrimaryAssetId {

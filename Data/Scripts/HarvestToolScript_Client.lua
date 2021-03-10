@@ -56,10 +56,12 @@ function OnToolHit(ability)
 		for _, obj in pairs(propTrigger:GetOverlappingObjects()) do
 			if obj:IsA("StaticMesh") then
 				local nodeData = mgr.GetNodeData(obj)
-				-- We need to figure out the hit location manually
-				local hr = World.Raycast(player:GetWorldPosition(), nodeData.obj:GetWorldPosition(), {ignorePlayers = true})
 				if nodeData ~= nil then
-					objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
+					-- We need to figure out the hit location manually
+					local hr = World.Raycast(player:GetWorldPosition(), nodeData.obj:GetWorldPosition(), {ignorePlayers = true})
+					if nodeData ~= nil then
+						objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
+					end
 				end
 			end
 		end
