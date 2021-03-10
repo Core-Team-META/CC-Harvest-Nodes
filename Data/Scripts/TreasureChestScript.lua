@@ -4,13 +4,6 @@ local propResourcePickup = script:GetCustomProperty("ResourcePickup")
 local propResourceAmount = script:GetCustomProperty("ResourceAmount")
 local propRoot = script:GetCustomProperty("Root"):WaitForObject()
 
-local groundHR = World.Raycast(propRoot:GetWorldPosition() + Vector3.UP * 500,
-							propRoot:GetWorldPosition() + Vector3.UP * -500,
-							{ignorePlayers = true})
-
-if groundHR ~= nil then
-	propRoot:SetWorldPosition(groundHR:GetImpactPosition())
-end
 
 propRoot:LookAt(Game:GetLocalPlayer():GetWorldPosition())
 local rot = propRoot:GetWorldRotation()

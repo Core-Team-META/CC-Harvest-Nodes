@@ -14124,6 +14124,2389 @@ Objects {
   ChildIds: 8606214403253492376
   ChildIds: 15131470766251674605
   ChildIds: 16578554612901537537
+  ChildIds: 2521183706453192128
+  ChildIds: 14471271117298810965
+  ChildIds: 17004509247956551927
+  ChildIds: 1251319232935563318
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1251319232935563318
+  Name: "!HarvestNodeGroup"
+  Transform {
+    Location {
+      X: 6708.05566
+      Y: -869.906
+      Z: -222.482666
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18302167890738607010
+  ChildIds: 10126168624872095726
+  ChildIds: 8022634131428217070
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeDataObj"
+      ObjectReference {
+        SelfId: 10126168624872095726
+      }
+    }
+    Overrides {
+      Name: "cs:StaticContext"
+      ObjectReference {
+        SelfId: 8022634131428217070
+      }
+    }
+    Overrides {
+      Name: "cs:MaxActiveNodes"
+      Int: 5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
+  }
+}
+Objects {
+  Id: 8022634131428217070
+  Name: "StaticContext"
+  Transform {
+    Location {
+      Z: 268.814453
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1251319232935563318
+  ChildIds: 10971792051000687371
+  ChildIds: 8078695354768467832
+  ChildIds: 15129717541787856636
+  ChildIds: 9117689033396089927
+  ChildIds: 2611768362151389797
+  ChildIds: 7219110718120113090
+  ChildIds: 12442193615559301984
+  ChildIds: 3020906721562386202
+  ChildIds: 6233921026384199637
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 6233921026384199637
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -8411.29688
+      Y: 1095.03491
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1172.21875
+            Y: -1155.86609
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 3020906721562386202
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -4535.13623
+      Y: 22.4897461
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3935.88916
+            Y: -600.793213
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 12442193615559301984
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -7886.71191
+      Y: -560.630371
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -59.7285156
+            Y: -1673.33838
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 7219110718120113090
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -8773.33496
+      Y: 741.210693
+      Z: -984.758545
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3411.3042
+            Y: -2256.4585
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 2611768362151389797
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -7632.24072
+      Y: 2314.34668
+      Z: -984.758301
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4297.92725
+            Y: -954.617432
+            Z: -0.000732421875
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 9117689033396089927
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -5473.94629
+      Y: 1235.98315
+      Z: -984.758301
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3156.83301
+            Y: 618.518555
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 15129717541787856636
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -5251.48535
+      Y: 2695.18091
+      Z: -984.758057
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -998.538574
+            Y: -459.844971
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 8078695354768467832
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -3857.20166
+      Y: 2046.90942
+      Z: -984.757813
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -776.077637
+            Y: 999.352783
+            Z: -0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 10971792051000687371
+  Name: "BasicTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8022634131428217070
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 618.206055
+            Y: 351.081299
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 10126168624872095726
+  Name: "NodeDataObj"
+  Transform {
+    Location {
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1251319232935563318
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeData"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:NodeData:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17004509247956551927
+  Name: "!HarvestNodeGroup"
+  Transform {
+    Location {
+      X: 5199.98291
+      Y: -448.394287
+      Z: -222.482666
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18302167890738607010
+  ChildIds: 9955899916222149345
+  ChildIds: 1823371117084840448
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeDataObj"
+      ObjectReference {
+        SelfId: 9955899916222149345
+      }
+    }
+    Overrides {
+      Name: "cs:StaticContext"
+      ObjectReference {
+        SelfId: 1823371117084840448
+      }
+    }
+    Overrides {
+      Name: "cs:MaxActiveNodes"
+      Int: 5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
+  }
+}
+Objects {
+  Id: 1823371117084840448
+  Name: "StaticContext"
+  Transform {
+    Location {
+      Z: 268.814453
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17004509247956551927
+  ChildIds: 2241001656939697071
+  ChildIds: 5502809153989103219
+  ChildIds: 9857070600305003413
+  ChildIds: 6518740048503842330
+  ChildIds: 13706434893132849367
+  ChildIds: 12085649958239275940
+  ChildIds: 9412791251283859025
+  ChildIds: 5719057834552402853
+  ChildIds: 14170308764223796695
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 14170308764223796695
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -8411.29688
+      Y: 1095.03491
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1172.21875
+            Y: -1155.86609
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 5719057834552402853
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -4535.13623
+      Y: 22.4897461
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3935.88916
+            Y: -600.793213
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 9412791251283859025
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -7886.71191
+      Y: -560.630371
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -59.7285156
+            Y: -1673.33838
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 12085649958239275940
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -8773.33496
+      Y: 741.210693
+      Z: -984.758545
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3411.3042
+            Y: -2256.4585
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 13706434893132849367
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -7632.24072
+      Y: 2314.34668
+      Z: -984.758301
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4297.92725
+            Y: -954.617432
+            Z: -0.000732421875
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 6518740048503842330
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -5473.94629
+      Y: 1235.98315
+      Z: -984.758301
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3156.83301
+            Y: 618.518555
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 9857070600305003413
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -5251.48535
+      Y: 2695.18091
+      Z: -984.758057
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -998.538574
+            Y: -459.844971
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 5502809153989103219
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -3857.20166
+      Y: 2046.90942
+      Z: -984.757813
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -776.077637
+            Y: 999.352783
+            Z: -0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 2241001656939697071
+  Name: "BasicTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1823371117084840448
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 618.206055
+            Y: 351.081299
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 9955899916222149345
+  Name: "NodeDataObj"
+  Transform {
+    Location {
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17004509247956551927
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeData"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:NodeData:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14471271117298810965
+  Name: "!HarvestNodeGroup"
+  Transform {
+    Location {
+      X: 6439.8833
+      Y: -265.257813
+      Z: -222.482666
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18302167890738607010
+  ChildIds: 11076453928758001146
+  ChildIds: 15517601264367669263
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeDataObj"
+      ObjectReference {
+        SelfId: 11076453928758001146
+      }
+    }
+    Overrides {
+      Name: "cs:StaticContext"
+      ObjectReference {
+        SelfId: 15517601264367669263
+      }
+    }
+    Overrides {
+      Name: "cs:MaxActiveNodes"
+      Int: 5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
+  }
+}
+Objects {
+  Id: 15517601264367669263
+  Name: "StaticContext"
+  Transform {
+    Location {
+      Z: 268.814453
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14471271117298810965
+  ChildIds: 16858295223958256197
+  ChildIds: 2024005772731174564
+  ChildIds: 4613293680598809381
+  ChildIds: 9412536816289854421
+  ChildIds: 7667000534620492225
+  ChildIds: 11508530269937910310
+  ChildIds: 15525677777466006084
+  ChildIds: 9402670806961360891
+  ChildIds: 16824357635737312865
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 16824357635737312865
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -8411.29688
+      Y: 1095.03491
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1172.21875
+            Y: -1155.86609
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 9402670806961360891
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -4535.13623
+      Y: 22.4897461
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3935.88916
+            Y: -600.793213
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 15525677777466006084
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -7886.71191
+      Y: -560.630371
+      Z: -984.758789
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -59.7285156
+            Y: -1673.33838
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 11508530269937910310
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -8773.33496
+      Y: 741.210693
+      Z: -984.758545
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3411.3042
+            Y: -2256.4585
+            Z: -0.0009765625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 7667000534620492225
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -7632.24072
+      Y: 2314.34668
+      Z: -984.758301
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4297.92725
+            Y: -954.617432
+            Z: -0.000732421875
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 9412536816289854421
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -5473.94629
+      Y: 1235.98315
+      Z: -984.758301
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3156.83301
+            Y: 618.518555
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 4613293680598809381
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -5251.48535
+      Y: 2695.18091
+      Z: -984.758057
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -998.538574
+            Y: -459.844971
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 2024005772731174564
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: -3857.20166
+      Y: 2046.90942
+      Z: -984.757813
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -776.077637
+            Y: 999.352783
+            Z: -0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 16858295223958256197
+  Name: "BasicTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15517601264367669263
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 618.206055
+            Y: 351.081299
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
+  }
+}
+Objects {
+  Id: 11076453928758001146
+  Name: "NodeDataObj"
+  Transform {
+    Location {
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14471271117298810965
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeData"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:NodeData:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2521183706453192128
+  Name: "!HarvestNodeGroup"
+  Transform {
+    Location {
+      X: 6439.8833
+      Y: -265.257813
+      Z: -222.482666
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18302167890738607010
+  ChildIds: 16253359417715388027
+  ChildIds: 17566205297963448681
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeDataObj"
+      ObjectReference {
+        SelfId: 16253359417715388027
+      }
+    }
+    Overrides {
+      Name: "cs:StaticContext"
+      ObjectReference {
+        SelfId: 17566205297963448681
+      }
+    }
+    Overrides {
+      Name: "cs:MaxActiveNodes"
+      Int: 5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3466347310880458133
+    }
+  }
+}
+Objects {
+  Id: 17566205297963448681
+  Name: "StaticContext"
+  Transform {
+    Location {
+      Z: 268.814453
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2521183706453192128
+  ChildIds: 14360488424791135373
+  ChildIds: 5216553521029220475
+  ChildIds: 13923490118272988928
+  ChildIds: 372397360189368575
+  ChildIds: 3818065398724895773
+  ChildIds: 12500438835641721730
+  ChildIds: 1715565130139652597
+  ChildIds: 5156585224423199683
+  ChildIds: 10757558281530476524
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 10757558281530476524
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -6393.85254
+      Y: 1472.09937
+      Z: -984.75769
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4443.14
+            Y: -1772.24963
+            Z: 0.000122070313
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 5156585224423199683
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -4510.98486
+      Y: 766.669678
+      Z: -984.757568
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1918.44482
+            Y: -223.72876
+            Z: 0.000122070313
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 1715565130139652597
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -8901.19
+      Y: 1973.99854
+      Z: -984.757446
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -35.5771484
+            Y: -929.158447
+            Z: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 12500438835641721730
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -4024.29785
+      Y: 3053.31738
+      Z: -984.757568
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4425.78271
+            Y: 278.17041
+            Z: 0.000366210938
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 3818065398724895773
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -5654.97852
+      Y: 60.364624
+      Z: -984.757813
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 451.109863
+            Y: 1357.48926
+            Z: 0.000244140625
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 372397360189368575
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -6611.17822
+      Y: 696.299072
+      Z: -984.757935
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1179.5708
+            Y: -1635.4635
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 13923490118272988928
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -5928.80615
+      Y: 2402.4668
+      Z: -984.757813
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2135.77051
+            Y: -999.529053
+            Z: -0.000122070313
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 5216553521029220475
+  Name: "AppleTree"
+  Transform {
+    Location {
+      X: -4475.40771
+      Y: 1695.82813
+      Z: -984.757813
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1453.39844
+            Y: 706.638672
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 14360488424791135373
+  Name: "AppleTree"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17566205297963448681
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4999618581829294618
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AppleTree"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 11473937538949555759
+    }
+  }
+}
+Objects {
+  Id: 16253359417715388027
+  Name: "NodeDataObj"
+  Transform {
+    Location {
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2521183706453192128
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NodeData"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:NodeData:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14594,15 +16977,15 @@ Objects {
     }
   }
   ParentId: 15131470766251674605
-  ChildIds: 1657207422900187819
-  ChildIds: 7044715742631109161
-  ChildIds: 14478144572611262323
-  ChildIds: 2537277310392420420
-  ChildIds: 12997559379637449612
-  ChildIds: 10517084820383833955
-  ChildIds: 8079095681684216989
-  ChildIds: 5608231755737504738
-  ChildIds: 10878935409671255186
+  ChildIds: 9961332579834476499
+  ChildIds: 1502187321582608924
+  ChildIds: 16073886747108676105
+  ChildIds: 2494065350971102641
+  ChildIds: 15728864576409568283
+  ChildIds: 16280468568490313239
+  ChildIds: 7827971793804087042
+  ChildIds: 8727349007739621904
+  ChildIds: 2580031903265303007
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -14616,16 +16999,15 @@ Objects {
   }
 }
 Objects {
-  Id: 10878935409671255186
-  Name: "GemstoneRock"
+  Id: 2580031903265303007
+  Name: "BasicRock"
   Transform {
     Location {
-      X: 1450
-      Y: 700
-      Z: 300.683899
+      X: -104.868652
+      Y: 2858.3064
+      Z: 137.596924
     }
     Rotation {
-      Yaw: 153.374619
     }
     Scale {
       X: 1
@@ -14636,90 +17018,49 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -639.562866
-            Y: 494.170532
-            Z: -0.000183105469
+            X: 651.432129
+            Y: -712.217041
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 103.374565
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
 Objects {
-  Id: 5608231755737504738
-  Name: "GemRock"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3171907511485994093
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 4724397547425144780
-      value {
-        Overrides {
-          Name: "Name"
-          String: "GemRock"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -639.562866
-            Y: -30.8294678
-            Z: -0.000183105469
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 128.37471
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1570089016767294935
-    }
-  }
-}
-Objects {
-  Id: 8079095681684216989
-  Name: "GemstoneRock"
+  Id: 8727349007739621904
+  Name: "BasicRock"
   Transform {
     Location {
-      X: 1450
-      Y: -300
-      Z: 300.683899
+      X: 688.678833
+      Y: 3607.24756
+      Z: 137.596924
     }
     Rotation {
-      Yaw: 73.3747787
     }
     Scale {
       X: 1
@@ -14730,44 +17071,49 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -639.562866
-            Y: -505.829468
-            Z: -0.000183105469
+            X: -45.6391602
+            Y: -880.612061
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -81.6251831
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
 Objects {
-  Id: 10517084820383833955
-  Name: "GemstoneRock"
+  Id: 7827971793804087042
+  Name: "BasicRock"
   Transform {
     Location {
-      X: 2050
-      Y: 700
-      Z: 300.683899
+      X: -292.944519
+      Y: 4220.17773
+      Z: 137.596924
     }
     Rotation {
-      Yaw: 153.374619
     }
     Scale {
       X: 1
@@ -14778,44 +17124,49 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -39.5627441
-            Y: 494.170532
-            Z: -0.000183105469
+            X: 747.908325
+            Y: -131.670898
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 123.374588
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
 Objects {
-  Id: 12997559379637449612
-  Name: "GemstoneRock"
+  Id: 16280468568490313239
+  Name: "BasicRock"
   Transform {
     Location {
-      X: 2050
-      Y: 175
-      Z: 300.683899
+      X: -620.287231
+      Y: 3812.55933
+      Z: 137.596924
     }
     Rotation {
-      Yaw: 28.3747749
     }
     Scale {
       X: 1
@@ -14826,44 +17177,49 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -39.5627441
-            Y: -30.8294678
-            Z: -0.000183105469
+            X: -233.715027
+            Y: 481.259277
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 93.3747253
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
 Objects {
-  Id: 2537277310392420420
-  Name: "GemstoneRock"
+  Id: 15728864576409568283
+  Name: "BasicRock"
   Transform {
     Location {
-      X: 2050
-      Y: -300
-      Z: 300.683899
+      X: -342.573914
+      Y: 3298.10352
+      Z: 137.596924
     }
     Rotation {
-      Yaw: 73.3748093
     }
     Scale {
       X: 1
@@ -14874,44 +17230,49 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -39.5627441
-            Y: -505.829468
-            Z: -0.000183105469
+            X: -561.057739
+            Y: 73.6408691
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 178.374695
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
 Objects {
-  Id: 14478144572611262323
-  Name: "GemstoneRock"
+  Id: 2494065350971102641
+  Name: "BasicRock"
   Transform {
     Location {
-      X: 2050
-      Y: 175
-      Z: 300.683899
+      X: 385.662598
+      Y: 4029.25366
+      Z: 137.596924
     }
     Rotation {
-      Yaw: 73.3747787
     }
     Scale {
       X: 1
@@ -14922,44 +17283,49 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 560.437
-            Y: 494.170532
-            Z: -0.000183105469
+            X: -283.344421
+            Y: -440.814941
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 153.374619
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
 Objects {
-  Id: 7044715742631109161
-  Name: "GemstoneRock"
+  Id: 16073886747108676105
+  Name: "BasicRock"
   Transform {
     Location {
-      X: 2050
-      Y: -300
-      Z: 300.683899
+      X: 207.467224
+      Y: 3351.25293
+      Z: 137.596924
     }
     Rotation {
-      Yaw: 73.3748093
     }
     Scale {
       X: 1
@@ -14970,36 +17336,95 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 560.437
-            Y: -30.8294678
-            Z: -0.000183105469
+            X: 444.89209
+            Y: 290.335205
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 28.3747826
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
 Objects {
-  Id: 1657207422900187819
-  Name: "GemstoneRock"
+  Id: 1502187321582608924
+  Name: "BasicRock"
+  Transform {
+    Location {
+      X: -59.2294922
+      Y: 3738.91846
+      Z: 137.596924
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3171907511485994093
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5032801462570562361
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicRock"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 266.696716
+            Y: -387.665527
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1876360131157000047
+    }
+  }
+}
+Objects {
+  Id: 9961332579834476499
+  Name: "BasicRock"
   Transform {
     Scale {
       X: 1
@@ -15010,30 +17435,24 @@ Objects {
   ParentId: 3171907511485994093
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4724397547425144780
+      key: 5032801462570562361
       value {
         Overrides {
           Name: "Name"
-          String: "GemRock"
+          String: "BasicRock"
         }
         Overrides {
-          Name: "Position"
+          Name: "Scale"
           Vector {
-            X: 560.437
-            Y: -505.829468
-            Z: -0.000183105469
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 73.3748322
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1570089016767294935
+      Id: 1876360131157000047
     }
   }
 }
@@ -15143,6 +17562,8 @@ Objects {
   ChildIds: 17783731162864585770
   ChildIds: 8946871210132767668
   ChildIds: 5543611084941500127
+  ChildIds: 1679211982277612717
+  ChildIds: 6511316909419184243
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -15153,6 +17574,134 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 6511316909419184243
+  Name: "GemstoneRock"
+  Transform {
+    Location {
+      X: -157.411133
+      Y: -290.554871
+      Z: 300.683777
+    }
+    Rotation {
+      Yaw: 73.3747787
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4724397547425144780
+      value {
+        Overrides {
+          Name: "Name"
+          String: "GemRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2146.98096
+            Y: 626.056396
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.3747559
+          }
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMin"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMax"
+          Int: 20
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1570089016767294935
+    }
+  }
+}
+Objects {
+  Id: 1679211982277612717
+  Name: "GemstoneRock"
+  Transform {
+    Location {
+      X: 635.541504
+      Y: 469.173889
+      Z: 300.683655
+    }
+    Rotation {
+      Yaw: 73.3748093
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4724397547425144780
+      value {
+        Overrides {
+          Name: "Name"
+          String: "GemRock"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2032.41113
+            Y: -90.5548706
+            Z: -6.10351563e-05
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 73.374794
+          }
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMin"
+          Int: 10
+        }
+        Overrides {
+          Name: "cs:PickupSpawnMax"
+          Int: 20
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1570089016767294935
+    }
   }
 }
 Objects {
