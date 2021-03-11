@@ -25,6 +25,8 @@ Objects {
   ChildIds: 18334245025561281365
   ChildIds: 7739860303948702135
   ChildIds: 10009644893434204028
+  ChildIds: 14438554572831746873
+  ChildIds: 10509255397640757702
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +36,73 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10509255397640757702
+  Name: "Tree Break VFX"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3947384021951389627
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tree Break VFX"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -825
+            Y: 2050
+            Z: 275
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 3837939735980492628
+    }
+  }
+}
+Objects {
+  Id: 14438554572831746873
+  Name: "ClientContext"
+  Transform {
+    Location {
+      X: -950
+      Y: -350
+      Z: 275
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
   }
 }
 Objects {
@@ -25009,24 +25078,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 10
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:DestroyEffect"
-          AssetReference {
-            Id: 16586940124174979573
-          }
-        }
       }
     }
     TemplateAsset {
@@ -25159,10 +25210,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "cs:MaxHealth"
-          Int: 10
         }
       }
     }

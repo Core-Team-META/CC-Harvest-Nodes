@@ -27,7 +27,7 @@ Assets {
           Overrides {
             Name: "cs:DestroyEffect"
             AssetReference {
-              Id: 16350646330474712341
+              Id: 3837939735980492628
             }
           }
           Overrides {

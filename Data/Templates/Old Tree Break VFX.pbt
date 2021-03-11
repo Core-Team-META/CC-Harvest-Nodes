@@ -1,12 +1,12 @@
 Assets {
-  Id: 3837939735980492628
-  Name: "Tree Break VFX"
+  Id: 16350646330474712341
+  Name: "Old Tree Break VFX"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3947384021951389627
+      RootId: 9576058488676408064
       Objects {
-        Id: 3947384021951389627
+        Id: 9576058488676408064
         Name: "Tree Break VFX"
         Transform {
           Scale {
@@ -16,8 +16,8 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 5368948951754869779
-        Lifespan: 10
+        ChildIds: 14189839045996546160
+        Lifespan: 6
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -29,7 +29,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5368948951754869779
+        Id: 14189839045996546160
         Name: "ClientContext"
         Transform {
           Location {
@@ -42,21 +42,32 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3947384021951389627
-        ChildIds: 1102373146937540489
-        ChildIds: 1519007816475844150
-        ChildIds: 4194693353248571277
-        ChildIds: 6363897240350803285
-        ChildIds: 11644667087137915857
-        ChildIds: 12450991355688585807
-        ChildIds: 3811794110344553095
-        ChildIds: 3680290375071672453
-        ChildIds: 5435354940492698076
-        ChildIds: 14585571792834773541
-        ChildIds: 13372112669973242298
-        ChildIds: 15219561205759648588
-        ChildIds: 16648706123322124509
-        ChildIds: 2548550773130085543
+        ParentId: 9576058488676408064
+        ChildIds: 5812492727498798421
+        ChildIds: 8494651702635143374
+        ChildIds: 10528641354731798629
+        ChildIds: 5508444486534768929
+        ChildIds: 6935528571025770438
+        ChildIds: 3781472857378243821
+        ChildIds: 10664174209939082847
+        ChildIds: 16371257195897364511
+        ChildIds: 1238553152311913947
+        ChildIds: 6967298107855601049
+        ChildIds: 6010197355650018444
+        ChildIds: 8070664727432870225
+        ChildIds: 8285954104717478615
+        ChildIds: 10948741373395539481
+        ChildIds: 17430741832591394940
+        ChildIds: 15388318840477936647
+        ChildIds: 5031851661157127478
+        ChildIds: 7341241812480689678
+        ChildIds: 12844912476687522841
+        ChildIds: 11925160159488829556
+        ChildIds: 11499745480324789524
+        ChildIds: 10477478534343355101
+        ChildIds: 2447961143620439810
+        ChildIds: 10667994577519836614
+        ChildIds: 2011108594873400331
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -67,7 +78,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1102373146937540489
+        Id: 5812492727498798421
         Name: "DebrisScript"
         Transform {
           Location {
@@ -82,7 +93,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 14189839045996546160
         UnregisteredParameters {
           Overrides {
             Name: "cs:FlingScale"
@@ -106,7 +117,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1519007816475844150
+        Id: 8494651702635143374
         Name: "Dust Puff VFX"
         Transform {
           Location {
@@ -119,7 +130,7 @@ Assets {
             Z: 8
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 14189839045996546160
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -151,7 +162,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4194693353248571277
+        Id: 10528641354731798629
         Name: "Dust Puff VFX"
         Transform {
           Location {
@@ -165,7 +176,7 @@ Assets {
             Z: 8
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 14189839045996546160
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -197,7 +208,7 @@ Assets {
         }
       }
       Objects {
-        Id: 6363897240350803285
+        Id: 5508444486534768929
         Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
         Transform {
           Location {
@@ -210,7 +221,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 14189839045996546160
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -232,160 +243,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11644667087137915857
-        Name: "Birch Log"
-        Transform {
-          Location {
-            Z: 350
-          }
-          Rotation {
-            Roll: -90
-          }
-          Scale {
-            X: 1.5
-            Y: 1.5
-            Z: 1.5
-          }
-        }
-        ParentId: 5368948951754869779
-        ChildIds: 8397976240809458081
-        ChildIds: 5225680249693235186
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4095813286451555388
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8397976240809458081
-        Name: "Cylinder"
-        Transform {
-          Location {
-            Y: 3.04014502e-05
-            Z: 2.65978633e-06
-          }
-          Rotation {
-            Roll: -89.9999619
-          }
-          Scale {
-            X: 0.58
-            Y: 0.58
-            Z: 3.8
-          }
-        }
-        ParentId: 11644667087137915857
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 4106537666371773621
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.165835291
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10484336216497506083
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 5225680249693235186
-        Name: "Cylinder"
-        Transform {
-          Location {
-            Y: 3.04014502e-05
-            Z: 2.65978633e-06
-          }
-          Rotation {
-            Roll: -89.9999924
-          }
-          Scale {
-            X: 0.6
-            Y: 0.6
-            Z: 3.75000024
-          }
-        }
-        ParentId: 11644667087137915857
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7966216967903090834
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.165835291
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 10484336216497506083
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12450991355688585807
+        Id: 6935528571025770438
         Name: "Branch debris"
         Transform {
           Location {
@@ -401,8 +259,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 4762821643183849250
+        ParentId: 14189839045996546160
+        ChildIds: 7289206728116820712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -427,7 +285,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4762821643183849250
+        Id: 7289206728116820712
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -440,7 +298,7 @@ Assets {
             Z: 0.897789836
           }
         }
-        ParentId: 12450991355688585807
+        ParentId: 6935528571025770438
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -465,7 +323,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3811794110344553095
+        Id: 3781472857378243821
         Name: "Branch debris"
         Transform {
           Location {
@@ -481,8 +339,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 12664206901879857453
+        ParentId: 14189839045996546160
+        ChildIds: 14835108722283070165
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -507,7 +365,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12664206901879857453
+        Id: 14835108722283070165
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -520,7 +378,7 @@ Assets {
             Z: 0.407616913
           }
         }
-        ParentId: 3811794110344553095
+        ParentId: 3781472857378243821
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -545,7 +403,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3680290375071672453
+        Id: 10664174209939082847
         Name: "Branch debris"
         Transform {
           Location {
@@ -561,8 +419,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 15728066159654247642
+        ParentId: 14189839045996546160
+        ChildIds: 8906012902593136712
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -587,7 +445,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15728066159654247642
+        Id: 8906012902593136712
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -600,7 +458,7 @@ Assets {
             Z: 0.262374401
           }
         }
-        ParentId: 3680290375071672453
+        ParentId: 10664174209939082847
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -625,7 +483,766 @@ Assets {
         }
       }
       Objects {
-        Id: 5435354940492698076
+        Id: 16371257195897364511
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -26.2645874
+            Y: -14.1600342
+            Z: 115.915161
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1238553152311913947
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -25.2767334
+            Y: -14.5991211
+            Z: 115.915161
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 90
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6967298107855601049
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -24.8312988
+            Y: -12.5688477
+            Z: 115.915161
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 90
+            Roll: 180
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6010197355650018444
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -25.0628662
+            Y: -16.8739014
+            Z: 115.915161
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 180
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8070664727432870225
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -25.0628662
+            Y: -16.8739014
+            Z: 320.137634
+          }
+          Rotation {
+            Pitch: -90
+            Roll: -179.999969
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8285954104717478615
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -25.2767334
+            Y: -14.5991211
+            Z: 320.137634
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: -90
+            Roll: 180
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10948741373395539481
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -24.8312988
+            Y: -12.5688477
+            Z: 320.137634
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 180
+            Roll: 90
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17430741832591394940
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -26.2645874
+            Y: -14.1600342
+            Z: 320.137634
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15388318840477936647
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -25.0628662
+            Y: -16.8739014
+            Z: 519.279175
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 2.73207552e-05
+            Roll: -179.999985
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5031851661157127478
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -25.2767334
+            Y: -14.5991211
+            Z: 519.279175
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: -90
+            Roll: 180
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7341241812480689678
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -24.8312988
+            Y: -12.5688477
+            Z: 519.279175
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: -90
+            Roll: 2.28881836e-05
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12844912476687522841
+        Name: "Log Debris"
+        Transform {
+          Location {
+            X: -26.2645874
+            Y: -14.1600342
+            Z: 519.279175
+          }
+          Rotation {
+            Pitch: -90
+          }
+          Scale {
+            X: 2
+            Y: 0.439671516
+            Z: 0.439671516
+          }
+        }
+        ParentId: 14189839045996546160
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2764328355537383799
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.203851908
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.498592079
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5428600281991857522
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11925160159488829556
         Name: "Branch debris"
         Transform {
           Location {
@@ -642,8 +1259,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 3546161587358970323
+        ParentId: 14189839045996546160
+        ChildIds: 13806628219505259838
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -668,7 +1285,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3546161587358970323
+        Id: 13806628219505259838
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -682,7 +1299,7 @@ Assets {
             Z: 0.262374401
           }
         }
-        ParentId: 5435354940492698076
+        ParentId: 11925160159488829556
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -707,7 +1324,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14585571792834773541
+        Id: 11499745480324789524
         Name: "Branch debris"
         Transform {
           Location {
@@ -724,8 +1341,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 18176543642480117732
+        ParentId: 14189839045996546160
+        ChildIds: 4789999029549359686
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -750,7 +1367,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18176543642480117732
+        Id: 4789999029549359686
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -764,7 +1381,7 @@ Assets {
             Z: 0.407616913
           }
         }
-        ParentId: 14585571792834773541
+        ParentId: 11499745480324789524
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -789,7 +1406,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13372112669973242298
+        Id: 10477478534343355101
         Name: "Branch debris"
         Transform {
           Location {
@@ -806,8 +1423,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 5561896999747466655
+        ParentId: 14189839045996546160
+        ChildIds: 17885929805464452588
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -832,7 +1449,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5561896999747466655
+        Id: 17885929805464452588
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -846,7 +1463,7 @@ Assets {
             Z: 0.897789836
           }
         }
-        ParentId: 13372112669973242298
+        ParentId: 10477478534343355101
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -871,7 +1488,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15219561205759648588
+        Id: 2447961143620439810
         Name: "Branch debris"
         Transform {
           Location {
@@ -888,8 +1505,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 7203258432640496876
+        ParentId: 14189839045996546160
+        ChildIds: 13612636261096695245
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -914,7 +1531,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7203258432640496876
+        Id: 13612636261096695245
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -928,7 +1545,7 @@ Assets {
             Z: 0.262374401
           }
         }
-        ParentId: 15219561205759648588
+        ParentId: 2447961143620439810
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -953,7 +1570,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16648706123322124509
+        Id: 10667994577519836614
         Name: "Branch debris"
         Transform {
           Location {
@@ -970,8 +1587,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 1228332950633653842
+        ParentId: 14189839045996546160
+        ChildIds: 11830799276413316595
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -996,7 +1613,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1228332950633653842
+        Id: 11830799276413316595
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -1010,7 +1627,7 @@ Assets {
             Z: 0.407616913
           }
         }
-        ParentId: 16648706123322124509
+        ParentId: 10667994577519836614
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1035,7 +1652,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2548550773130085543
+        Id: 2011108594873400331
         Name: "Branch debris"
         Transform {
           Location {
@@ -1052,8 +1669,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 17068857325324066629
+        ParentId: 14189839045996546160
+        ChildIds: 7010754693796802542
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -1078,7 +1695,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17068857325324066629
+        Id: 7010754693796802542
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -1092,7 +1709,7 @@ Assets {
             Z: 0.897789836
           }
         }
-        ParentId: 2548550773130085543
+        ParentId: 2011108594873400331
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1136,42 +1753,6 @@ Assets {
       }
     }
     Assets {
-      Id: 4095813286451555388
-      Name: "Sci-fi Panel 1x4m"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_panel_1x4m_001"
-      }
-    }
-    Assets {
-      Id: 10484336216497506083
-      Name: "Cylinder"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_002"
-      }
-    }
-    Assets {
-      Id: 4106537666371773621
-      Name: "Wood Raw"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
-      }
-    }
-    Assets {
-      Id: 7966216967903090834
-      Name: "Bark Birch 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_bark_birch_001_uv"
-      }
-    }
-    Assets {
       Id: 3393143403857794665
       Name: "Parallelepiped - Horizontal "
       PlatformAssetType: 1
@@ -1205,6 +1786,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_gen_branches_big_001"
+      }
+    }
+    Assets {
+      Id: 5428600281991857522
+      Name: "Wedge - Convex Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_wedge_curved_convex_hq_001"
       }
     }
     PrimaryAssetId {
