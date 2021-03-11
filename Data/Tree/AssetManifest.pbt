@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13496182490988924400
+  Name: "Tree Oak Stump 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_stump_001"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1

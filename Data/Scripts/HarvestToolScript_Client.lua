@@ -79,6 +79,9 @@ function OnToolHit(ability)
 			if mgr.CanHarvest(obj, tool) then
 				if not hpTracker.IsDestroyed(obj) then
 					hpTracker.ApplyDamage(obj, damage)
+					World.SpawnAsset(nodeData.properties.HitEffect,
+					{position = impactPos})
+
 					if hpTracker.IsDestroyed(obj) then
 						mgr.HarvestNodeByPlayer(obj, Game.GetLocalPlayer())
 						--Events.BroadcastToServer("Harvested", mgr.GetHId(obj))

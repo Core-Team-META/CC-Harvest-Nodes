@@ -7,7 +7,7 @@ Assets {
       RootId: 18410224792694099383
       Objects {
         Id: 18410224792694099383
-        Name: "Wood Hit VFX"
+        Name: "Tree Hit VFX"
         Transform {
           Scale {
             X: 1
@@ -56,9 +56,9 @@ Assets {
             Id: 10015224543834701468
           }
           AutoPlay: true
-          Volume: 2.05345917
+          Volume: 15
           Falloff: -1
-          Radius: -1
+          Radius: 1000
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -73,9 +73,9 @@ Assets {
           Rotation {
           }
           Scale {
-            X: 2
-            Y: 2
-            Z: 2
+            X: 5
+            Y: 5
+            Z: 5
           }
         }
         ParentId: 18410224792694099383

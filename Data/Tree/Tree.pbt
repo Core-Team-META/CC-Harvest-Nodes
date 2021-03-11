@@ -26,7 +26,7 @@ Objects {
   ChildIds: 7739860303948702135
   ChildIds: 10009644893434204028
   ChildIds: 14438554572831746873
-  ChildIds: 10509255397640757702
+  ChildIds: 3547857882220735448
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,42 +39,44 @@ Objects {
   }
 }
 Objects {
-  Id: 10509255397640757702
-  Name: "Tree Break VFX"
+  Id: 3547857882220735448
+  Name: "Tree Oak Stump 01"
   Transform {
+    Location {
+      X: -2168.92285
+      Y: 2134.83594
+      Z: 124.311554
+    }
+    Rotation {
+      Yaw: -109.486969
+    }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.320246249
+      Y: 0.320246249
+      Z: 0.320246249
     }
   }
   ParentId: 4781671109827199097
-  WantsNetworking: true
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3947384021951389627
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Tree Break VFX"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -825
-            Y: 2050
-            Z: 275
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13496182490988924400
     }
-    TemplateAsset {
-      Id: 3837939735980492628
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
     }
   }
 }
@@ -24743,6 +24745,7 @@ Objects {
   ChildIds: 5543611084941500127
   ChildIds: 1679211982277612717
   ChildIds: 6511316909419184243
+  ChildIds: 15630137344941656344
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -24753,6 +24756,64 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 15630137344941656344
+  Name: "BasicTree"
+  Transform {
+    Location {
+      X: 764.541626
+      Y: 1129.95215
+      Z: 300.683838
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8270882688003474880
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3425220369186122994
+      value {
+        Overrides {
+          Name: "Name"
+          String: "BasicTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4032.33032
+            Y: 2350.98633
+            Z: -142.706299
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:MaxHealth"
+          Int: 10
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15943661245242096667
+    }
   }
 }
 Objects {

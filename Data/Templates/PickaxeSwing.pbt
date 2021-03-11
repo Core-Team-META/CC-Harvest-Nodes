@@ -1,13 +1,13 @@
 Assets {
-  Id: 6957485912960622556
-  Name: "AxeSwing"
+  Id: 13094493791807916252
+  Name: "PickaxeSwing"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2935758060865264502
+      RootId: 5417803485630174441
       Objects {
-        Id: 2935758060865264502
-        Name: "AxeSwing"
+        Id: 5417803485630174441
+        Name: "PickaxeSwing"
         Transform {
           Scale {
             X: 1
@@ -16,15 +16,14 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 4096290815209198266
-        ChildIds: 2510785291421684883
-        ChildIds: 11057073747658945555
-        ChildIds: 9069778061575037954
+        ChildIds: 3436307693052121069
+        ChildIds: 1161597919441076582
+        ChildIds: 15198666476804885805
         UnregisteredParameters {
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 4096290815209198266
+              SelfId: 841534158063459245
             }
           }
         }
@@ -40,39 +39,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4096290815209198266
-        Name: "Trigger"
-        Transform {
-          Location {
-            X: 87.8677368
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.4
-            Y: 2.5
-            Z: 0.3
-          }
-        }
-        ParentId: 2935758060865264502
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Trigger {
-          TeamSettings {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          TriggerShape_v2 {
-            Value: "mc:etriggershape:box"
-          }
-        }
-      }
-      Objects {
-        Id: 2510785291421684883
+        Id: 3436307693052121069
         Name: "Cube"
         Transform {
           Location {
@@ -86,7 +53,7 @@ Assets {
             Z: 0.3
           }
         }
-        ParentId: 2935758060865264502
+        ParentId: 5417803485630174441
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -118,14 +85,14 @@ Assets {
         }
       }
       Objects {
-        Id: 11057073747658945555
+        Id: 1161597919441076582
         Name: "Sword Swipe Half Circle"
         Transform {
           Location {
             Y: 9.15527344e-05
           }
           Rotation {
-            Roll: 180
+            Roll: 90
           }
           Scale {
             X: 3
@@ -133,7 +100,7 @@ Assets {
             Z: 3
           }
         }
-        ParentId: 2935758060865264502
+        ParentId: 5417803485630174441
         UnregisteredParameters {
           Overrides {
             Name: "bp:Color"
@@ -175,7 +142,7 @@ Assets {
         }
       }
       Objects {
-        Id: 9069778061575037954
+        Id: 15198666476804885805
         Name: "Sword Swipe Whoosh 01 SFX"
         Transform {
           Location {
@@ -188,7 +155,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 2935758060865264502
+        ParentId: 5417803485630174441
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

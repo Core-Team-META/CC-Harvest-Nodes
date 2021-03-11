@@ -537,6 +537,12 @@ Assets {
               SubObjectId: 1867002693186125048
             }
           }
+          Overrides {
+            Name: "cs:AoETemplate"
+            AssetReference {
+              Id: 13094493791807916252
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
