@@ -15,7 +15,6 @@ local respawnList = {}
 
 -- Just to make this a little cleaner.
 function GetShortId(obj)
-	--print(CoreDebug.GetStackTrace())
 	return obj:GetReference().id
 end
 
@@ -60,8 +59,6 @@ function API.Init()
 		API.RegisterHarvestableNodes(groupRoot, false)
 	end
 
-	--Events.Connect("ObjectLookup", PerformObjectLookup)
-
 	if Environment.IsServer() then
 		Task.Wait()
 		for nodeDataObj,v in pairs(nodeGroupData) do
@@ -85,17 +82,13 @@ function OnHarvestRespawn_PIE(hid, objRef)
 	print("Got a respawn event:", hid)
 	local obj = objRef:WaitForObject()
 	print(obj.name, obj)
-	--print("Am I in the client context?", Environment.IsClient())
 	h_idLookup[GetShortId(obj)] = hid
 	allNodes[hid].obj = obj
-	-- This is so that the HP tracker gets it.  This is so convoluted... ;_;
-	--Events.Broadcast("Harvest-Respawn", allNodes[hid])
 end
 
 function API.GetNodeData(obj)
 	local h_id = API.GetHId(obj)
 	if h_id == nil then
-		--print("Nothing...")
 		return nil
 	end
 
@@ -150,17 +143,7 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 			active = true,
 			bitfield = bitfield,
 			properties = v:GetCustomProperties(),
-			--[[
-			maxHealth = v:GetCustomProperty("MaxHealth"),
-			hitFX = v:GetCustomProperty("HitEffect"),
-			destroyFX = v:GetCustomProperty("DestroyEffect"),
-			harvestMessage = v:GetCustomProperty("HarvestMessage"),
-			resourceMin = v:GetCustomProperty("HarvestMessage"),
-			resourceMax = v:GetCustomProperty("HarvestMessage"),
-			resourceType = 
-			]]
 			health = v:GetCustomProperty("MaxHealth"),
-			--contextMgr = hcMgr,
 			nodeDataObj = nodeDataObj,
 			templateId = v.sourceTemplateId,
 			transform = v:GetTransform(),
@@ -169,7 +152,6 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 			requiredTags = tagList,
 			groupRoot = groupRoot,
 		}
-		--print("destroy = ", newData.properties.DestroyEffect)
 		nodeGroups[nodeDataObj][k] = newData
 
 		allNodes[nextUniqueId] = newData
@@ -185,7 +167,6 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 		end
 		UpdateToStringData(nodeDataObj)
 	end
-	--OnNodeDataUpdate(nodeDataObj, CUSTOM_PROPERTY_NAME)
 end
 
 
@@ -200,7 +181,6 @@ function UpdateToStringData(obj)
 	local newStringData = obj:GetCustomProperty(CUSTOM_PROPERTY_NAME)
 	if newStringData:len() == 0 then return end
 	bitfields[obj].raw = newStringData
-	--print("Something changed!", newStringData)
 	local activeNodeCount = 0
 	for k,nodeData in pairs(nodeGroups[obj]) do
 		local currentState = nodeData.active
@@ -228,7 +208,6 @@ function UpdateToStringData(obj)
 								Events.Broadcast("Harvest-RelayToAllClients", "Harvest-SpawnAsset",
 										nodeData.properties.DestroyEffect,
 										nodeData.obj:GetWorldPosition(),
-										--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
 										nodeData.obj:GetWorldRotation())
 
 							end
@@ -237,7 +216,6 @@ function UpdateToStringData(obj)
 								Events.Broadcast("Harvest-SpawnAsset",
 										nodeData.properties.DestroyEffect,
 										nodeData.obj:GetWorldPosition(),
-										--Rotation.New(math.random(-10, 10), math.random(-10, 10), math.random(0, 360)))
 										nodeData.obj:GetWorldRotation())
 
 							end
@@ -258,7 +236,6 @@ function UpdateToStringData(obj)
 		end
 	end
 
-	--print("Active Node count = ",activeNodeCount, "/", nodeGroupData[obj].nodeCount)
 	nodeGroupData[obj].activeNodeCount = activeNodeCount
 end
 
@@ -275,7 +252,6 @@ function CanHarvest(toolTags, nodeTagList)
 	-- Otherwise, go through and look for a match:
 	for k,v in pairs(toolTagList) do
 		if nodeTagList[v] ~= nil then 
-			--print("Tag match:", v)
 			return true
 		end
 	end
@@ -347,13 +323,6 @@ function OnNodeHarvested(player, hid)
 		player:AddResource(nodeData.properties.HarvestResource, harvestAmount)
 	end
 
---[[
-	Events.BroadcastToPlayer(player, "Harvest-FlyupText",
-		string.format(nodeData.properties.HarvestMessage, harvestAmount),
-		nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
-		Color.GREEN)
-		]]
-
 	API.SetNodeState(nodeData.h_id, false)
 	Events.Broadcast("Harvest-NodeHarvested", player, nodeData)
 end
@@ -369,64 +338,12 @@ function API.CanHarvest(node, tool)
 	local nodeData = allNodes[h_id]
 
 	local toolScript = tool:FindChildByName("HarvestToolScript")
-	--print("CanHarvest : checking tags:", toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
 
 	local canHarvest = CanHarvest(toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
 	return canHarvest
 end
 
 
---[[
-function API.AttemptToHarvest(obj, tool, hitresult)
-	if damage == nil then damage = tool.damage end
-	if not ServerCheck("AttemptToHarvest") then return end
-
-	local newTarget = API.GetHId(obj)
-	if newTarget == nil then
-		print("Nothing to harvest")
-		return
-	end
-
-	local nodeData = allNodes[newTarget]
-
-
-	if nodeData.properties.HitEffect ~= nil then --and (Environment.IsClient() or Environment.IsPreview()) then
-		Events.Broadcast("Harvest-SpawnAsset",
-				nodeData.properties["HitEffect"],
-				hitresult:GetImpactPosition(),
-				hitresult:GetTransform():GetRotation())
-	end
-
-	-- Verify that they have a tool that works here
-	if not API.CanHarvest(obj, tool) then
-			Events.BroadcastToPlayer(tool.owner, "Harvest-FlyupText",
-				"You need a different tool.",
-				nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
-				Color.RED)
-		return
-	end
-
-
-
-	if nodeData.health > 0 then
-		nodeData.health = nodeData.health - damage
-		if nodeData.health <= 0 then
-			local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
-
-			Events.BroadcastToPlayer(tool.owner, "Harvest-FlyupText",
-				string.format(nodeData.properties.HarvestMessage, harvestAmount),
-				nodeData.obj:GetWorldPosition() + Vector3.UP * 100,
-				Color.GREEN)
-
-			tool.owner:AddResource(nodeData.properties.HarvestResource, harvestAmount)
-
-			API.SetNodeState(nodeData.h_id, false)
-		end
-	end
-
-end
-
-]]
 function API.IsNode(obj)
 	return API.GetHId(obj) ~= nil
 end
@@ -467,10 +384,7 @@ function API.SetNodeState(h_id, newState)
 		return
 	end
 	nodeData.bitfield:Set(nodeData.index - 1, newState)
-	--nodeData.active = newState
-	--nodeData.nodeDataObj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, nodeData.bitfield.raw)
 	ForceStringBroadcast(nodeData.nodeDataObj)
-	--Events.Broadcast("HN-Update", nodeData.bitfield.raw)
 end
 
 
@@ -523,7 +437,6 @@ function GetRandomNode(obj, state)
 	-- if there are no nodes with the requested state, just error out.
 	local relativeIndex = -1
 	if state == true then
-		--print("state is true", groupData.activeNodeCount)
 		if groupData.activeNodeCount > 0 then 
 			relativeIndex = math.random(groupData.activeNodeCount)
 		end
@@ -535,12 +448,10 @@ function GetRandomNode(obj, state)
 	--print("relativeindex = ", relativeIndex)
 	if relativeIndex == -1 then return nil end
 
-	--for i = 0, #nodeGroups[obj] do
 	for k,v in ipairs(nodeGroups[obj]) do
 		if v.active == state then
 			relativeIndex = relativeIndex - 1
 			if relativeIndex == 0 then
-				--print("Returning ", v, v.h_id)
 				return v
 			end
 		end
@@ -551,17 +462,13 @@ end
 
 
 function SetStartingNodeDistrbution(nodeDataObj)
-	--print("in server space?", Environment.IsServer())
-	--if true then return end
 	data = nodeGroupData[nodeDataObj]
 	local maxActiveNodes = data.properties.MaxActiveNodes
 	if maxActiveNodes == -1 then maxActiveNodes = data.nodeCount end
 
 	while data.activeNodeCount > maxActiveNodes do
-		--print("active/max" , data.activeNodeCount, maxActiveNodes)
 		local nodeData = GetRandomNode(nodeDataObj, true)
 		print("despawning a node!", nodeData.h_id)
-		-- TODO - verify that the node is not too close to a player!
 		API.SetNodeState(nodeData.h_id, false)
 	end
 end

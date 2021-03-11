@@ -26,9 +26,3 @@ end
 
 Events.Connect("Harvest-SpawnResourceFlyup", OnResourceGet)
 
---[[
-local propResourceImage = script:GetCustomProperty("ResourceImage"):WaitForObject()
-local propResourceAmount = script:GetCustomProperty("ResourceAmount"):WaitForObject()
-local propResourceAmountShadow = script:GetCustomProperty("ResourceAmountShadow"):WaitForObject()
-
-]]

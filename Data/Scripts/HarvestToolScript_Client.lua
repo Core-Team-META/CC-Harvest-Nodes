@@ -52,7 +52,6 @@ function OnToolHit(ability)
 			end
 		end
 	else
-		--print("Doing the AOE thing!")
 		for _, obj in pairs(propTrigger:GetOverlappingObjects()) do
 			if obj:IsA("StaticMesh") then
 				local nodeData = mgr.GetNodeData(obj)
@@ -86,29 +85,15 @@ function OnToolHit(ability)
 					end
 				end
 			else
-				--[[
-				UI.ShowFlyUpText("You need a different tool.", 
-					nodeData.obj:GetWorldPosition() + Vector3.UP * 100, {
-					color = Color.RED,
-					duration = 2,
-					isBig = true,
-				})]]
 				Events.Broadcast("WrongTool", impactPos)
 				return
 			end
 		end
 	end
 
-
-	--mgr.AttemptToHarvest(impactData.targetObject, propToolRoot, impactData:GetHitResult())
-	--local data = mgr.GetNodeData(obj)
-
-	--hpTracker.ApplyDamage(obj, damage)
-
 end
 
 
---propToolRoot.targetImpactedEvent:Connect(OnToolHit)
 -- TargetImpactedEvent would be nicer here, but we can't
 -- use that on client. :(
 propHarvestAbility.executeEvent:Connect(OnToolHit)

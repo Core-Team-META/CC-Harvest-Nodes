@@ -21,7 +21,6 @@ function OnWrongTool(worldPos)
 		SetAlpha(1.0)
 		
 		while time() < startTime + TIME_ON_SCREEN do
-			--UI.GetScreenPosition(Vector3 worldPosition)
 			local screenPos = UI.GetScreenPosition(worldPos)
 			if screenPos ~= nil then
 				propUIContainer.isEnabled = true
@@ -49,5 +48,3 @@ end
 
 
 Events.Connect("WrongTool", OnWrongTool)
-
---OnWrongTool(Vector3.ZERO)
