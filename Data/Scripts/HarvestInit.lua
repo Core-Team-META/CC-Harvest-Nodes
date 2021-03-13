@@ -3,7 +3,9 @@ local mgr = require(prop_HarvestManager)
 
 
 if script.parent.name == "StaticContext" then
-	mgr.Init()
+	mgr.StaticInit()
 elseif script.parent.name == "ClientContext" and Environment.IsSinglePlayerPreview() then
 	mgr.InitClient()
+else
+	mgr.Init()
 end

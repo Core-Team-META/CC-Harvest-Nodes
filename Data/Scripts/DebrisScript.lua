@@ -26,7 +26,9 @@ Task.Wait(4)
 for k,v in pairs(debris) do
 	Task.Spawn(function()
 		Task.Wait(math.random() * 2)
-		v:ScaleTo(Vector3.ZERO, 1)
+		if Object.IsValid(v) then
+			v:ScaleTo(Vector3.ZERO, 1)
+		end
 	end)
 end
 

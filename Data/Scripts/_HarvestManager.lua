@@ -53,7 +53,15 @@ function API.GetHId(obj)
 end
 
 
+
+
 function API.Init()
+	if Environment.IsServer() then
+		Events.ConnectForPlayer("NodeHarvested", OnNodeHarvested)
+	end
+end
+
+function API.StaticInit()
 	for k,groupRoot in pairs(World.FindObjectsByName("!HarvestNodeGroup")) do
 		-- TODO: Check that it's a static context and has the right properties?
 		API.RegisterHarvestableNodes(groupRoot, false)
@@ -392,10 +400,6 @@ function ForceStringBroadcast(obj)
 	obj:SetNetworkedCustomProperty(CUSTOM_PROPERTY_NAME, bitfields[obj].raw)
 end
 
-
-if Environment.IsServer() then
-	Events.ConnectForPlayer("NodeHarvested", OnNodeHarvested)
-end
 
 
 

@@ -25331,6 +25331,7 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 2054939999866712979
   ChildIds: 6148008806011559126
   ChildIds: 9513753132090586738
   ChildIds: 4576134389465926228
@@ -26497,6 +26498,33 @@ Objects {
     }
   }
   ParentId: 6148008806011559126
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14803262454648751980
+    }
+  }
+}
+Objects {
+  Id: 2054939999866712979
+  Name: "HarvestInit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13122367563676440083
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
