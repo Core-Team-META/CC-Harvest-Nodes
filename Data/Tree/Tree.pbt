@@ -28494,7 +28494,7 @@ Objects {
       WalkSpeed: 640
       MaxAcceleration: 1800
       WalkableFloorAngle: 44
-      JumpMaxCount: 1
+      JumpMaxCount: 2
       JumpVelocity: 900
       GroundFriction: 8
       GravityScale: 1.9
