@@ -62,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15387056210964804928
-  Name: "Computer Stand"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_computer-stand_001"
-  }
-}
-Assets {
   Id: 14609222748856275364
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -89,21 +80,21 @@ Assets {
   }
 }
 Assets {
-  Id: 13496182490988924400
-  Name: "Tree Oak Stump 01"
+  Id: 12073391629279408770
+  Name: "Flower Bellflower 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_stump_001"
+    AssetId: "sm_foliage_gen_flower_bell_001_ref"
   }
 }
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
+  Id: 11706084200482189002
+  Name: "Grass Short"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
+    AssetId: "sm_grass_generic_002"
   }
 }
 Assets {
@@ -113,6 +104,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
+  Id: 9697140392341706753
+  Name: "Baloo 2 Extra Bold"
+  PlatformAssetType: 28
+  PrimaryAsset {
+    AssetType: "FontAssetRef"
+    AssetId: "Baloo2ExtraBold_ref"
   }
 }
 Assets {
@@ -134,21 +134,30 @@ Assets {
   }
 }
 Assets {
-  Id: 7053286940546212522
-  Name: "Computer Monitor 01"
+  Id: 7754933176412714472
+  Name: "Flower Wild Lily Patch 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_computer-monitor_001"
+    AssetId: "sm_foliage_gen_flower_wild_lily_patch_001_ref"
   }
 }
 Assets {
-  Id: 5918760318625082276
-  Name: "\"Japanese Moonlight\" Music Construction Kit (Layers) 01"
-  PlatformAssetType: 10
+  Id: 6074758349134573141
+  Name: "Bush 02"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "AudioBlueprintAssetRef"
-    AssetId: "abp_JapaneseMoonlightKit_ref"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
+  Id: 4610361039179229101
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
   }
 }
 Assets {
@@ -179,21 +188,21 @@ Assets {
   }
 }
 Assets {
-  Id: 1943848901426182074
-  Name: "Grass Clumps"
-  PlatformAssetType: 2
+  Id: 2344241588375231651
+  Name: "Grass Tall"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_002_uv"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
   }
 }
 Assets {
-  Id: 1450856503829411012
-  Name: "Plastic Matte"
-  PlatformAssetType: 2
+  Id: 1107066816074999332
+  Name: "Bush 01"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "plastic_matte_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
   }
 }
 Assets {

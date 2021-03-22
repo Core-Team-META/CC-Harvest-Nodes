@@ -1,13 +1,13 @@
 Assets {
-  Id: 3837939735980492628
-  Name: "Tree Break VFX"
+  Id: 15958504390296896653
+  Name: "Crystal Tree Break VFX"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3947384021951389627
+      RootId: 2868415349321225045
       Objects {
-        Id: 3947384021951389627
-        Name: "Tree Break VFX"
+        Id: 2868415349321225045
+        Name: "Crystal Tree Break VFX"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 5368948951754869779
+        ChildIds: 5798470580488695653
         Lifespan: 10
         WantsNetworking: true
         Collidable_v2 {
@@ -32,7 +32,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5368948951754869779
+        Id: 5798470580488695653
         Name: "ClientContext"
         Transform {
           Location {
@@ -45,22 +45,21 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 3947384021951389627
-        ChildIds: 1102373146937540489
-        ChildIds: 1519007816475844150
-        ChildIds: 4194693353248571277
-        ChildIds: 6363897240350803285
-        ChildIds: 6216557288476931766
-        ChildIds: 11644667087137915857
-        ChildIds: 12450991355688585807
-        ChildIds: 3811794110344553095
-        ChildIds: 3680290375071672453
-        ChildIds: 5435354940492698076
-        ChildIds: 14585571792834773541
-        ChildIds: 13372112669973242298
-        ChildIds: 15219561205759648588
-        ChildIds: 16648706123322124509
-        ChildIds: 2548550773130085543
+        ParentId: 2868415349321225045
+        ChildIds: 7213616061787376909
+        ChildIds: 34852023128851535
+        ChildIds: 6113437145748095742
+        ChildIds: 1159509835123656235
+        ChildIds: 14427566833758074263
+        ChildIds: 4443587662507710511
+        ChildIds: 13851892169046857528
+        ChildIds: 16989032227129788732
+        ChildIds: 11454255239465238334
+        ChildIds: 16742171056132419378
+        ChildIds: 13937372362235003122
+        ChildIds: 5036173257348672650
+        ChildIds: 10374508419204042683
+        ChildIds: 5760759482169348213
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -74,7 +73,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1102373146937540489
+        Id: 7213616061787376909
         Name: "DebrisScript"
         Transform {
           Location {
@@ -89,7 +88,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 5798470580488695653
         UnregisteredParameters {
           Overrides {
             Name: "cs:FlingScale"
@@ -116,7 +115,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1519007816475844150
+        Id: 34852023128851535
         Name: "Dust Puff VFX"
         Transform {
           Location {
@@ -129,7 +128,7 @@ Assets {
             Z: 8
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 5798470580488695653
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -138,6 +137,14 @@ Assets {
           Overrides {
             Name: "bp:Density"
             Float: 2
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.929999948
+              B: 0.110860638
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -164,7 +171,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4194693353248571277
+        Id: 6113437145748095742
         Name: "Dust Puff VFX"
         Transform {
           Location {
@@ -178,7 +185,7 @@ Assets {
             Z: 8
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 5798470580488695653
         UnregisteredParameters {
           Overrides {
             Name: "bp:Particle Scale Multiplier"
@@ -187,6 +194,14 @@ Assets {
           Overrides {
             Name: "bp:Density"
             Float: 2
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 0.929999948
+              B: 0.110860638
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -213,8 +228,8 @@ Assets {
         }
       }
       Objects {
-        Id: 6363897240350803285
-        Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
+        Id: 1159509835123656235
+        Name: "Glass Shatter Break Impact Set 01 SFX"
         Transform {
           Location {
           }
@@ -226,7 +241,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 5368948951754869779
+        ParentId: 5798470580488695653
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -236,62 +251,25 @@ Assets {
         CameraCollidable {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
-        AudioInstance {
-          AudioAsset {
-            Id: 7179125323962287454
+        Blueprint {
+          BlueprintAsset {
+            Id: 1856390946956496912
           }
-          AutoPlay: true
-          Pitch: 1633.15332
-          Volume: 4
-          Falloff: -1
-          Radius: 500
-          EnableOcclusion: true
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Volume: 4
+            Falloff: 5000
+            Radius: 1000
+            EnableOcclusion: true
+            IsSpatializationEnabled: true
+            IsAttenuationEnabled: true
+          }
         }
       }
       Objects {
-        Id: 6216557288476931766
-        Name: "Object Wood Creak 01 SFX"
-        Transform {
-          Location {
-            X: 1985
-            Y: -205
-            Z: -125
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5368948951754869779
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 417301981549160694
-          }
-          AutoPlay: true
-          Volume: 10
-          Falloff: -1
-          Radius: 1000
-          EnableOcclusion: true
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 11644667087137915857
+        Id: 14427566833758074263
         Name: "Birch Log"
         Transform {
           Location {
@@ -306,9 +284,9 @@ Assets {
             Z: 1.5
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 8397976240809458081
-        ChildIds: 5225680249693235186
+        ParentId: 5798470580488695653
+        ChildIds: 14972973722883964862
+        ChildIds: 14389175039464384914
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -335,7 +313,7 @@ Assets {
         }
       }
       Objects {
-        Id: 8397976240809458081
+        Id: 14972973722883964862
         Name: "Cylinder"
         Transform {
           Location {
@@ -351,12 +329,12 @@ Assets {
             Z: 3.8
           }
         }
-        ParentId: 11644667087137915857
+        ParentId: 14427566833758074263
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4106537666371773621
+              Id: 5223385215047925506
             }
           }
           Overrides {
@@ -394,7 +372,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5225680249693235186
+        Id: 14389175039464384914
         Name: "Cylinder"
         Transform {
           Location {
@@ -410,12 +388,12 @@ Assets {
             Z: 3.75000024
           }
         }
-        ParentId: 11644667087137915857
+        ParentId: 14427566833758074263
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7966216967903090834
+              Id: 5223385215047925506
             }
           }
           Overrides {
@@ -453,7 +431,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12450991355688585807
+        Id: 4443587662507710511
         Name: "Branch debris"
         Transform {
           Location {
@@ -469,8 +447,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 4762821643183849250
+        ParentId: 5798470580488695653
+        ChildIds: 6456310610975627766
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -498,7 +476,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4762821643183849250
+        Id: 6456310610975627766
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -511,7 +489,15 @@ Assets {
             Z: 0.897789836
           }
         }
-        ParentId: 12450991355688585807
+        ParentId: 4443587662507710511
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -539,7 +525,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3811794110344553095
+        Id: 13851892169046857528
         Name: "Branch debris"
         Transform {
           Location {
@@ -555,8 +541,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 12664206901879857453
+        ParentId: 5798470580488695653
+        ChildIds: 10707152486032059854
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -584,7 +570,7 @@ Assets {
         }
       }
       Objects {
-        Id: 12664206901879857453
+        Id: 10707152486032059854
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -597,7 +583,15 @@ Assets {
             Z: 0.407616913
           }
         }
-        ParentId: 3811794110344553095
+        ParentId: 13851892169046857528
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -625,7 +619,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3680290375071672453
+        Id: 16989032227129788732
         Name: "Branch debris"
         Transform {
           Location {
@@ -641,8 +635,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 15728066159654247642
+        ParentId: 5798470580488695653
+        ChildIds: 2349450029947052825
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -670,7 +664,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15728066159654247642
+        Id: 2349450029947052825
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -683,7 +677,15 @@ Assets {
             Z: 0.262374401
           }
         }
-        ParentId: 3680290375071672453
+        ParentId: 16989032227129788732
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -711,7 +713,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5435354940492698076
+        Id: 11454255239465238334
         Name: "Branch debris"
         Transform {
           Location {
@@ -728,8 +730,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 3546161587358970323
+        ParentId: 5798470580488695653
+        ChildIds: 14544612122041679468
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -757,7 +759,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3546161587358970323
+        Id: 14544612122041679468
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -771,7 +773,15 @@ Assets {
             Z: 0.262374401
           }
         }
-        ParentId: 5435354940492698076
+        ParentId: 11454255239465238334
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -799,7 +809,7 @@ Assets {
         }
       }
       Objects {
-        Id: 14585571792834773541
+        Id: 16742171056132419378
         Name: "Branch debris"
         Transform {
           Location {
@@ -816,8 +826,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 18176543642480117732
+        ParentId: 5798470580488695653
+        ChildIds: 4751237170784621986
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -845,7 +855,7 @@ Assets {
         }
       }
       Objects {
-        Id: 18176543642480117732
+        Id: 4751237170784621986
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -859,7 +869,15 @@ Assets {
             Z: 0.407616913
           }
         }
-        ParentId: 14585571792834773541
+        ParentId: 16742171056132419378
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -887,7 +905,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13372112669973242298
+        Id: 13937372362235003122
         Name: "Branch debris"
         Transform {
           Location {
@@ -904,8 +922,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 5561896999747466655
+        ParentId: 5798470580488695653
+        ChildIds: 15979279705228884393
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -933,7 +951,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5561896999747466655
+        Id: 15979279705228884393
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -947,7 +965,15 @@ Assets {
             Z: 0.897789836
           }
         }
-        ParentId: 13372112669973242298
+        ParentId: 13937372362235003122
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -975,7 +1001,7 @@ Assets {
         }
       }
       Objects {
-        Id: 15219561205759648588
+        Id: 5036173257348672650
         Name: "Branch debris"
         Transform {
           Location {
@@ -992,8 +1018,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 7203258432640496876
+        ParentId: 5798470580488695653
+        ChildIds: 3442072766431052720
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -1021,7 +1047,7 @@ Assets {
         }
       }
       Objects {
-        Id: 7203258432640496876
+        Id: 3442072766431052720
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -1035,7 +1061,15 @@ Assets {
             Z: 0.262374401
           }
         }
-        ParentId: 15219561205759648588
+        ParentId: 5036173257348672650
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1063,7 +1097,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16648706123322124509
+        Id: 10374508419204042683
         Name: "Branch debris"
         Transform {
           Location {
@@ -1080,8 +1114,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 1228332950633653842
+        ParentId: 5798470580488695653
+        ChildIds: 2666574225640966764
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -1109,7 +1143,7 @@ Assets {
         }
       }
       Objects {
-        Id: 1228332950633653842
+        Id: 2666574225640966764
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -1123,7 +1157,15 @@ Assets {
             Z: 0.407616913
           }
         }
-        ParentId: 16648706123322124509
+        ParentId: 10374508419204042683
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1151,7 +1193,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2548550773130085543
+        Id: 5760759482169348213
         Name: "Branch debris"
         Transform {
           Location {
@@ -1168,8 +1210,8 @@ Assets {
             Z: 1.9396621
           }
         }
-        ParentId: 5368948951754869779
-        ChildIds: 17068857325324066629
+        ParentId: 5798470580488695653
+        ChildIds: 243550194423900180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceon"
         }
@@ -1197,7 +1239,7 @@ Assets {
         }
       }
       Objects {
-        Id: 17068857325324066629
+        Id: 243550194423900180
         Name: "Branches Cluster Small"
         Transform {
           Location {
@@ -1211,7 +1253,15 @@ Assets {
             Z: 0.897789836
           }
         }
-        ParentId: 2548550773130085543
+        ParentId: 5760759482169348213
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 5223385215047925506
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1249,21 +1299,12 @@ Assets {
       }
     }
     Assets {
-      Id: 7179125323962287454
-      Name: "Large Wooden Structure Break Destroy Impact 01 SFX"
-      PlatformAssetType: 7
+      Id: 1856390946956496912
+      Name: "Glass Shatter Break Impact Set 01 SFX"
+      PlatformAssetType: 10
       PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_large_wooden_structure_break_impact_01a_Cue_ref"
-      }
-    }
-    Assets {
-      Id: 417301981549160694
-      Name: "Object Wood Creak 01 SFX"
-      PlatformAssetType: 7
-      PrimaryAsset {
-        AssetType: "AudioAssetRef"
-        AssetId: "sfx_object_wood_creak_01a_Cue_ref"
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_glass_shatter_impact_hits_set_ref"
       }
     }
     Assets {
@@ -1285,21 +1326,12 @@ Assets {
       }
     }
     Assets {
-      Id: 4106537666371773621
-      Name: "Wood Raw"
+      Id: 5223385215047925506
+      Name: "Magic Glass"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_raw_001_uv"
-      }
-    }
-    Assets {
-      Id: 7966216967903090834
-      Name: "Bark Birch 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_bark_birch_001_uv"
+        AssetId: "fxmi_magic_glass"
       }
     }
     Assets {
