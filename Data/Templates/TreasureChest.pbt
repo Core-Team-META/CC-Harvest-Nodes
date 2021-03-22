@@ -15,12 +15,13 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 2340510130903752428
         ChildIds: 5438383655576013124
         ChildIds: 18401455559273985964
         ChildIds: 9264467222225818709
         ChildIds: 6556392610582290676
         ChildIds: 8627730754121984655
+        ChildIds: 6145716734584997424
         ChildIds: 14438009863575198559
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -237,6 +238,43 @@ Assets {
         }
       }
       Objects {
+        Id: 6145716734584997424
+        Name: "Trigger"
+        Transform {
+          Location {
+            Z: 51.1462135
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.34756231
+            Y: 1.34756231
+            Z: 1.34756231
+          }
+        }
+        ParentId: 7963602546669290137
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Trigger {
+          Interactable: true
+          InteractionLabel: "Open Chest!"
+          TeamSettings {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          TriggerShape_v2 {
+            Value: "mc:etriggershape:box"
+          }
+        }
+      }
+      Objects {
         Id: 14438009863575198559
         Name: "TreasureChestScript"
         Transform {
@@ -279,6 +317,16 @@ Assets {
             ObjectReference {
               SubObjectId: 7963602546669290137
             }
+          }
+          Overrides {
+            Name: "cs:Trigger"
+            ObjectReference {
+              SubObjectId: 6145716734584997424
+            }
+          }
+          Overrides {
+            Name: "cs:AutoOpenTime"
+            Float: 10
           }
         }
         Collidable_v2 {

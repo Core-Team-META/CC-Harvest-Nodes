@@ -3,6 +3,8 @@ local propOpenGlow = script:GetCustomProperty("OpenGlow"):WaitForObject()
 local propResourcePickup = script:GetCustomProperty("ResourcePickup")
 local propResourceAmount = script:GetCustomProperty("ResourceAmount")
 local propRoot = script:GetCustomProperty("Root"):WaitForObject()
+local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
+local propAutoOpenTime = script:GetCustomProperty("AutoOpenTime")
 
 
 propRoot:LookAt(Game:GetLocalPlayer():GetWorldPosition())
@@ -12,8 +14,25 @@ rot.y = 0
 propRoot:SetWorldRotation(rot)
 
 
+local hasOpened = false
 
-Task.Wait(2)
+propTrigger.interactedEvent:Connect(function(trigger, other)
+	hasOpened = true
+end)
+
+
+local startTime = time()
+
+while startTime + propAutoOpenTime > time() and not hasOpened do
+	Task.Wait()
+end
+
+
+propTrigger.isEnabled = false
+
+
+
+--Task.Wait(2)
 rot = propChestLid:GetWorldRotation()
 rot.x = -90
 propChestLid:RotateTo(rot, 1)
