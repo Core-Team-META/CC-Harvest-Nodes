@@ -71,11 +71,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HarvestResourceMin"
-            Int: 0
+            Int: 20
           }
           Overrides {
             Name: "cs:HarvestResourceMax"
-            Int: 0
+            Int: 30
           }
           Overrides {
             Name: "cs:MaxHealth"

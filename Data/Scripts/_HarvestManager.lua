@@ -302,15 +302,19 @@ function API.HarvestNodeByPlayer(obj, player)
 	local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
 
 	if harvestAmount > 0 then
+		--[[
 		Events.Broadcast("Harvest-SpawnResourceFlyup",
 			nodeData.properties.HarvestResource, harvestAmount,
 			nodeData.obj:GetWorldPosition() + Vector3.UP * 100)
+			]]
 	end
 	if nodeData.properties.PickupSpawnMax > 0 then
+		local pickupsToSpawn = math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax)
+
 		Events.Broadcast("Harvest-SpawnPickups",
 				nodeData.properties.PickupTemplate,
 				nodeData.obj:GetWorldPosition(),
-				math.random(nodeData.properties.PickupSpawnMin, nodeData.properties.PickupSpawnMax),
+				pickupsToSpawn,
 				100
 				)
 	end

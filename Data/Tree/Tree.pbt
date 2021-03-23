@@ -25756,14 +25756,6 @@ Objects {
             Roll: -2.14519247e-07
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -26000,6 +25992,12 @@ Objects {
       Name: "cs:coins"
       AssetReference {
         Id: 3097722784719198694
+      }
+    }
+    Overrides {
+      Name: "cs:crystal"
+      AssetReference {
+        Id: 3319814660807435748
       }
     }
   }

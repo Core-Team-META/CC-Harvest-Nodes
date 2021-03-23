@@ -3,6 +3,15 @@
 -- because they're inside of a static context, and
 -- scripts behave weirdly in there.
 
+function AddResources(player, rsc, amount)
+	if Environment.IsServer() then
+		player:AddResource(rsc, amount)
+	else
+		warn("tried to add resources on client side!")
+	end
+end
+
+
 function SpawnAsset(assetId, position, rotation, scale)
 	World.SpawnAsset(assetId, {
 		position = position,
@@ -69,6 +78,10 @@ Events.Connect("Harvest-FlyupText", SpawnFlyupText)
 Events.Connect("Harvest-SpawnPickups", SpawnPickups)
 Events.Connect("Harvest-RelayToAllClients", RelayToClients)
 Events.Connect("Harvest-RelayToOneClient", RelayToClient)
+
+if Environment.IsServer() then
+	Events.ConnectForPlayer("Harvest-AddResource", AddResources)
+end
 
 -- This one is a hack to make it work while playing in single player preview mode.
 if Environment.IsSinglePlayerPreview() and not Environment.IsClient() then

@@ -42,11 +42,11 @@ Assets {
           }
           Overrides {
             Name: "cs:HarvestResource"
-            String: "wood"
+            String: "apples"
           }
           Overrides {
             Name: "cs:HarvestMessage"
-            String: "+%d Wood!"
+            String: "+%d Apples!"
           }
           Overrides {
             Name: "cs:MaxHealth"
@@ -69,6 +69,14 @@ Assets {
             AssetReference {
               Id: 7760420973341241106
             }
+          }
+          Overrides {
+            Name: "cs:HarvestResourceMin"
+            Int: 3
+          }
+          Overrides {
+            Name: "cs:HarvestResourceMax"
+            Int: 8
           }
         }
         Collidable_v2 {

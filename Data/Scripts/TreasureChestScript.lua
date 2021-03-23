@@ -38,6 +38,7 @@ rot.x = -90
 propChestLid:RotateTo(rot, 1)
 Task.Wait(0.5)
 propOpenGlow:Play()
+Events.BroadcastToServer("Harvest-AddResource", "coins", propResourceAmount)
 
 local radius = 100
 local rnd = RandomStream.New()

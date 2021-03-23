@@ -4,6 +4,7 @@ local propIconDirectory = script:GetCustomProperty("IconDirectory"):WaitForObjec
 
 
 local displayedResources = {}
+local currentResourceValues = {}
 local displayCount = 0
 
 
@@ -19,6 +20,10 @@ function OnResourceChanged(player, rsc, amount)
   if displayedResources[rsc] == nil then
     SpawnResourceTracker(rsc)
   end
+  if currentResourceValues[rsc] == nil then
+    currentResourceValues[rsc] = 0
+  end
+
   local text = displayedResources[rsc]:GetCustomProperty("AmountText"):WaitForObject()
   local icon = displayedResources[rsc]:GetCustomProperty("Icon"):WaitForObject()
 
@@ -28,6 +33,9 @@ function OnResourceChanged(player, rsc, amount)
   end
   text.text = "x " .. tostring(amount)
 
+  Events.Broadcast("Harvest-SpawnResourceFlyup", rsc, 
+    amount - currentResourceValues[rsc], player:GetWorldPosition() + Vector3.UP * 100)
+  currentResourceValues[rsc] = amount
 end
 
 

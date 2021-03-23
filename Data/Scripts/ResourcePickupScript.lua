@@ -23,10 +23,13 @@ function PickupCheckerTask()
 			local root = propObjectRoot:FindTemplateRoot()
 			root:Destroy()
 			
+			--[[
+			-- Moved into ResourceReadoutClient
 			if propResource ~= nil and propResource ~= "" then
 				Events.Broadcast("Harvest-SpawnResourceFlyup", propResource, propAmount, 
 					player:GetWorldPosition() + Vector3.UP * 100 + RandomStream.New():GetVector3() * 50)
 			end
+			]]
 			return
 		end
 		Task.Wait()

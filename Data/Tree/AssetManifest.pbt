@@ -170,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3319814660807435748
+  Name: "Fantasy Craft Crystal 021"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Crystal_021"
+  }
+}
+Assets {
   Id: 3097722784719198694
   Name: "Fantasy Coins 004"
   PlatformAssetType: 9

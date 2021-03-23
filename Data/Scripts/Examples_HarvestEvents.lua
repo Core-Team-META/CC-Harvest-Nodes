@@ -15,7 +15,7 @@ function OnNodeHarvested(player, nodeData)
 
 		if groundHR ~= nil then
 			pos = groundHR:GetImpactPosition()
-			CoreDebug.DrawLine(pos, pos + Vector3.New(1, 1, 1) * 500, {duration = 5, thickness = 5})
+			--CoreDebug.DrawLine(pos, pos + Vector3.New(1, 1, 1) * 500, {duration = 5, thickness = 5})
 		end
 
 		--local pos = nodeData.worldTransform:GetPosition()
