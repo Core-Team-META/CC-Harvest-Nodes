@@ -97,7 +97,33 @@ textData = {
 		]]
 	},			
 	
+	["x10Buff"] = {
+		title = "Harvest Bonus",
+		text = [[When players harvest nodes,
+		events are sent out, which contain a
+		bunch of data about what is being harvested.
+		
+		You can set event listeners to modify that data
+		if you like!
+		
+		This area grants a buff that demonstrates this,
+		by increasing the number of resources harvested
+		by x10!
+		]]
+	},
 	
+	["MidasBuff"] = {
+		title = "Midas Touch!",
+		text = [[When players harvest nodes,
+		events are sent out, which contain a
+		bunch of data about what is being harvested.
+		
+		Event listeners can modify that data in interesting
+		ways.  For example, this area grants a buff that
+		converts all resources gathered into coins,
+		no matter what they were originally.
+		]]
+	},	
 	
 
 	["Welcome"] = {

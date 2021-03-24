@@ -209,7 +209,7 @@ function UpdateToStringData(obj)
 				if nodeData.obj ~= nil then
 					--if nodeGroupData[obj].firstUpdateTime ~= -1 and nodeGroupData[obj].firstUpdateTime + 1 < time() then
 					if nodeGroupData[obj].firstUpdateTime + 1 < time() then
-					print(nodeGroupData[obj].firstUpdateTime, time())
+					--print(nodeGroupData[obj].firstUpdateTime, time())
 						-- UGH this is so messy.  But necessary for single player preview to work. >:(
 						if Environment.IsSinglePlayerPreview() then
 							if nodeData.properties.DestroyEffect ~= nil then
@@ -228,8 +228,6 @@ function UpdateToStringData(obj)
 
 							end
 						end
-
-
 
 					else
 						nodeGroupData[obj].firstUpdateTime = time()
@@ -329,14 +327,23 @@ function OnNodeHarvested(player, hid)
 	local nodeData = allNodes[hid]
 	if nodeData == nil then
 		warning("OnNodeHarvested: Got a bad hid:", hid)
-	end
-	local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
-	if harvestAmount > 0 then
-		player:AddResource(nodeData.properties.HarvestResource, harvestAmount)
+		return
 	end
 
-	API.SetNodeState(nodeData.h_id, false)
-	Events.Broadcast("Harvest-NodeHarvested", player, nodeData)
+	local harvestAmount = math.random(nodeData.properties.HarvestResourceMin, nodeData.properties.HarvestResourceMax)
+	local harvestData = 	{
+		isBlocked = false,
+		resource = nodeData.properties.HarvestResource,
+		amount = harvestAmount,
+	}
+
+	Events.Broadcast("Harvest-NodeHarvested", player, nodeData, harvestData)
+
+	if not harvestData.isBlocked then
+		player:AddResource(harvestData.resource, harvestData.amount)
+
+		API.SetNodeState(nodeData.h_id, false)
+	end
 end
 
 
