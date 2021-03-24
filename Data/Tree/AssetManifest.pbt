@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17648950198053764850
+  Name: "Fantasy Axe 010"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Axe_010"
+  }
+}
+Assets {
   Id: 17486578884833630931
   Name: "Crescent - 03"
   PlatformAssetType: 1
@@ -161,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5316407571147825481
+  Name: "Survival Tool Pickaxe 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_024"
+  }
+}
+Assets {
   Id: 4610361039179229101
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
@@ -203,6 +221,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 2818875133679383233
+  Name: "Fantasy Frame 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_007"
   }
 }
 Assets {
