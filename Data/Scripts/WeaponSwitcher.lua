@@ -1,6 +1,6 @@
 local propTool1 = script:GetCustomProperty("Tool1")
 local propTool2 = script:GetCustomProperty("Tool2")
-
+local propTool3 = script:GetCustomProperty("Tool3")
 
 
 function RemoveAllTools(player)
@@ -26,6 +26,8 @@ function OnBindingPressed(player, binding)
     EquipTool(player, propTool1)
   elseif binding == "ability_extra_2" then
     EquipTool(player, propTool2)
+  elseif binding == "ability_extra_3" then
+    EquipTool(player, propTool3)
   end
 
 

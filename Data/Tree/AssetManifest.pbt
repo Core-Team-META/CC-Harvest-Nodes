@@ -242,6 +242,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1522629405894115660
+  Name: "Survival Tool Shovel 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Equip_Tool_010"
+  }
+}
+Assets {
   Id: 1107066816074999332
   Name: "Bush 01"
   PlatformAssetType: 1
