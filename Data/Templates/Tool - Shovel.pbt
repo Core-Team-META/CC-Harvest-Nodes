@@ -460,7 +460,7 @@ Assets {
           }
           Overrides {
             Name: "cs:ToolTags"
-            String: "mining:50 dig"
+            String: "mining:50 dig axe:150"
           }
         }
         WantsNetworking: true

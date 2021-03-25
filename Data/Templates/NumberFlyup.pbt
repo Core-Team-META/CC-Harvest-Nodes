@@ -1,13 +1,13 @@
 Assets {
-  Id: 6646616631939457785
-  Name: "ResourceFlyup"
+  Id: 2522726038582485575
+  Name: "NumberFlyup"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 9270368761340721823
+      RootId: 13205090863303800833
       Objects {
-        Id: 9270368761340721823
-        Name: "ResourceFlyup"
+        Id: 13205090863303800833
+        Name: "NumberFlyup"
         Transform {
           Scale {
             X: 1
@@ -15,26 +15,20 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 8727754450971967396
-        ChildIds: 815838404480366637
-        ChildIds: 11189460583575426521
+        ParentId: 4781671109827199097
+        ChildIds: 7122055857993214345
+        ChildIds: 12171878163935307318
         UnregisteredParameters {
           Overrides {
-            Name: "cs:ResourceImage"
+            Name: "cs:Amount"
             ObjectReference {
-              SubObjectId: 4403580753095662824
+              SubObjectId: 4533605951475975349
             }
           }
           Overrides {
-            Name: "cs:ResourceAmount"
+            Name: "cs:AmountShadow"
             ObjectReference {
-              SubObjectId: 6200644171098778974
-            }
-          }
-          Overrides {
-            Name: "cs:ResourceAmountShadow"
-            ObjectReference {
-              SubObjectId: 17266970686306560767
+              SubObjectId: 2741006613778175385
             }
           }
         }
@@ -70,8 +64,8 @@ Assets {
         }
       }
       Objects {
-        Id: 815838404480366637
-        Name: "Resource Flyup"
+        Id: 7122055857993214345
+        Name: "Number Flyup"
         Transform {
           Location {
           }
@@ -84,10 +78,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9270368761340721823
-        ChildIds: 4403580753095662824
-        ChildIds: 17266970686306560767
-        ChildIds: 6200644171098778974
+        ParentId: 13205090863303800833
+        ChildIds: 6009197854176289846
+        ChildIds: 2741006613778175385
+        ChildIds: 4533605951475975349
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -102,7 +96,7 @@ Assets {
         Control {
           Width: 158
           Height: 70
-          UIY: 537.542114
+          UIY: 500
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -113,7 +107,7 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
@@ -125,16 +119,13 @@ Assets {
         }
       }
       Objects {
-        Id: 4403580753095662824
-        Name: "Resource Image"
+        Id: 6009197854176289846
+        Name: "UI Image"
         Transform {
           Location {
-            X: -3912.48291
-            Y: -338.800232
-            Z: -7.62939453e-06
           }
           Rotation {
-            Yaw: 34.0053215
+            Yaw: -1.02452823e-05
           }
           Scale {
             X: 1
@@ -142,7 +133,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 815838404480366637
+        ParentId: 7122055857993214345
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -153,9 +144,9 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 70
-          Height: 70
-          UIX: -35
+          Width: 200
+          Height: 85
+          UIY: 10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -163,12 +154,12 @@ Assets {
           }
           Image {
             Brush {
-              Id: 17957934994848271909
+              Id: 13708048469628802978
             }
             Color {
               R: 1
-              G: 1
-              B: 1
+              G: 0.0899999738
+              B: 0.0899999738
               A: 1
             }
             TeamSettings {
@@ -189,8 +180,8 @@ Assets {
         }
       }
       Objects {
-        Id: 17266970686306560767
-        Name: "Resource Amount Shadow"
+        Id: 2741006613778175385
+        Name: "Amount Shadow"
         Transform {
           Location {
             X: 1716.43701
@@ -206,7 +197,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 815838404480366637
+        ParentId: 7122055857993214345
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -217,9 +208,9 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 100
+          Width: 150
           Height: 67
-          UIX: 7
+          UIX: 2
           UIY: 2
           RenderTransformPivot {
             Anchor {
@@ -227,13 +218,13 @@ Assets {
             }
           }
           Text {
-            Label: "+99"
+            Label: "12345"
             Color {
               A: 1
             }
-            Size: 35
+            Size: 40
             Justification {
-              Value: "mc:etextjustify:left"
+              Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
@@ -243,7 +234,7 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
@@ -255,8 +246,8 @@ Assets {
         }
       }
       Objects {
-        Id: 6200644171098778974
-        Name: "Resource Amount"
+        Id: 4533605951475975349
+        Name: "Amount"
         Transform {
           Location {
             X: 1716.43689
@@ -272,7 +263,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 815838404480366637
+        ParentId: 7122055857993214345
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -283,25 +274,24 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Control {
-          Width: 100
+          Width: 150
           Height: 67
-          UIX: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
           Text {
-            Label: "+99"
+            Label: "12345"
             Color {
               R: 1
               G: 1
               B: 1
               A: 1
             }
-            Size: 35
+            Size: 40
             Justification {
-              Value: "mc:etextjustify:left"
+              Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
             Font {
@@ -311,7 +301,7 @@ Assets {
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middleleft"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
@@ -323,7 +313,7 @@ Assets {
         }
       }
       Objects {
-        Id: 11189460583575426521
+        Id: 12171878163935307318
         Name: "ResourceFlyupScript"
         Transform {
           Location {
@@ -337,12 +327,12 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9270368761340721823
+        ParentId: 13205090863303800833
         UnregisteredParameters {
           Overrides {
             Name: "cs:ResourceFlyup"
             ObjectReference {
-              SubObjectId: 815838404480366637
+              SubObjectId: 7122055857993214345
             }
           }
         }
@@ -363,12 +353,12 @@ Assets {
       }
     }
     Assets {
-      Id: 17957934994848271909
-      Name: "Fantasy Craft Gem 012"
+      Id: 13708048469628802978
+      Name: "UI Gradient Circular 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Crafting_Gem_012"
+        AssetId: "UI_Basic_Shape_001"
       }
     }
     Assets {

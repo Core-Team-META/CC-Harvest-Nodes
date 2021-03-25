@@ -3,10 +3,16 @@ local prop_HarvestHPTracker = script:GetCustomProperty("_HarvestHPTracker")
 local propHarvestAbility = script:GetCustomProperty("HarvestAbility"):WaitForObject()
 local propToolRoot = script:GetCustomProperty("ToolRoot"):WaitForObject()
 local propAoETemplate = script:GetCustomProperty("AoETemplate")
+local propNumberFlyup = script:GetCustomProperty("NumberFlyup")
+local propBadNumberFlyup = script:GetCustomProperty("BadNumberFlyup")
+local propGoodNumberFlyup = script:GetCustomProperty("GoodNumberFlyup")
 
 local mgr = require(prop_HarvestManager)
 local hpTracker = require(prop_HarvestHPTracker)
 
+local QUALITY_NORMAL = 0
+local QUALITY_GOOD = 1
+local QUALITY_BAD = 2
 
 local CAMERA_DIST = 400 -- TODO - read this directly or something
 function OnToolHit(ability)
@@ -79,7 +85,12 @@ function OnToolHit(ability)
       local harvestEfficiency = mgr.CanHarvest(obj, tool)
 			if harvestEfficiency > 0 then
 				if not hpTracker.IsDestroyed(obj) then
-					hpTracker.ApplyDamage(obj, math.floor(damage * harvestEfficiency))
+          local actualDamage = math.floor(damage * harvestEfficiency)
+          local quality = QUALITY_NORMAL
+          if harvestEfficiency > 1 then quality = QUALITY_GOOD end
+          if harvestEfficiency < 1 then quality = QUALITY_BAD end
+          SpawnFlyupNumber(actualDamage, impactPos, quality)
+					hpTracker.ApplyDamage(obj, actualDamage)
 					World.SpawnAsset(nodeData.properties.HitEffect,
 					{position = impactPos})
 
@@ -95,6 +106,30 @@ function OnToolHit(ability)
 		end
 	end
 
+end
+
+
+function SpawnFlyupNumber(value, pos, quality)
+  local template = propNumberFlyup
+  if quality == QUALITY_GOOD then template = propGoodNumberFlyup end
+  if quality == QUALITY_BAD then template = propBadNumberFlyup end
+
+  local flyup = World.SpawnAsset(template, {position = pos})
+
+  local propAmount = flyup:GetCustomProperty("Amount"):WaitForObject()
+  local propAmountShadow = flyup:GetCustomProperty("AmountShadow"):WaitForObject()
+
+
+  local text = tostring(value)
+  if quality == QUALITY_GOOD then text = text .. "!!" end
+  propAmount.text = text
+  propAmountShadow.text = text
+
+  Task.Spawn(function()
+    flyup:MoveTo(flyup:GetWorldPosition() + Vector3.UP * 200, 3)
+    Task.Wait(3)
+    flyup:Destroy()
+  end)
 end
 
 

@@ -37,6 +37,24 @@ Assets {
           Id: 841534158063459245
         }
       }
+      Overrides {
+        Name: "cs:NumberFlyup"
+        AssetReference {
+          Id: 2522726038582485575
+        }
+      }
+      Overrides {
+        Name: "cs:BadNumberFlyup"
+        AssetReference {
+          Id: 8143565390694958499
+        }
+      }
+      Overrides {
+        Name: "cs:GoodNumberFlyup"
+        AssetReference {
+          Id: 1631329705905446933
+        }
+      }
     }
   }
   SerializationVersion: 78

@@ -11,6 +11,4 @@ function OnInteract(trigger, player)
 end
 
 
-
-
 script.parent.interactedEvent:Connect(OnInteract)

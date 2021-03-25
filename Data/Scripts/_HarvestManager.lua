@@ -252,7 +252,6 @@ function UpdateToStringData(obj)
 						nodeGroupData[obj].firstUpdateTime = time()
 					end
 
-
 					h_idLookup[GetShortId(nodeData.obj)] = nil
 					nodeData.obj:Destroy()
 					nodeData.obj = nil
@@ -273,7 +272,6 @@ function CanHarvest(toolTags, nodeTagList)
 
 	-- If there are no tool tags and there are node tags, then fail.
 	if toolTagList == nil then return 0.0 end
-
 
 	-- Otherwise, go through and look for a match:
 	local best = 0
