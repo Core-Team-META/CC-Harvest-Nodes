@@ -76,9 +76,10 @@ function OnToolHit(ability)
 		local obj = nodeData.obj
 		if nodeData ~= nil then 
 			-- Verify that they have a tool that works here
-			if mgr.CanHarvest(obj, tool) then
+      local harvestEfficiency = mgr.CanHarvest(obj, tool)
+			if harvestEfficiency > 0 then
 				if not hpTracker.IsDestroyed(obj) then
-					hpTracker.ApplyDamage(obj, damage)
+					hpTracker.ApplyDamage(obj, math.floor(damage * harvestEfficiency))
 					World.SpawnAsset(nodeData.properties.HitEffect,
 					{position = impactPos})
 

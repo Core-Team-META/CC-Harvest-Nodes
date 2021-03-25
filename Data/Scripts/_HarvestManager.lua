@@ -18,11 +18,27 @@ function GetShortId(obj)
 	return obj:GetReference().id
 end
 
+function StrSplit(instring, seperator)
+	if seperator == nil then seperator = "%s" end
+	local result = {}
+	for str in string.gmatch(instring, "([^".. seperator .. "]+)") do
+		table.insert(result, str)
+	end
+	return result
+end
+
+
 -- Helper function for splitting tags
 function SplitTags(tags)
+	local tagList = StrSplit(tags)
 	local result = {}
-	for str in string.gmatch(tags, "([^%s]+)") do
-		table.insert(result, str)
+	for k,v in ipairs(tagList) do
+		local tagSplit = StrSplit(v, ":")
+		if tagSplit[2] == nil then
+			result[tagSplit[1]] = 1
+		else
+			result[tagSplit[1]] = tonumber(tagSplit[2]) / 100
+		end
 	end
 	return result
 end
@@ -89,7 +105,7 @@ end
 function OnHarvestRespawn_PIE(hid, objRef)
 	print("Got a respawn event:", hid)
 	local obj = objRef:WaitForObject()
-	print(obj.name, obj)
+	--print(obj.name, obj)
 	h_idLookup[GetShortId(obj)] = hid
 	allNodes[hid].obj = obj
 end
@@ -117,7 +133,7 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 	end
 
 
-	print("Registering", #newNodeList, "nodes!")
+	--print("Registering", #newNodeList, "nodes!")
 	local bitfield = BF.New(#newNodeList)
 	bitfield:Reset(true)
 	local nodeDataObj = groupRoot:GetCustomProperty("NodeDataObj"):WaitForObject()
@@ -137,11 +153,14 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
 
 	for k,v in pairs(newNodeList) do
 
+		--[[
 		local tagList = nil
-		for k,v in pairs(SplitTags(v:GetCustomProperty("RequiredHarvestTags"))) do
+		for k,v in pairs(SplitTags() do
 			if tagList == nil then tagList = {} end
 			tagList[v] = true
 		end
+		]]
+		local tagList = SplitTags(v:GetCustomProperty("RequiredHarvestTags"))
 
 
 		local newData = {
@@ -250,18 +269,20 @@ end
 function CanHarvest(toolTags, nodeTagList)
 	local toolTagList = SplitTags(toolTags)
 	-- If no tags are specified, then yes, they can harvest.
-	if nodeTagList == nil then return true end
+	if nodeTagList == nil then return 1.0 end
 
 	-- If there are no tool tags and there are node tags, then fail.
-	if toolTagList == nil then return false end
+	if toolTagList == nil then return 0.0 end
+
 
 	-- Otherwise, go through and look for a match:
-	for k,v in pairs(toolTagList) do
-		if nodeTagList[v] ~= nil then 
-			return true
+	local best = 0
+	for k,v in pairs(nodeTagList) do
+		if toolTagList[k] ~= nil then 
+			if toolTagList[k] > best then best = toolTagList[k] end
 		end
 	end
-	return false
+	return best
 end
 
 
@@ -351,14 +372,13 @@ function API.CanHarvest(node, tool)
 	local h_id = API.GetHId(node)
 	if h_id == nil then
 		print("CanHarvest : couldn't find hid")
-		return false
+		return 0
 	end
 
 	local nodeData = allNodes[h_id]
-
 	local toolScript = tool:FindChildByName("HarvestToolScript")
-
 	local canHarvest = CanHarvest(toolScript:GetCustomProperty("ToolTags"), nodeData.requiredTags)
+
 	return canHarvest
 end
 
@@ -483,7 +503,7 @@ function SetStartingNodeDistrbution(nodeDataObj)
 
 	while data.activeNodeCount > maxActiveNodes do
 		local nodeData = GetRandomNode(nodeDataObj, true)
-		print("despawning a node!", nodeData.h_id)
+		--print("despawning a node!", nodeData.h_id)
 		API.SetNodeState(nodeData.h_id, false)
 	end
 end
