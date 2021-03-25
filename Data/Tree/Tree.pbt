@@ -24731,24 +24731,22 @@ Objects {
     }
   }
   ParentId: 16578554612901537537
-  ChildIds: 13999289788384163440
-  ChildIds: 14038187266238044924
-  ChildIds: 13551250321166032018
-  ChildIds: 7111729760799549773
-  ChildIds: 11428284140499424443
-  ChildIds: 10387573941790670081
-  ChildIds: 9602677146598816777
-  ChildIds: 17470474699709068252
-  ChildIds: 17549279494544313412
-  ChildIds: 13999160518270159331
-  ChildIds: 10769232881314120280
-  ChildIds: 10532198699760509500
-  ChildIds: 8671970716044815285
-  ChildIds: 12375228157294742494
-  ChildIds: 13154426977144799999
-  ChildIds: 12105232961570264601
-  ChildIds: 12445769144052794933
-  ChildIds: 10490731089886054503
+  ChildIds: 14978776278291200867
+  ChildIds: 18249735573588082822
+  ChildIds: 11036981284146613710
+  ChildIds: 1543519320999678129
+  ChildIds: 390698090172733938
+  ChildIds: 17216744197756310952
+  ChildIds: 13512585815163527658
+  ChildIds: 1976744072770746198
+  ChildIds: 8903780684165502245
+  ChildIds: 7358822811068986690
+  ChildIds: 1510272909672955130
+  ChildIds: 14741106063939537855
+  ChildIds: 12431587493859220646
+  ChildIds: 6953506754683869609
+  ChildIds: 16419466259579717186
+  ChildIds: 15357198684161258039
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -24765,17 +24763,9 @@ Objects {
   }
 }
 Objects {
-  Id: 10490731089886054503
-  Name: "BasicRock"
+  Id: 15357198684161258039
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1568.6283
-      Y: -5185.12695
-      Z: 79.3183
-    }
-    Rotation {
-      Yaw: 73.3748703
-    }
     Scale {
       X: 1
       Y: 1
@@ -24783,29 +24773,33 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -827.945313
-            Y: 1229.04883
-            Z: -34.3183594
+            X: -205.68042
+            Y: 749.129395
+            Z: -84.9604492
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -16.6251221
+            Pitch: 3.57404661
+            Yaw: 62.1836967
           }
         }
         Overrides {
@@ -24819,22 +24813,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 12445769144052794933
-  Name: "BasicRock"
+  Id: 16419466259579717186
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1295.07922
-      Y: -4768.50781
-      Z: 79.3180542
-    }
-    Rotation {
-      Yaw: 73.3747253
-    }
     Scale {
       X: 1
       Y: 1
@@ -24842,29 +24828,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -411.326294
-            Y: 955.5
-            Z: -34.3186035
+            X: -1163.47522
+            Y: -40.4282227
+            Z: -102.003662
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -16.6253052
+            Pitch: 4.08915901
+            Yaw: 157.23941
+            Roll: 5.34970397e-08
           }
         }
         Overrides {
@@ -24878,22 +24869,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 12105232961570264601
-  Name: "BasicRock"
+  Id: 6953506754683869609
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1176.6355
-      Y: -5166.03809
-      Z: 79.3180542
-    }
-    Rotation {
-      Yaw: 73.3747559
-    }
     Scale {
       X: 1
       Y: 1
@@ -24901,29 +24884,33 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -808.856201
-            Y: 837.056152
-            Z: -34.3186035
+            X: -873.464966
+            Y: -453.811523
+            Z: -104.371094
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -16.6252747
+            Pitch: 3.24935293
+            Yaw: -88.7294388
           }
         }
         Overrides {
@@ -24937,22 +24924,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 13154426977144799999
-  Name: "BasicRock"
+  Id: 12431587493859220646
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1174.22644
-      Y: -5675.18555
-      Z: 79.3180542
-    }
-    Rotation {
-      Yaw: 73.3748322
-    }
     Scale {
       X: 1
       Y: 1
@@ -24960,29 +24939,33 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -2477.94531
-            Y: 424.048828
-            Z: 55.6816406
+            X: -1837.79297
+            Y: -270.431152
+            Z: -51.3362961
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -16.6251831
+            Pitch: 5.84503651
+            Yaw: 147.681229
           }
         }
         Overrides {
@@ -24996,22 +24979,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 12375228157294742494
-  Name: "BasicRock"
+  Id: 14741106063939537855
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -2310
-      Y: -5395
-      Z: 165
-    }
-    Rotation {
-      Yaw: -106.625221
-    }
     Scale {
       X: 1
       Y: 1
@@ -25019,29 +24994,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -1582.94531
-            Y: 1279.04883
-            Z: 95.6816406
+            X: -1673.89136
+            Y: 627.818359
+            Z: -10.8058853
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 163.374756
+            Pitch: 8.00864887
+            Yaw: 146.141968
+            Roll: -6.46636863e-07
           }
         }
         Overrides {
@@ -25055,22 +25035,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 8671970716044815285
-  Name: "BasicRock"
+  Id: 1510272909672955130
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1884.44861
-      Y: -4446.3916
-      Z: 165
-    }
-    Rotation {
-      Yaw: -106.625221
-    }
     Scale {
       X: 1
       Y: 1
@@ -25078,29 +25050,33 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -607.945313
-            Y: 504.048828
-            Z: -64.3183594
+            X: -755.82373
+            Y: 1354.45166
+            Z: -25.1772079
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 163.374756
+            Pitch: 6.90200138
+            Yaw: 120.990631
           }
         }
         Overrides {
@@ -25114,22 +25090,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 10532198699760509500
-  Name: "BasicRock"
+  Id: 7358822811068986690
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -2430.85352
-      Y: -4488.32227
-      Z: 165
-    }
-    Rotation {
-      Yaw: -106.62513
-    }
     Scale {
       X: 1
       Y: 1
@@ -25137,29 +25105,33 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -1372.94531
-            Y: 1594.04883
-            Z: 51.3633423
+            X: -705.603271
+            Y: 659.609375
+            Z: -93.9064941
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 163.374939
+            Pitch: 3.8780241
+            Yaw: 106.464714
           }
         }
         Overrides {
@@ -25173,22 +25145,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 10769232881314120280
-  Name: "BasicRock"
+  Id: 8903780684165502245
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -2036.45093
-      Y: -4978.38086
-      Z: 165.000244
-    }
-    Rotation {
-      Yaw: -106.62513
-    }
     Scale {
       X: 1
       Y: 1
@@ -25196,29 +25160,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -447.945313
-            Y: 164.048828
-            Z: -84.3183594
+            X: -430.088379
+            Y: 1063.48682
+            Z: -65.6518784
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 163.374939
+            Pitch: 5.21150923
+            Yaw: 94.3178253
+            Roll: 2.14329404e-07
           }
         }
         Overrides {
@@ -25232,22 +25201,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 13999160518270159331
-  Name: "BasicRock"
+  Id: 1976744072770746198
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1295.07922
-      Y: -4768.50781
-      Z: 79.3180542
-    }
-    Rotation {
-      Yaw: 73.3747253
-    }
     Scale {
       X: 1
       Y: 1
@@ -25255,29 +25216,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -2022.94531
-            Y: -50.9511719
-            Z: 85.6816406
+            X: -511.409424
+            Y: 284.549316
+            Z: -107.676514
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -106.625214
+            Pitch: 1.94057274
+            Yaw: 44.7354088
+            Roll: 1.60174423e-07
           }
         }
         Overrides {
@@ -25291,22 +25257,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 17549279494544313412
-  Name: "BasicRock"
+  Id: 13512585815163527658
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1176.6355
-      Y: -5166.03809
-      Z: 79.3180542
-    }
-    Rotation {
-      Yaw: 73.3747559
-    }
     Scale {
       X: 1
       Y: 1
@@ -25314,29 +25272,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -2141.39014
-            Y: 346.57959
-            Z: 85.6816406
+            X: -1238.52209
+            Y: 609.07666
+            Z: -62.7197762
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -106.625214
+            Pitch: 7.20968771
+            Yaw: 145.368744
+            Roll: -4.30288878e-07
           }
         }
         Overrides {
@@ -25350,22 +25313,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 17470474699709068252
-  Name: "BasicRock"
+  Id: 17216744197756310952
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1720.63086
-      Y: -5717.1167
-      Z: 79.3180542
-    }
-    Rotation {
-      Yaw: 73.374794
-    }
     Scale {
       X: 1
       Y: 1
@@ -25373,29 +25328,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -1597.39392
-            Y: 897.657227
-            Z: 85.6816406
+            X: -2081.56201
+            Y: 228.685547
+            Z: 2.58522797
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -106.625214
+            Pitch: 5.89179611
+            Yaw: 141.604874
+            Roll: 2.145769e-07
           }
         }
         Overrides {
@@ -25409,22 +25369,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 9602677146598816777
-  Name: "BasicRock"
+  Id: 390698090172733938
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1174.22644
-      Y: -5675.18555
-      Z: 79.3180542
-    }
-    Rotation {
-      Yaw: 73.3748322
-    }
     Scale {
       X: 1
       Y: 1
@@ -25432,29 +25384,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -2143.79883
-            Y: 855.726563
-            Z: 85.6816406
+            X: -2032.80786
+            Y: 909.305664
+            Z: 48.2010117
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -106.625107
+            Pitch: 6.25014162
+            Yaw: 127.430054
+            Roll: 6.44159e-07
           }
         }
         Overrides {
@@ -25468,22 +25425,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 10387573941790670081
-  Name: "BasicRock"
+  Id: 1543519320999678129
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1568.6283
-      Y: -5185.12695
-      Z: 79.3183
-    }
-    Rotation {
-      Yaw: 73.3748703
-    }
     Scale {
       X: 1
       Y: 1
@@ -25491,29 +25440,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -1749.39624
-            Y: 365.667969
-            Z: 85.6818848
+            X: -1649.23914
+            Y: 1355.35645
+            Z: 57.7993
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -106.625107
+            Pitch: 6.63632774
+            Yaw: 136.169159
+            Roll: -2.14883201e-07
           }
         }
         Overrides {
@@ -25527,22 +25481,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 11428284140499424443
-  Name: "BasicRock"
+  Id: 11036981284146613710
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1602.52612
-      Y: 3462.05981
-      Z: 198.302917
-    }
-    Rotation {
-      Yaw: 73.3747559
-    }
     Scale {
       X: 1
       Y: 1
@@ -25550,29 +25496,33 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -1008.02454
-            Y: 575.54126
-            Z: -0.000305175781
+            X: -972.805176
+            Y: 1649.76074
+            Z: 19.6161499
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 73.3747406
+            Pitch: 6.2864852
+            Yaw: 140.621262
           }
         }
         Overrides {
@@ -25586,22 +25536,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 7111729760799549773
-  Name: "BasicRock"
+  Id: 18249735573588082822
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -2146.52148
-      Y: 2910.98096
-      Z: 198.302917
-    }
-    Rotation {
-      Yaw: 73.374794
-    }
     Scale {
       X: 1
       Y: 1
@@ -25609,29 +25551,34 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -889.580811
-            Y: 178.010986
-            Z: -0.000305175781
+            X: -305.842041
+            Y: -17.9677734
+            Z: -104.039307
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 73.3747787
+            Pitch: 2.53609014
+            Yaw: -2.36930394
+            Roll: 1.33532909e-08
           }
         }
         Overrides {
@@ -25645,22 +25592,14 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }
 Objects {
-  Id: 13551250321166032018
-  Name: "BasicRock"
+  Id: 14978776278291200867
+  Name: "SandPile"
   Transform {
-    Location {
-      X: -1600.11707
-      Y: 2952.91187
-      Z: 198.302917
-    }
-    Rotation {
-      Yaw: 73.3748322
-    }
     Scale {
       X: 1
       Y: 1
@@ -25668,152 +25607,38 @@ Objects {
     }
   }
   ParentId: 4642849674167832204
-  CameraCollidable {
+  Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 5032801462570562361
+      key: 7117383631022276307
       value {
         Overrides {
           Name: "Name"
-          String: "BasicRock"
+          String: "SandPile"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -1433.57617
-            Y: -373.067871
-            Z: -0.000305175781
+            X: -1217.94531
+            Y: 1129.04883
+            Z: -9.31835938
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 73.3748093
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            Pitch: -5
           }
         }
       }
     }
     TemplateAsset {
-      Id: 1876360131157000047
-    }
-  }
-}
-Objects {
-  Id: 14038187266238044924
-  Name: "BasicRock"
-  Transform {
-    Location {
-      X: -1994.51855
-      Y: 3442.97095
-      Z: 198.303162
-    }
-    Rotation {
-      Yaw: 73.3748703
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4642849674167832204
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5032801462570562361
-      value {
-        Overrides {
-          Name: "Name"
-          String: "BasicRock"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -887.171753
-            Y: -331.136963
-            Z: -0.000305175781
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 73.374855
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1876360131157000047
-    }
-  }
-}
-Objects {
-  Id: 13999289788384163440
-  Name: "BasicRock"
-  Transform {
-    Location {
-      X: -108.667328
-      Y: 986.383484
-      Z: -6.10351563e-05
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4642849674167832204
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5032801462570562361
-      value {
-        Overrides {
-          Name: "Name"
-          String: "BasicRock"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1281.57361
-            Y: 158.92218
-            Z: -6.10351563e-05
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 73.3748932
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 1876360131157000047
+      Id: 9377067956955882422
     }
   }
 }

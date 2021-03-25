@@ -17,94 +17,95 @@ local QUALITY_BAD = 2
 local CAMERA_DIST = 400 -- TODO - read this directly or something
 function OnToolHit(ability)
 
-	--print("Client tool hit!")
+  --print("Client tool hit!")
 
-	local player = Game.GetLocalPlayer()
-	-- This check is important because even though we're in a
-	-- client context, we still have local copies of other players'
-	-- tools, and will get events when they execute.
-	if ability.owner ~= player then return end
+  local player = Game.GetLocalPlayer()
+  -- This check is important because even though we're in a
+  -- client context, we still have local copies of other players'
+  -- tools, and will get events when they execute.
+  if ability.owner ~= player then return end
 
-	-- We have to do our own raycast to figure out what we hit
-	-- because we are firing off of Ability.ExecuteEvent.
-	local cameraPos = player:GetViewWorldPosition()
-	local cameraAim = player:GetViewWorldRotation()
-	local aimVector = cameraAim * Vector3.FORWARD
+  -- We have to do our own raycast to figure out what we hit
+  -- because we are firing off of Ability.ExecuteEvent.
+  local cameraPos = player:GetViewWorldPosition()
+  local cameraAim = player:GetViewWorldRotation()
+  local aimVector = cameraAim * Vector3.FORWARD
 
-	local objList = {}
-
-
-	local swing = nil
-	local propTrigger = nil
-
-	if propAoETemplate ~= nil then
-		swing = World.SpawnAsset(propAoETemplate, 
-				{position = player:GetWorldPosition(),
-				rotation = player:GetWorldRotation()})
-
-		propTrigger = swing:GetCustomProperty("Trigger"):WaitForObject()
-	end
-
-	if propTrigger == nil then
-		-- If we don't have a trigger, we just go do a regular raycast.
-		local hr = World.Raycast(cameraPos, cameraPos + aimVector * (propToolRoot.range + CAMERA_DIST), {
-				ignorePlayers = true,
-			})
-
-		if hr ~= nil and hr.other ~= nil then
-			local nodeData = mgr.GetNodeData(hr.other)
-			if nodeData ~= nil then
-				objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
-			end
-		end
-	else
-		for _, obj in pairs(propTrigger:GetOverlappingObjects()) do
-			if obj:IsA("StaticMesh") then
-				local nodeData = mgr.GetNodeData(obj)
-				if nodeData ~= nil then
-					-- We need to figure out the hit location manually
-					local hr = World.Raycast(player:GetWorldPosition(), nodeData.obj:GetWorldPosition(), {ignorePlayers = true})
-					if nodeData ~= nil then
-						objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
-					end
-				end
-			end
-		end
-	end
+  local objList = {}
 
 
-	local tool = propToolRoot
-	local damage = tool.damage
+  local swing = nil
+  local propTrigger = nil
 
-	for h_id, data in pairs(objList) do
-		local impactPos = data.impactPos
-		local nodeData = data.nodeData
-		local obj = nodeData.obj
-		if nodeData ~= nil then 
-			-- Verify that they have a tool that works here
+  if propAoETemplate ~= nil then
+    swing = World.SpawnAsset(propAoETemplate, 
+        {position = player:GetWorldPosition(),
+        rotation = player:GetWorldRotation()})
+
+    propTrigger = swing:GetCustomProperty("Trigger"):WaitForObject()
+  end
+
+  if propTrigger == nil then
+    -- If we don't have a trigger, we just go do a regular raycast.
+    local hr = World.Raycast(cameraPos, cameraPos + aimVector * (propToolRoot.range + CAMERA_DIST), {
+        ignorePlayers = true,
+      })
+
+    if hr ~= nil and hr.other ~= nil then
+      local nodeData = mgr.GetNodeData(hr.other)
+      if nodeData ~= nil then
+        objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
+      end
+    end
+  else
+    for _, obj in pairs(propTrigger:GetOverlappingObjects()) do
+      if obj:IsA("StaticMesh") then
+        local nodeData = mgr.GetNodeData(obj)
+        if nodeData ~= nil then
+          -- We need to figure out the hit location manually
+          local hr = World.Raycast(player:GetWorldPosition(), nodeData.obj:GetWorldPosition(), {ignorePlayers = true})
+          if nodeData ~= nil then
+            objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
+          end
+        end
+      end
+    end
+  end
+
+
+  local tool = propToolRoot
+  local damage = tool.damage
+
+  for h_id, data in pairs(objList) do
+    local impactPos = data.impactPos
+    local nodeData = data.nodeData
+    local obj = nodeData.obj
+    if nodeData ~= nil then 
+      -- Verify that they have a tool that works here
       local harvestEfficiency = mgr.CanHarvest(obj, tool)
-			if harvestEfficiency > 0 then
-				if not hpTracker.IsDestroyed(obj) then
+      if harvestEfficiency > 0 then
+        if not hpTracker.IsDestroyed(obj) then
           local actualDamage = math.floor(damage * harvestEfficiency)
           local quality = QUALITY_NORMAL
           if harvestEfficiency > 1 then quality = QUALITY_GOOD end
           if harvestEfficiency < 1 then quality = QUALITY_BAD end
           SpawnFlyupNumber(actualDamage, impactPos, quality)
-					hpTracker.ApplyDamage(obj, actualDamage)
-					World.SpawnAsset(nodeData.properties.HitEffect,
-					{position = impactPos})
-
-					if hpTracker.IsDestroyed(obj) then
-						mgr.HarvestNodeByPlayer(obj, Game.GetLocalPlayer())
-						--Events.BroadcastToServer("Harvested", mgr.GetHId(obj))
-					end
-				end
-			else
-				Events.Broadcast("WrongTool", impactPos)
-				return
-			end
-		end
-	end
+          hpTracker.ApplyDamage(obj, actualDamage)
+          if nodeData.properties.HitEffect then
+            World.SpawnAsset(nodeData.properties.HitEffect,
+              {position = impactPos})
+          end
+        end
+        if hpTracker.IsDestroyed(obj) then
+          mgr.HarvestNodeByPlayer(obj, Game.GetLocalPlayer())
+          --Events.BroadcastToServer("Harvested", mgr.GetHId(obj))
+        end
+      else
+        Events.Broadcast("WrongTool", impactPos)
+        return
+      end
+    end
+  end
 
 end
 

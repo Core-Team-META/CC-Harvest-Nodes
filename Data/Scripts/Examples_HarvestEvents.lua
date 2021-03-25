@@ -7,7 +7,8 @@ local propTreasureChance = script:GetCustomProperty("TreasureChance")
 
 function OnNodeHarvested(player, nodeData)
 	if nodeData.groupRoot == propNodeGroup and math.random() < propTreasureChance then
-
+		-- Wait a frame to make sure that the local object is gone.
+		Task.Wait()
 		local pos = nodeData.worldTransform:GetPosition()
 		local groundHR = World.Raycast(pos + Vector3.UP * 500,
 									pos + Vector3.UP * -500,
