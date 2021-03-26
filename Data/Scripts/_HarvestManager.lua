@@ -82,6 +82,34 @@ end
 -- This is the context that the client will actually keep things in.
 local clientStaticContext = nil
 
+
+local requiredProperties = {"NodeDataObj", "StaticContext", "MaxActiveNodes", "RespawnMinPlayerDistance"}
+function IsHarvestNodeGroup(script)
+  local properties = script:GetCustomProperties()
+  for k,v in pairs(requiredProperties) do
+    if properties[v] == nil then
+      return false
+    end
+  end
+  return true
+end
+
+
+function FindAllHarvestNodeGroups()
+  --local results = World.FindObjectsByName("!HarvestNodeGroup")
+  local scripts = World.FindObjectsByType("Script")
+  local results = {}
+  for k,script in pairs(scripts) do
+    if IsHarvestNodeGroup(script) then
+      table.insert(results, script)
+    end
+  end
+  return results
+end
+
+
+
+
 -- Static context init.  Register all of the harvest nodes.
 -- Note that this executes on both client and server,
 -- so the registration happens in both contexts.
@@ -89,7 +117,7 @@ local clientStaticContext = nil
 -- server, so that everyone loading in gets it.)
 function API.StaticInit(staticContext)
   clientStaticContext = staticContext
-  for k,groupRoot in pairs(World.FindObjectsByName("!HarvestNodeGroup")) do
+  for k,groupRoot in pairs(FindAllHarvestNodeGroups()) do
     -- TODO: Check that it's a static context and has the right properties?
     API.RegisterHarvestableNodes(groupRoot, false)
   end
@@ -106,7 +134,7 @@ end
 function API.InitClient()
 
   print("initting client only stuff.")
-  for k,groupRoot in pairs(World.FindObjectsByName("!HarvestNodeGroup")) do
+  for k,groupRoot in pairs(FindAllHarvestNodeGroups()) do
     -- TODO: Check that it's a static context and has the right properties?
     API.RegisterHarvestableNodes(groupRoot, true)
   end
