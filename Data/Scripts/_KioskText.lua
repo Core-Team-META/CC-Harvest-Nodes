@@ -53,11 +53,12 @@ textData = {
 	["Treasure"] = {
 		title = "Treasure!",
 		text = [[Haresting nodes generates events,
-		which your code can listen for.  This makes it
-		really easy to extend the behavior of harvest nodes.
+		which your code can listen for.  You can use this
+		to add your own gameplay effects on to harvest nodes!
 		
-		For example, the rocks over here have a 50% chance
-		of containing a treasure chest!
+		For example, digging up these sand piles has a 50% chance
+		to reveal a treasure chest!  Equip your shovel by
+		pressing '3' and give them a try!
 		]]
 	},	
 	
