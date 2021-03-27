@@ -19,7 +19,6 @@ Assets {
         ChildIds: 10613276244945792615
         ChildIds: 2429667060356643935
         ChildIds: 11165079345553534293
-        ChildIds: 9636877743567997651
         ChildIds: 16972731118799440578
         ChildIds: 5648504430275594095
         WantsNetworking: true
@@ -291,135 +290,6 @@ Assets {
         }
       }
       Objects {
-        Id: 9636877743567997651
-        Name: "ClientContext"
-        Transform {
-          Location {
-            Z: 69.4827881
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8583049880314352059
-        ChildIds: 4375609231174640549
-        ChildIds: 13042890894921129833
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 4375609231174640549
-        Name: "Cylinder - Bottom-Aligned"
-        Transform {
-          Location {
-            Z: 7.5393219
-          }
-          Rotation {
-            Yaw: 89.9999771
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.09
-            Y: 0.09
-            Z: 1
-          }
-        }
-        ParentId: 9636877743567997651
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7795504530598228722
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 14609222748856275364
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 13042890894921129833
-        Name: "Fantasy Axe Blade 01"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: -179.999969
-          }
-          Scale {
-            X: 1.47087419
-            Y: 1.00000012
-            Z: 1.3105886
-          }
-        }
-        ParentId: 9636877743567997651
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 18423898048047861963
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
         Id: 16972731118799440578
         Name: "HarvestToolScript"
         Transform {
@@ -487,6 +357,8 @@ Assets {
         }
         ParentId: 8583049880314352059
         ChildIds: 7067686696212581041
+        ChildIds: 4375609231174640549
+        ChildIds: 13042890894921129833
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -553,6 +425,109 @@ Assets {
         Script {
           ScriptAsset {
             Id: 10938322263209158755
+          }
+        }
+      }
+      Objects {
+        Id: 4375609231174640549
+        Name: "Cylinder - Bottom-Aligned"
+        Transform {
+          Location {
+            X: -95.6142578
+            Y: 218.306458
+            Z: 77.02211
+          }
+          Rotation {
+            Yaw: 89.9999542
+            Roll: -179.999954
+          }
+          Scale {
+            X: 0.09
+            Y: 0.09
+            Z: 1
+          }
+        }
+        ParentId: 5648504430275594095
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7795504530598228722
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14609222748856275364
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13042890894921129833
+        Name: "Fantasy Axe Blade 01"
+        Transform {
+          Location {
+            X: -95.6142578
+            Y: 218.306458
+            Z: 69.4827881
+          }
+          Rotation {
+            Yaw: -179.999954
+          }
+          Scale {
+            X: 1.47087419
+            Y: 1.00000012
+            Z: 1.3105886
+          }
+        }
+        ParentId: 5648504430275594095
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 18423898048047861963
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
           }
         }
       }

@@ -1,6 +1,6 @@
 Assets {
   Id: 10820760314122400789
-  Name: "HarvestNode"
+  Name: "!HarvestNode"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
