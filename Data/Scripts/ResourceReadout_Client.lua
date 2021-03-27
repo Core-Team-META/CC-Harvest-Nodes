@@ -1,6 +1,7 @@
 local propUIContainer = script:GetCustomProperty("UIContainer"):WaitForObject()
 local propResourceReadout = script:GetCustomProperty("ResourceReadout")
-local propIconDirectory = script:GetCustomProperty("IconDirectory"):WaitForObject()
+local prop_IconDirectory = script:GetCustomProperty("_IconDirectory")
+local iconDir = require(prop_IconDirectory)
 
 
 local displayedResources = {}
@@ -27,7 +28,7 @@ function OnResourceChanged(player, rsc, amount)
   local text = displayedResources[rsc]:GetCustomProperty("AmountText"):WaitForObject()
   local icon = displayedResources[rsc]:GetCustomProperty("Icon"):WaitForObject()
 
-  local img = propIconDirectory:GetCustomProperty(rsc)
+  local img = iconDir.GetIcon(rsc)
   if img ~= nil then
     icon:SetImage(img)
   end

@@ -6,8 +6,8 @@ local propTargetName = script:GetCustomProperty("TargetName"):WaitForObject()
 local propResourceImage = script:GetCustomProperty("ResourceImage"):WaitForObject()
 
 local propResourceImage = script:GetCustomProperty("ResourceImage"):WaitForObject()
-local propIconDirectory = script:GetCustomProperty("IconDirectory"):WaitForObject()
-
+local prop_IconDirectory = script:GetCustomProperty("_IconDirectory")
+local iconDir = require(prop_IconDirectory)
 
 
 local mgr = require(prop_HarvestManager)
@@ -55,7 +55,7 @@ function UpdateUI(data, other)
 
 	propTargetHPBar.progress = CoreMath.Clamp(currentHp/maxHp)
 	
-	local iconImage = propIconDirectory:GetCustomProperty(data.properties.HarvestResource)
+	local iconImage = iconDir.GetIcon(data.properties.HarvestResource)
 	if iconImage ~= nil then
 		propResourceImage.isEnabled = true
 		propResourceImage:SetImage(iconImage)

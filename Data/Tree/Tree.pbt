@@ -1027,6 +1027,12 @@ Objects {
   ParentId: 2340510130903752428
   UnregisteredParameters {
     Overrides {
+      Name: "cs:_IconDirectory"
+      AssetReference {
+        Id: 6467647666409937864
+      }
+    }
+    Overrides {
       Name: "cs:UIContainer"
       ObjectReference {
         SelfId: 2975120631345439584
@@ -1036,12 +1042,6 @@ Objects {
       Name: "cs:ResourceReadout"
       AssetReference {
         Id: 2865529945836929231
-      }
-    }
-    Overrides {
-      Name: "cs:IconDirectory"
-      ObjectReference {
-        SelfId: 5684842202126429078
       }
     }
   }
@@ -11686,6 +11686,16 @@ Objects {
         Overrides {
           Name: "Name"
           String: "Harvest Setup"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
         }
       }
     }

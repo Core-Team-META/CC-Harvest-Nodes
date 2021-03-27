@@ -213,6 +213,12 @@ Assets {
             }
           }
           Overrides {
+            Name: "cs:_IconDirectory"
+            AssetReference {
+              Id: 6467647666409937864
+            }
+          }
+          Overrides {
             Name: "cs:TargetDisplayPanel"
             ObjectReference {
               SubObjectId: 3031213032815262942
@@ -234,12 +240,6 @@ Assets {
             Name: "cs:ResourceImage"
             ObjectReference {
               SubObjectId: 16255904953413065310
-            }
-          }
-          Overrides {
-            Name: "cs:IconDirectory"
-            ObjectReference {
-              SelfId: 5684842202126429078
             }
           }
         }
@@ -1242,9 +1242,9 @@ Assets {
             }
           }
           Overrides {
-            Name: "cs:IconDirectory"
-            ObjectReference {
-              SelfId: 5684842202126429078
+            Name: "cs:_IconDirectory"
+            AssetReference {
+              Id: 6467647666409937864
             }
           }
         }

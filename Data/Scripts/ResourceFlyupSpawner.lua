@@ -1,5 +1,6 @@
 local propResourceFlyup = script:GetCustomProperty("ResourceFlyup")
-local propIconDirectory = script:GetCustomProperty("IconDirectory"):WaitForObject()
+local prop_IconDirectory = script:GetCustomProperty("_IconDirectory")
+local iconDir = require(prop_IconDirectory)
 
 local player = Game.GetLocalPlayer()
 
@@ -12,7 +13,7 @@ function OnResourceGet(resource, amount, pos)
 	local propResourceAmountShadow = flyup:GetCustomProperty("ResourceAmountShadow"):WaitForObject()
 
 
-	local img = propIconDirectory:GetCustomProperty(resource)
+	local img = iconDir.GetIcon(resource)
 	-- todo: error checking?
 	propResourceImage:SetImage(img)
 	local text = string.format("+%d", amount)
