@@ -83,9 +83,9 @@ end
 local clientStaticContext = nil
 
 
-local requiredProperties = {"NodeDataObj", "StaticContext", "MaxActiveNodes", "RespawnMinPlayerDistance"}
-function IsHarvestNodeGroup(script)
-  local properties = script:GetCustomProperties()
+
+function HasProperties(obj, requiredProperties)
+  local properties = obj:GetCustomProperties()
   for k,v in pairs(requiredProperties) do
     if properties[v] == nil then
       return false
@@ -93,6 +93,20 @@ function IsHarvestNodeGroup(script)
   end
   return true
 end
+
+
+function IsHarvestNodeGroup(script)
+  local HNG_RequiredProperties = {"NodeDataObj", "StaticContext", "MaxActiveNodes", "RespawnMinPlayerDistance"}
+  return HasProperties(script, HNG_RequiredProperties)
+end
+
+
+function IsHarvestNode(script)
+  local HN_RequiredProperties = {"MaxHealth", "NodeName", "HarvestResource", "RequiredHarvestTags"}
+  return HasProperties(script, HN_RequiredProperties)
+end
+
+
 
 
 function FindAllHarvestNodeGroups()
@@ -166,8 +180,9 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
   local newNodeList = {}
   for k,v in pairs(groupRoot:GetCustomProperty("StaticContext"):WaitForObject():GetChildren()) do
     --print("testing ", v.name)
-    local properties = v:GetCustomProperties()
-    if properties["_HarvestManager"] ~= nil then
+    --local properties = v:GetCustomProperties()
+    --if properties["_HarvestManager"] ~= nil then
+    if IsHarvestNode(v) then
       table.insert(newNodeList, v)
     end
   end
