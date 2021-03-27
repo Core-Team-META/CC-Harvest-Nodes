@@ -10,12 +10,12 @@ Assets {
         Name: "BasicTree"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.09715807
+            Y: 1.09715807
+            Z: 1.09715807
           }
         }
-        ParentId: 8270882688003474880
+        ParentId: 141631311083154720
         ChildIds: 1598258886464956286
         UnregisteredParameters {
           Overrides {
@@ -49,10 +49,6 @@ Assets {
           Overrides {
             Name: "cs:MaxHealth"
             Int: 2
-          }
-          Overrides {
-            Name: "cs:RespawnTime"
-            Float: 5
           }
         }
         Collidable_v2 {

@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 4642849674167832204
         ChildIds: 17705707684835133323
         UnregisteredParameters {
           Overrides {
@@ -33,10 +33,6 @@ Assets {
           Overrides {
             Name: "cs:RequiredHarvestTags"
             String: "dig"
-          }
-          Overrides {
-            Name: "cs:RespawnTime"
-            Float: 5
           }
           Overrides {
             Name: "cs:HarvestResource"

@@ -27,7 +27,6 @@ Objects {
   ChildIds: 15005641500316237336
   ChildIds: 2340510130903752428
   ChildIds: 1377266972826226657
-  ChildIds: 181953770841119093
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,52 +39,6 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 181953770841119093
-  Name: "Tool - Axe"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8583049880314352059
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Tool - Axe"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -1260
-            Y: 735
-            Z: 20
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15251422738044263284
-    }
   }
 }
 Objects {
@@ -3098,14 +3051,6 @@ Objects {
             Pitch: 8.712883
             Yaw: -121.637505
             Roll: -1.29561192e-06
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -9920,14 +9865,6 @@ Objects {
             Roll: 1.0773595e-07
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -10123,14 +10060,6 @@ Objects {
             Pitch: 1.66136146
             Yaw: 35.3633728
             Roll: 1.60149867e-07
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -11684,14 +11613,6 @@ Objects {
           Rotator {
             Pitch: 3.77357
             Yaw: 127.749542
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.09715807
-            Y: 1.09715807
-            Z: 1.09715807
           }
         }
       }

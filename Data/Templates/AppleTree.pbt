@@ -53,10 +53,6 @@ Assets {
             Int: 4
           }
           Overrides {
-            Name: "cs:RespawnTime"
-            Float: 5
-          }
-          Overrides {
             Name: "cs:PickupSpawnMin"
             Int: 3
           }

@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 15528465808647617243
         ChildIds: 4353526738624117170
         UnregisteredParameters {
           Overrides {
@@ -49,10 +49,6 @@ Assets {
           Overrides {
             Name: "cs:MaxHealth"
             Int: 2
-          }
-          Overrides {
-            Name: "cs:RespawnTime"
-            Float: 5
           }
         }
         Collidable_v2 {

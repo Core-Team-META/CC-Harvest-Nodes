@@ -43,10 +43,6 @@ Assets {
             String: "mining"
           }
           Overrides {
-            Name: "cs:RespawnTime"
-            Float: 5
-          }
-          Overrides {
             Name: "cs:PickupTemplate"
             AssetReference {
               Id: 6336426655816631665
