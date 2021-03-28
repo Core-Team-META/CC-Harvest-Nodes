@@ -30,6 +30,30 @@ Assets {
         Name: "cs:RespawnMinPlayerDistance"
         Float: 1000
       }
+      Overrides {
+        Name: "cs:NodeDataObj:tooltip"
+        String: "A reference to the object used for data transfer.  (Normally a direct child of the root of the group.)  The object must contain a networked custom string property, named \"NodeData\"."
+      }
+      Overrides {
+        Name: "cs:StaticContext:tooltip"
+        String: "An object reference to the static context for this group.  This context contains all of the nodes that this group is responsible for tracking."
+      }
+      Overrides {
+        Name: "cs:MaxActiveNodes:tooltip"
+        String: "The maximum number of nodes in this group that can be active at a time.  If -1 is given, then there is no limit."
+      }
+      Overrides {
+        Name: "cs:RespawnFrequency:tooltip"
+        String: "The number of seconds between respawn passes."
+      }
+      Overrides {
+        Name: "cs:MaxRespawnsPerUpdate:tooltip"
+        String: "The maximum number of nodes that will respawn every respawn pass."
+      }
+      Overrides {
+        Name: "cs:RespawnMinPlayerDistance:tooltip"
+        String: "The minimum distance a player must be from a node before it can respawn."
+      }
     }
   }
   SerializationVersion: 78
