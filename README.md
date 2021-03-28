@@ -31,6 +31,15 @@ First, let's define terms that I use throughout this document and the source cod
 * The **Node Manager** is a high-level singleton that does most of the bookkeeping for when nodes are broken or respawned.  It also serves as the main interface for code to interact with the harvest framework.
 * The **Harvest Framework**, sometimes shortened to just **the Framework,** is this big blob of code and assets for making it easy to harvest hundreds or thousands of objects.
 
+### Script Naming Conventions
+
+Since scripts are used in several different ways in this framework, they adhere to a specific naming convention, to make it easier to tell their purpose.
+
+* Scripts whose name begins with an underscore (`_`) are only intended to be invoked via the lua `require()` command.  They should never be placed on the hierarchy directly.  These tend to be libraries or common resources that are used by multiple other scripts.  (Examples:  `_HarvestManager`, `_HarvestHPTracker`, `_BitFields`
+* Scripts whose names begin with an exclamation point (`!`) are intended to be the root node of some sort of structure.  They contain no actual code, and are just used as a container for children and custom properties.  (Examples: `!HarvestNode", "!HarvestNodeGroup")
+* All other scripts are "normal" scripts, that are just placed somewhere in the hierarchy according to their function.  (Examples: `ToolDispenser`, `HarvestUIScript`, `HarvestToolScript`)
+
+
 ### Also let's quick talk about Static Contexts
 
 This library makes extensive use of *Static Contexts,* so it's important to understand how they work.  If you already are a static context expert, feel free to skip this part!
@@ -64,11 +73,13 @@ The downside of this method is that whenever a single node in a node group chang
 
 The easiest way to "get it working" is to start from the sample project in this repository.  If you want to move things into a different project though, there are some extremely specific requirements about how the hierarchy needs to be structured.
 
-First, there is a template, "Harvest Setup" that needs to be placed on the hierarchy somewhere.  This contains various inintialization code required for the framework to function.  There is also an `IconDirectory` group that several UI elements reference.  If you want icons to show up for things like flyup text, on-screen resource readouts, and similar, then `IconDirectory` needs to exist, and have a custom property for each resource, where the name is the resource name, and the property is an asset reference pointing to the icon you'd like to represent that resource.  (See the existing `IconDirectory`'s custom properties for an example.)
+First, there is a template, "Harvest Setup" that needs to be placed on the hierarchy somewhere.  This contains various inintialization code required for the framework to function.  Second, there is a script called `IconDirectory.lua`, which needs to have a custom property for each resource that you want to appear with an icon in the HUD.
 
 The meat of the harvest framework is in the harvest node groups, and the harvest nodes themselves though.  Both have specific structural requirements:
 
 ### Harvest Nodes
+
+![TitleCard](/ReadmeImages/HarvestNodeStruct.png)
 
 To create a new harvest node, start with the script `HarvestNode`, and place all geometry as children of the script.  (It doesn't all need to be the direct child - things under the script can have children of their own - but ultimately, the root object of the node needs to be the script.)
 
@@ -78,6 +89,8 @@ Finally, (and importantly!) every harvest node needs to be an instance of a temp
 
 
 ### Harvest Node Groups
+
+![TitleCard](/ReadmeImages/NodeGroupStruct.png)
 
 Harvest node groups are a bit fiddly.  The basic structure is:
 
@@ -91,6 +104,35 @@ Harvest node groups are a bit fiddly.  The basic structure is:
 
 Creating tools to harvest nodes is much less fiddly.  They can basically be standard Core weapons or abilites - they just need to contain a copy of `HarvestToolScript`, and a client context containing a copy of `HarvestToolScript_Client`.
 
+
+
+
+## Node and Group Properties
+
+There are a bunch of properties on HarvestNodes and HarvestNodeGroups.  This is an attempt to explain what they all do.  (They also have tooltips, if you forget!)
+
+### Harvest Node Properties
+
+#### _HarvestManager
+
+This is an asset reference link to the harvest manager, so that 
+
+local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
+local propMaxHealth = script:GetCustomProperty("MaxHealth")
+local propDestroyEffect = script:GetCustomProperty("DestroyEffect")
+local propHitEffect = script:GetCustomProperty("HitEffect")
+local propNodeName = script:GetCustomProperty("NodeName")
+local propHarvestResource = script:GetCustomProperty("HarvestResource")
+local propHarvestResourceMin = script:GetCustomProperty("HarvestResourceMin")
+local propHarvestResourceMax = script:GetCustomProperty("HarvestResourceMax")
+local propHarvestMessage = script:GetCustomProperty("HarvestMessage")
+local propRequiredHarvestTags = script:GetCustomProperty("RequiredHarvestTags")
+local propPickupSpawnMin = script:GetCustomProperty("PickupSpawnMin")
+local propPickupSpawnMax = script:GetCustomProperty("PickupSpawnMax")
+local propPickupTemplate = script:GetCustomProperty("PickupTemplate")
+
+
+Nodes 
 
 
 
