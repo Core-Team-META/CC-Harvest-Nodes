@@ -3135,7 +3135,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MaxActiveNodes"
-      Int: 50
+      Int: -50
     }
     Overrides {
       Name: "cs:RespawnFrequency"

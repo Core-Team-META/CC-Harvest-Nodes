@@ -16,7 +16,7 @@ Assets {
       }
       Overrides {
         Name: "cs:MaxActiveNodes"
-        Int: -1
+        Int: -100
       }
       Overrides {
         Name: "cs:RespawnFrequency"
@@ -40,7 +40,7 @@ Assets {
       }
       Overrides {
         Name: "cs:MaxActiveNodes:tooltip"
-        String: "The maximum number of nodes in this group that can be active at a time.  If -1 is given, then there is no limit."
+        String: "The maximum number of nodes in this group that can be active at a time.  If the number is negative, it is interpreted as a percentage."
       }
       Overrides {
         Name: "cs:RespawnFrequency:tooltip"

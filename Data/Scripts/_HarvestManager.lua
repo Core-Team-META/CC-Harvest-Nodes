@@ -574,7 +574,10 @@ end
 function SetStartingNodeDistrbution(nodeDataObj)
   data = nodeGroupData[nodeDataObj]
   local maxActiveNodes = data.properties.MaxActiveNodes
-  if maxActiveNodes == -1 then maxActiveNodes = data.nodeCount end
+  if maxActiveNodes < 0 then
+    local percent = CoreMath.Clamp(maxActiveNodes / -100.0)
+    maxActiveNodes = math.floor(data.nodeCount * percent)
+  end
 
   while data.activeNodeCount > maxActiveNodes do
     local nodeData = GetRandomNode(nodeDataObj, true)
