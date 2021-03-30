@@ -1,3 +1,10 @@
+--[[
+HarvestUI Script
+
+This file describes the behavior of the UI HUD, which
+displays the current health of whatever item is being aimed at.
+
+]]
 local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
 local prop_HarvestHPTracker = script:GetCustomProperty("_HarvestHPTracker")
 local propTargetDisplayPanel = script:GetCustomProperty("TargetDisplayPanel"):WaitForObject()

@@ -1,3 +1,12 @@
+--[[
+HarvestToolScript_Client
+
+This is the client-side logic that governs the behavior
+of harvest tools.  All damage to harvest nodes is
+only tracked on the client.  When the node's damage
+exceeds its max health, the server is notified.
+]]
+
 local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
 local prop_HarvestHPTracker = script:GetCustomProperty("_HarvestHPTracker")
 local propHarvestAbility = script:GetCustomProperty("HarvestAbility"):WaitForObject()

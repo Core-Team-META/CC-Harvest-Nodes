@@ -1,3 +1,8 @@
+--[[
+Quick script for managing the behavior of spawned debris from
+harvesting.  Flings it around a little, and then vanishes it.
+]]
+
 local propFlingAmount = script:GetCustomProperty("FlingAmount")
 
 

@@ -1,3 +1,11 @@
+--[[
+Explosions from the plasma gun.
+
+This code executes on the client.  It scales the size of the
+explosion, and flings any debris physics items it can find away
+from the center of the blast.
+]]
+
 local propEnergyChargeUpHoldVFX = script:GetCustomProperty("EnergyChargeUpHoldVFX"):WaitForObject()
 local propPlasmaExplosionVolume = script:GetCustomProperty("PlasmaExplosionVolume")
 
@@ -24,8 +32,4 @@ while startTime + 0.5 > time() do
 end
 aoe:Destroy()
 
--- Fling stuff
-
-
---Task.Wait(0.5)
 propEnergyChargeUpHoldVFX:Destroy()

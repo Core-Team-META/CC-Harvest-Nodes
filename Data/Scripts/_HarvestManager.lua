@@ -1,3 +1,17 @@
+--[[
+  HarvestManager
+  v1.0
+  by: Chris
+  
+  Interface/Manager class for the Efficient Harvestables framework.
+  Most operations that you might want to do to harvest nodes
+  should be done via this class.
+
+  See the docs at https://github.com/Core-Team-META/CC-Harvest-Nodes for
+  more details!
+
+--]]
+
 local prop_Bitfields = script:GetCustomProperty("_Bitfields")
 local BF = require(prop_Bitfields)
 

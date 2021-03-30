@@ -1,3 +1,12 @@
+--[[
+An example of how one might listen for harvest events, and
+trigger logic based on them.
+
+In this case, whenever the player breaks a node from a particular
+node group, there is a 50% chance of spawning a treasure chest.
+
+]]
+
 local propTreasureChest = script:GetCustomProperty("TreasureChest")
 local propNodeGroup = script:GetCustomProperty("NodeGroup"):WaitForObject()
 local propTreasureChance = script:GetCustomProperty("TreasureChance")

@@ -1,3 +1,11 @@
+--[[
+  Kiosk Text
+  by: Chris
+  
+  Contains the text for all of the info kiosks throughout
+  the sample level.
+--]]
+
 function Replace(s, a, b)
 	return table.concat({CoreString.Split(s, a)}, b)
 end

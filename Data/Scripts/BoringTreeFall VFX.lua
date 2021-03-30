@@ -1,3 +1,10 @@
+--[[
+Script for animating a simple tree-fall-over effect.
+(The tree just rotates 90 degrees around the base, and
+falls over, before vanishing)
+]]
+
+
 local propRoot = script:GetCustomProperty("Root"):WaitForObject()
 local propCrashSFX = script:GetCustomProperty("CrashSFX"):WaitForObject()
 

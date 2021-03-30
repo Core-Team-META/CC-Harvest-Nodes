@@ -1,3 +1,11 @@
+--[[
+The server-side code of the plasma gun.
+
+Whenever it detects an impact, it spawns a spherical trigger,
+uses that to find any harvestable nodes in the area, and sets
+them to be destroyed.
+]]
+
 local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
 local propPlasmaExplosionVFX = script:GetCustomProperty("PlasmaExplosionVFX")
 local propPlasmaExplosionVolume = script:GetCustomProperty("PlasmaExplosionVolume")

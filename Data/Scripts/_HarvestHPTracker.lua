@@ -1,3 +1,12 @@
+--[[
+  HarvestHPTracker
+  by: Chris
+  
+  Client-side tracking of HP of objects in the world.
+  Put into a require() script, so that it's easy to
+  access from anywhere.
+--]]
+
 local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
 local mgr = require(prop_HarvestManager)
 

@@ -1,3 +1,18 @@
+--[[
+Example of how to set up listeners to modify
+events from the harvest system!
+
+One of these makes it so that any resources harvested
+are converted into gold coins.
+
+The other causes the player to receive x10 the normal
+amount of resources.
+
+Also contains some code for giving them graphical auras
+when the effects are active.
+]]
+
+
 local propX10ZoneTrigger = script:GetCustomProperty("x10ZoneTrigger"):WaitForObject()
 local propMidasZoneTrigger = script:GetCustomProperty("MidasZoneTrigger"):WaitForObject()
 local propMidasVFX = script:GetCustomProperty("MidasVFX")

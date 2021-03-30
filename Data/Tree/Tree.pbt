@@ -34,6 +34,7 @@ Objects {
   ChildIds: 3234062574768950029
   ChildIds: 2489164405447903265
   ChildIds: 15229563686125696027
+  ChildIds: 536774532460521814
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -46,6 +47,47 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 536774532460521814
+  Name: "Tool - Axe"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8583049880314352059
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tool - Axe"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2755
+            Y: 1090
+            Z: -45
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15251422738044263284
+    }
   }
 }
 Objects {
@@ -88,6 +130,19 @@ Objects {
             Z: 2850
           }
         }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -126,6 +181,19 @@ Objects {
             X: 1360
             Y: 185
             Z: 2850
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }
@@ -19950,7 +20018,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 89.9999847
+            Yaw: 89.9999619
           }
         }
         Overrides {
