@@ -8,12 +8,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17798409052959246679
+  Name: "Modern Weapon - Grip 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_grip_003"
+  }
+}
+Assets {
   Id: 17648950198053764850
   Name: "Fantasy Axe 010"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Weapon_Axe_010"
+  }
+}
+Assets {
+  Id: 16956732760613111471
+  Name: "Fantasy Castle Bannister 01 - Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_straight"
   }
 }
 Assets {
@@ -44,6 +62,33 @@ Assets {
   }
 }
 Assets {
+  Id: 14117502084327467929
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
+  Id: 12486469380190802843
+  Name: "Modern Weapon - Grenade Canister 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weapons_grenade_indented_001"
+  }
+}
+Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 12073391629279408770
   Name: "Flower Bellflower 01"
   PlatformAssetType: 1
@@ -68,6 +113,24 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
+  Id: 10484336216497506083
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 9933034030368674416
+  Name: "Modern Weapon - Grip 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_grip_002"
   }
 }
 Assets {
@@ -116,12 +179,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4709518597990190873
+  Name: "Additive Edgeline Top Fade"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_add_edgeline_sharpline_topfade"
+  }
+}
+Assets {
   Id: 4610361039179229101
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
+  Id: 4359311749668538001
+  Name: "Bricks Stone Floor Large 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_large_001"
   }
 }
 Assets {
@@ -176,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 2168240361010595988
+  Name: "Modern Weapon - Scope 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_modern_scope_002"
   }
 }
 Assets {

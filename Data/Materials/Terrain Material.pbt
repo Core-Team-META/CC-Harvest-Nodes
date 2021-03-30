@@ -15,7 +15,7 @@ Assets {
       Overrides {
         Name: "cmp:Material2"
         AssetReference {
-          Id: 1840591770811449625
+          Id: 872422851713384541
         }
       }
       Overrides {
@@ -34,6 +34,21 @@ Assets {
         Name: "cmp:Material3_Sides"
         AssetReference {
           Id: 6443590846362754552
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material2"
+        Color {
+          R: 2
+          G: 2
+          B: 2
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmp:Material4"
+        AssetReference {
+          Id: 16021048002592970614
         }
       }
     }
@@ -56,12 +71,12 @@ Assets {
       }
     }
     Assets {
-      Id: 1840591770811449625
-      Name: "Forest Floor 01"
+      Id: 872422851713384541
+      Name: "Bricks Cobblestone Floor Arches 001"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "forest-floor_001"
+        AssetId: "mi_brick_cobblestone_floor_arch_001"
       }
     }
     Assets {
@@ -89,6 +104,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_sand_001_uv"
+      }
+    }
+    Assets {
+      Id: 16021048002592970614
+      Name: "Dirt 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "dirt_001"
       }
     }
   }

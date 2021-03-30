@@ -64,9 +64,7 @@ function OnToolHit(ability)
         if nodeData ~= nil then
           -- We need to figure out the hit location manually
           local hr = World.Raycast(player:GetWorldPosition(), nodeData.obj:GetWorldPosition(), {ignorePlayers = true})
-          if nodeData ~= nil then
-            objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
-          end
+          objList[nodeData.h_id] = {nodeData = nodeData, impactPos = hr:GetImpactPosition()}
         end
       end
     end

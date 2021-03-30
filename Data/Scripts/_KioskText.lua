@@ -65,25 +65,38 @@ textData = {
 	
 	["LootDrops"] = {
 		title = "Loot Drops!",
-		text = [[Harvest nodes can be set to
-		drop random numbers of templates
-		when broken, which can be used for
-		nodes that spill their contents onto
-		the ground.
-		
-		These rocks contain gems!  Break a few and see!]]
+		text = [[You can set harvest nodes
+		to spawn collectable pickups when
+		they are broken.
+
+		Check out these rocks!  They've got
+		gems inside!  And the trees are laden with
+		apples!
+
+		Press 1 or 2, to select your axe or
+		pickaxe, and try harvesting some of
+		these.  The resouces will fall out
+		when the harvest node is broken!
+		]]
 	},		
 	
 	
 	["RespawnLimits"] = {
 		title = "Respawn Limits!",
-		text = [[Groups can be set to only
-		display a small number of their contents.
-		
-		This is a group of 9 rocks, but it is
-		set so that only 4 can be active at a time.
-		
-		Break a few and see how they respawn!]]
+		text = [[Harvest groups can set how many nodes
+		can be active at any given time.  You can use this
+		to make respawns more unpredictable.
+
+		In this group, there are 16 rocks defined, but it
+		is set so that only 8 of them can be active at
+		any given time.  The spawn points have been
+		marked by a glowing circle, so you can see where
+		they are.
+
+		Press '2' to ready your pickaxe, and try
+		breaking some rocks, and notice how there are
+		always exactly 8 rocks left!
+		]]
 	},			
 	
 	["LargeGroups"] = {
@@ -129,16 +142,20 @@ textData = {
 
 	["Welcome"] = {
 		title = "Welcome!",
-		text = [[Welcome to Chris's Info Kiosk template!
+		text = [[
+		To start with, pull out a tool
+		by pressing 1 or 2 on your keyboard.
 		
-		To make your own content, open up the _KioskText.lua file
-		and add new exhibits there!
+		Try breaking the rocks and trees around the courtyard!
+		The axe will work on the trees, but the rocks require
+		the pickaxe to break.
 		
-		Then set the `InfoTextKey` custom property on a kiosk
-		to the table key, to make your kiosk display that text!
+		(Don't worry!  They'll grow back!)
 		
-		This means that all of your text ends up in one file,
-		so it's easy to view and edit.
+		After you get the hang of that, go upstairs and wander
+		around a bit.  There's lots to see!  Whenever you see
+		a blue kiosk like this one, approach it to find out
+		what's happening.
 		
 		Have fun!
 		]]
