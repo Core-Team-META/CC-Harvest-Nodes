@@ -1,3 +1,9 @@
+--[[
+Code for the little resource icons that fly up when you
+gain a resource.  Basically just keeps the ui element
+matching the screen space of the actual (inbisible) object.
+]]
+
 local propResourceFlyup = script:GetCustomProperty("ResourceFlyup"):WaitForObject()
 
 

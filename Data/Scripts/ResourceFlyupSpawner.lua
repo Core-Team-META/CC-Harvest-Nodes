@@ -1,3 +1,8 @@
+--[[
+This script just sits around listening for SpawnResourceFlyup
+events, and when it hears one, it spawns a resource flyup.
+
+]]
 local propResourceFlyup = script:GetCustomProperty("ResourceFlyup")
 local prop_IconDirectory = script:GetCustomProperty("_IconDirectory")
 local iconDir = require(prop_IconDirectory)

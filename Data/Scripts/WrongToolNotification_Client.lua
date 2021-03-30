@@ -1,3 +1,10 @@
+--[[
+Handler for the big red X that shows up when you
+hit the wrong sort of object with the wrong sort of tool.
+
+Stop trying to pickaxe trees!
+]]
+
 local propUIContainer = script:GetCustomProperty("UIContainer"):WaitForObject()
 local propGraphicPanel = script:GetCustomProperty("GraphicPanel"):WaitForObject()
 

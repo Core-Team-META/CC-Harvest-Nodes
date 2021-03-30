@@ -1,3 +1,11 @@
+--[[
+Client-Side controller for treasure chests.
+
+Makes them appear appealingly, and wait for interaction.
+Then they open up and sparkle a lot, and launch coins
+at your head.  What's not to like!
+]]
+
 local propChestLid = script:GetCustomProperty("ChestLid"):WaitForObject()
 local propOpenGlow = script:GetCustomProperty("OpenGlow"):WaitForObject()
 local propResourcePickup = script:GetCustomProperty("ResourcePickup")

@@ -1,3 +1,9 @@
+--[[
+Quick and easy script for handling the on-screen
+weapon switching UI and behavior.  Press a button,
+get a new tool!
+]]
+
 local propTool1 = script:GetCustomProperty("Tool1")
 local propTool2 = script:GetCustomProperty("Tool2")
 local propTool3 = script:GetCustomProperty("Tool3")
@@ -18,8 +24,6 @@ end
 
 
 
-
-
 function OnBindingPressed(player, binding)
   if binding == "ability_extra_1" then
     EquipTool(player, propTool1)
@@ -28,10 +32,7 @@ function OnBindingPressed(player, binding)
   elseif binding == "ability_extra_3" then
     EquipTool(player, propTool3)
   end
-
-
 end
-
 
 
 function OnPlayerJoin(player)

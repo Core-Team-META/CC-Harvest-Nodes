@@ -1,3 +1,14 @@
+--[[
+Client-side script for handling the behavior of collectable
+pickups, like the gems, coins or fruit.
+
+Basically just sets the debris physics, checks for when the
+player actually touches the object to collect it, and handles
+vanishing it when it's gone.
+
+Also makes it fly at the player at high speeds, if they take
+too long.
+]]
 local propObjectRoot = script:GetCustomProperty("ObjectRoot"):WaitForObject()
 local propResource = script:GetCustomProperty("Resource")
 local propAmount = script:GetCustomProperty("Amount")
@@ -9,10 +20,7 @@ local propFlingSpeedMax = script:GetCustomProperty("FlingSpeedMax")
 local propSpawnOffset = script:GetCustomProperty("SpawnOffset")
 
 local propAutoCollectFling = script:GetCustomProperty("AutoCollectFling")
-
 local player = Game.GetLocalPlayer()
-
-
 
 
 
@@ -22,21 +30,13 @@ function PickupCheckerTask()
 			World.SpawnAsset(propPickupEffect, {position = propObjectRoot:GetWorldPosition()})
 			local root = propObjectRoot:FindTemplateRoot()
 			root:Destroy()
-			
-			--[[
-			-- Moved into ResourceReadoutClient
-			if propResource ~= nil and propResource ~= "" then
-				Events.Broadcast("Harvest-SpawnResourceFlyup", propResource, propAmount, 
-					player:GetWorldPosition() + Vector3.UP * 100 + RandomStream.New():GetVector3() * 50)
-			end
-			]]
+
 			return
 		end
 		Task.Wait()
 	end
 end
 
---propObjectRoot.isSimulatingDebrisPhysics = false
 Task.Wait()
 Task.Wait()
 propObjectRoot.isSimulatingDebrisPhysics = true
@@ -49,10 +49,6 @@ local flingSpeed = propFlingSpeedMin + math.random() * (propFlingSpeedMax - prop
 propObjectRoot:SetVelocity(vel * flingSpeed)
 propObjectRoot:SetWorldPosition(propObjectRoot:GetWorldPosition() + propSpawnOffset)
 
---propObjectRoot:SetWorldPosition(Vector3.ZERO)
-
---propObjectRoot.isSimulatingDebrisPhysics = true
---propObjectRoot.Set
 
 
 
@@ -69,7 +65,6 @@ while true do
 	local pos = propObjectRoot:GetWorldPosition() + currentVelocity
 	propObjectRoot:SetWorldPosition(pos)
 	local vecToPlayer = (player:GetWorldPosition() - pos):GetNormalized()
-	--print(vecToPlayer)
 	currentVelocity = currentVelocity + vecToPlayer * homingSpeed
 	if currentVelocity.size > maxVelocity then
 		currentVelocity = currentVelocity:GetNormalized() * maxVelocity
@@ -77,7 +72,5 @@ while true do
 	homingSpeed = homingSpeed * 1.04
 	Task.Wait()
 end
-
-
 
 

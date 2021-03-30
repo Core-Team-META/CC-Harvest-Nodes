@@ -29,12 +29,7 @@ Objects {
   ChildIds: 2340510130903752428
   ChildIds: 1377266972826226657
   ChildIds: 18179708537465442510
-  ChildIds: 905783046576103270
-  ChildIds: 17320373810465944780
   ChildIds: 3234062574768950029
-  ChildIds: 2489164405447903265
-  ChildIds: 15229563686125696027
-  ChildIds: 536774532460521814
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -47,160 +42,6 @@ Objects {
     Value: "mc:ecollisionsetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 536774532460521814
-  Name: "Tool - Axe"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8583049880314352059
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Tool - Axe"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2755
-            Y: 1090
-            Z: -45
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15251422738044263284
-    }
-  }
-}
-Objects {
-  Id: 15229563686125696027
-  Name: "CornerPillar"
-  Transform {
-    Location {
-      X: 1360
-      Y: 185
-      Z: 2850
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6999976521673436178
-      value {
-        Overrides {
-          Name: "Name"
-          String: "CornerPillar"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1360
-            Y: 830
-            Z: 2850
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15509881431105236789
-    }
-  }
-}
-Objects {
-  Id: 2489164405447903265
-  Name: "CornerPillar"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6999976521673436178
-      value {
-        Overrides {
-          Name: "Name"
-          String: "CornerPillar"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1360
-            Y: 185
-            Z: 2850
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15509881431105236789
-    }
   }
 }
 Objects {
@@ -226,7 +67,6 @@ Objects {
   ChildIds: 11387260186578554695
   ChildIds: 12075990491074649171
   ChildIds: 8075688709866099879
-  ChildIds: 14419141700229585328
   ChildIds: 7818130513631721140
   ChildIds: 7231399022462942951
   ChildIds: 10117559280586836343
@@ -259,6 +99,9 @@ Objects {
   ChildIds: 12112379847516209455
   ChildIds: 14872922670224538752
   ChildIds: 17492421136522724000
+  ChildIds: 15229563686125696027
+  ChildIds: 2489164405447903265
+  ChildIds: 905783046576103270
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -270,6 +113,180 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 905783046576103270
+  Name: "Top Platform"
+  Transform {
+    Location {
+      X: 3195
+      Y: -675
+      Z: 2760
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 8
+      Y: 12.2500019
+      Z: 1.75
+    }
+  }
+  ParentId: 3234062574768950029
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4359311749668538001
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 3
+        B: 3
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+    }
+  }
+}
+Objects {
+  Id: 2489164405447903265
+  Name: "CornerPillar"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3234062574768950029
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6999976521673436178
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CornerPillar"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2640
+            Y: -1005
+            Z: 2850
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15509881431105236789
+    }
+  }
+}
+Objects {
+  Id: 15229563686125696027
+  Name: "CornerPillar"
+  Transform {
+    Location {
+      X: 1360
+      Y: 185
+      Z: 2850
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3234062574768950029
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6999976521673436178
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CornerPillar"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2640
+            Y: -360
+            Z: 2850
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15509881431105236789
+    }
   }
 }
 Objects {
@@ -19563,60 +19580,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14419141700229585328
-  Name: "InfoKiosk"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3234062574768950029
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17518781150138055631
-      value {
-        Overrides {
-          Name: "Name"
-          String: "InfoKiosk"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -670
-            Y: -580
-            Z: -40
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 95
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6803822521206802384
-    }
-  }
-}
-Objects {
   Id: 8075688709866099879
   Name: "Tutorial_Staircase"
   Transform {
@@ -19940,125 +19903,6 @@ Objects {
     }
   }
   ParentId: 3234062574768950029
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 4359311749668538001
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 3
-        G: 3
-        B: 3
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-        Mass: 100
-        LinearDamping: 0.01
-      }
-    }
-  }
-}
-Objects {
-  Id: 17320373810465944780
-  Name: "InfoKiosk"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17518781150138055631
-      value {
-        Overrides {
-          Name: "Name"
-          String: "InfoKiosk"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2425
-            Y: 255
-            Z: 2850
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999619
-          }
-        }
-        Overrides {
-          Name: "cs:InfoTextKey"
-          String: "plasma"
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 6803822521206802384
-    }
-  }
-}
-Objects {
-  Id: 905783046576103270
-  Name: "Cube"
-  Transform {
-    Location {
-      X: 1915
-      Y: 515
-      Z: 2760
-    }
-    Rotation {
-      Yaw: 89.9999542
-    }
-    Scale {
-      X: 8
-      Y: 12.2500019
-      Z: 1.75
-    }
-  }
-  ParentId: 4781671109827199097
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -21237,6 +21081,9 @@ Objects {
   ChildIds: 13820681159614408115
   ChildIds: 1503914035987836461
   ChildIds: 2677848794672264970
+  ChildIds: 17320373810465944780
+  ChildIds: 14419141700229585328
+  ChildIds: 5267760781022882123
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -21248,6 +21095,184 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 5267760781022882123
+  Name: "InfoKiosk"
+  Transform {
+    Location {
+      X: -1950
+      Y: 610
+      Z: -40
+    }
+    Rotation {
+      Yaw: 95
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15005641500316237336
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17518781150138055631
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Welcome InfoKiosk"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -10955
+            Y: 6020
+            Z: 415.000031
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 95
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:InfoTextKey"
+          String: "explore"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6803822521206802384
+    }
+  }
+}
+Objects {
+  Id: 14419141700229585328
+  Name: "InfoKiosk"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15005641500316237336
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17518781150138055631
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Welcome InfoKiosk"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12570
+            Y: 6065
+            Z: -40
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 95
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6803822521206802384
+    }
+  }
+}
+Objects {
+  Id: 17320373810465944780
+  Name: "InfoKiosk"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15005641500316237336
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17518781150138055631
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Plasma Gun InfoKiosk"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8195
+            Y: 5710
+            Z: 2850
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.9999542
+          }
+        }
+        Overrides {
+          Name: "cs:InfoTextKey"
+          String: "plasma"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6803822521206802384
+    }
   }
 }
 Objects {

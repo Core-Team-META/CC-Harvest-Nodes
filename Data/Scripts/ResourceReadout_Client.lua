@@ -1,3 +1,11 @@
+--[[
+This script handles the UI for the HUD displaying the number of
+resources the player has collected total.
+
+Basically just sits and listens for ResourceChanged events and
+updates the number, along with an icon from the icon directory.
+]]
+
 local propUIContainer = script:GetCustomProperty("UIContainer"):WaitForObject()
 local propResourceReadout = script:GetCustomProperty("ResourceReadout")
 local prop_IconDirectory = script:GetCustomProperty("_IconDirectory")

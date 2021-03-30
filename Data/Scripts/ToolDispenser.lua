@@ -1,3 +1,9 @@
+--[[
+Quick script for handling equipment dispensers in
+the world.  They clear your equipment and spawn
+a new one for you, when interacted with.
+]]
+
 local propTool = script:GetCustomProperty("Tool")
 
 

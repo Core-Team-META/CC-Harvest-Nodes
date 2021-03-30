@@ -185,6 +185,27 @@ textData = {
 		]]
 	},		
 
+	
+	["explore"] = {
+		title = "Go Explore~",
+		text = [[Now that you know the basics of
+		harvesting, (select a weapon with your number
+		keys, then hit stuff with it), it's time to go
+		exploring!
+
+		Whenever you see a console like this one, you can
+		get more information by walking near it.
+
+		This level has been set up with examples of many
+		neat things you can do with the Efficient Harvestables
+		framework.  Go explore and check them out!
+
+
+		]]
+	},		
+
+
+
 }
 
 
