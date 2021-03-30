@@ -13,6 +13,12 @@ local h_idLookup = {}
 
 local respawnList = {}
 
+local CONTEXT_CLIENT = "client"
+local CONTEXT_STATIC = "static"
+local CONTEXT_DEFAULT = "default"
+
+local context = "not yet set"
+
 -- Just to make this a little cleaner.
 function GetShortId(obj)
   return obj:GetReference().id
@@ -27,6 +33,9 @@ function StrSplit(instring, seperator)
   return result
 end
 
+function API.PrintContext()
+  print(context)
+end
 
 -- Helper function for splitting tags
 function SplitTags(tags)
@@ -74,6 +83,7 @@ end
 -- for when players harvest nodes.
 -- (Node harvest checks are done client side)
 function API.Init()
+  context = CONTEXT_DEFAULT
   if Environment.IsServer() then
     Events.ConnectForPlayer("NodeHarvested", OnNodeHarvested)
   end
@@ -130,6 +140,7 @@ end
 -- (The starting node distribution only happens on the
 -- server, so that everyone loading in gets it.)
 function API.StaticInit(staticContext)
+  context = CONTEXT_STATIC
   clientStaticContext = staticContext
   for k,groupRoot in pairs(FindAllHarvestNodeGroups()) do
     -- TODO: Check that it's a static context and has the right properties?
@@ -146,7 +157,7 @@ function API.StaticInit(staticContext)
 end
 
 function API.InitClient()
-
+  context = CONTEXT_CLIENT
   print("initting client only stuff.")
   for k,groupRoot in pairs(FindAllHarvestNodeGroups()) do
     -- TODO: Check that it's a static context and has the right properties?

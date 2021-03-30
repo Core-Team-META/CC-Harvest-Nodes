@@ -7493,8 +7493,9 @@ Objects {
   Name: "PlasmaGun"
   Transform {
     Location {
-      X: 900
-      Z: 800
+      X: -1095
+      Y: 590
+      Z: 440
     }
     Rotation {
     }

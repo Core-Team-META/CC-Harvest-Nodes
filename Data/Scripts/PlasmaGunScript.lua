@@ -18,11 +18,13 @@ function OnImpact(weapon, impactData)
 
   for _, obj in pairs(aoe:GetOverlappingObjects()) do
     --print(obj.name)
+    mgr.PrintContext()
     if obj:IsA("StaticMesh") then
-      local nodeData = mgr.GetNodeData(obj)
-      if nodeData ~= nil then
-        print("found a node - ", nodeData.h_id)
-        mgr.SetNodeState(nodeData.h_id, false)
+      local id = mgr.GetHId(obj, true)
+      print(id)
+      if id ~= nil then
+        print("found a node - ", id)
+        --mgr.SetNodeState(nodeData.h_id, false)
       end
     end
   end
