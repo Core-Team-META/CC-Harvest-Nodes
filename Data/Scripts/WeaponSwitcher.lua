@@ -11,7 +11,6 @@ function RemoveAllTools(player)
 end
 
 function EquipTool(player, toolMUID)
-  print(player)
   RemoveAllTools(player)
   local newTool = World.SpawnAsset(toolMUID)
   newTool:Equip(player)
@@ -32,9 +31,6 @@ function OnBindingPressed(player, binding)
 
 
 end
-
-
---script.parent.interactedEvent:Connect(OnInteract)
 
 
 

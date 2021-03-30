@@ -102,12 +102,11 @@ textData = {
 	["LargeGroups"] = {
 		title = "Large Groups!",
 		text = [[Harvest nodes are very
-		lightweight in networking costs.
+		lightweight in networking costs, so you can have
+		a lot of nodes in your game.
 		
-		This whole grove uses only two networked
-		objects.
-		
-		Bonus!  Can you find the crystal tree?
+		This whole grove of trees is only using two
+		networked objects!
 		]]
 	},			
 	
@@ -160,6 +159,23 @@ textData = {
 		Have fun!
 		]]
 	},
+	
+	
+	["plasma"] = {
+		title = "Other Uses",
+		text = [[Of course, nothing says
+		that you have to use this framework
+		for making harvestable resource systems!
+		
+		The line between harvest nodes and destructable
+		environments is pretty thin, and there's nothing
+		stopping you from just using this system as a way
+		to make the world react when you shoot it!
+		
+		Grab this plasma gun and fire a few shots at
+		the forest below!
+		]]
+	},		
 
 }
 

@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17798409052959246679
-  Name: "Modern Weapon - Grip 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_grip_003"
-  }
-}
-Assets {
   Id: 17648950198053764850
   Name: "Fantasy Axe 010"
   PlatformAssetType: 9
@@ -71,12 +62,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12486469380190802843
-  Name: "Modern Weapon - Grenade Canister 02"
+  Id: 12222929129962827347
+  Name: "Fantasy Castle Stairs 01 - Bannister"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weapons_grenade_indented_001"
+    AssetId: "sm_ts_fan_cas_stairs_001_bannister"
   }
 }
 Assets {
@@ -125,12 +116,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9933034030368674416
-  Name: "Modern Weapon - Grip 02"
+  Id: 9842143421296066252
+  Name: "Fantasy Castle Stairs 01 - 150cm"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_grip_002"
+    AssetId: "sm_ts_fan_cas_stairs_001_150cm"
   }
 }
 Assets {
@@ -257,15 +248,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 2168240361010595988
-  Name: "Modern Weapon - Scope 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_modern_scope_002"
   }
 }
 Assets {
