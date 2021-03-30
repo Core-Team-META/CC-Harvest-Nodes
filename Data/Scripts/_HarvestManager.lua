@@ -248,8 +248,8 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
       newData.obj:Destroy()
       newData.active = false
     end
-
     if Environment.IsServer() then
+      h_idLookup[GetShortId(newData.obj)] = nil
       newData.obj:Destroy()
       newData.obj = World.SpawnAsset(newData.templateId, {
           parent = newData.container,
@@ -257,7 +257,7 @@ function API.RegisterHarvestableNodes(groupRoot, dataOnly)
           rotation = newData.transform:GetRotation(),
           scale = newData.transform:GetScale(),
         })
-
+      h_idLookup[GetShortId(newData.obj)] = newData.h_id
     end
 
   end

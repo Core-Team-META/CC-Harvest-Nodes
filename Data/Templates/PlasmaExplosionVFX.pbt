@@ -18,7 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 10097670557083780936
         ChildIds: 6772022435545467381
-        Lifespan: 2
+        Lifespan: 3
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -100,6 +100,12 @@ Assets {
             Name: "cs:EnergyChargeUpHoldVFX"
             ObjectReference {
               SubObjectId: 10097670557083780936
+            }
+          }
+          Overrides {
+            Name: "cs:PlasmaExplosionVolume"
+            AssetReference {
+              Id: 3784236399982390873
             }
           }
         }
