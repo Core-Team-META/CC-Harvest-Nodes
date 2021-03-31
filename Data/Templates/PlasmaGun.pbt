@@ -21,6 +21,7 @@ Assets {
         ChildIds: 16784873573031036160
         ChildIds: 3456946501415129154
         ChildIds: 2885503624191658172
+        ChildIds: 18176039548900194142
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41,7 +42,7 @@ Assets {
               Id: 16548392242954998495
             }
             MuzzleFlashAssetRef {
-              Id: 841534158063459245
+              Id: 4405621110089222677
             }
             TrailAssetRef {
               Id: 841534158063459245
@@ -309,6 +310,8 @@ Assets {
         ChildIds: 17967200256927366654
         ChildIds: 15019653188943327611
         ChildIds: 1819782992940732012
+        ChildIds: 6930776803915441974
+        ChildIds: 15585090059662799893
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -421,6 +424,16 @@ Assets {
           }
         }
         ParentId: 3456946501415129154
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              G: 0.523575783
+              B: 0.669999957
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -572,6 +585,108 @@ Assets {
         }
       }
       Objects {
+        Id: 6930776803915441974
+        Name: "Modern Weapon - Scope 02"
+        Transform {
+          Location {
+            X: 60
+            Z: 5
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.5
+            Y: 1
+            Z: 1.25
+          }
+        }
+        ParentId: 3456946501415129154
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              G: 0.654966772
+              B: 0.86
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 2168240361010595988
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15585090059662799893
+        Name: "Sci-fi Trails"
+        Transform {
+          Location {
+            X: 90
+            Z: 15
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3456946501415129154
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.25
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 12008007912711409011
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:medium"
+        }
+      }
+      Objects {
         Id: 2885503624191658172
         Name: "PlasmaGunScript"
         Transform {
@@ -605,6 +720,12 @@ Assets {
               Id: 3784236399982390873
             }
           }
+          Overrides {
+            Name: "cs:AttackAudio"
+            ObjectReference {
+              SubObjectId: 18176039548900194142
+            }
+          }
         }
         WantsNetworking: true
         Collidable_v2 {
@@ -620,6 +741,43 @@ Assets {
           ScriptAsset {
             Id: 11373562238952668251
           }
+        }
+      }
+      Objects {
+        Id: 18176039548900194142
+        Name: "Electricity  Power Blast 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16062812015123139368
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 13470134799123583137
+          }
+          Volume: 1
+          Falloff: -1
+          Radius: -1
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
         }
       }
     }
@@ -657,6 +815,24 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weapons_grenade_indented_001"
+      }
+    }
+    Assets {
+      Id: 12008007912711409011
+      Name: "Sci-fi Trails"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_trail_variants"
+      }
+    }
+    Assets {
+      Id: 13470134799123583137
+      Name: "Electricity  Power Blast 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_electricity_power_blast_01_Cue_ref"
       }
     }
     PrimaryAssetId {

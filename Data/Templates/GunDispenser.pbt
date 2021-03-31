@@ -17,7 +17,7 @@ Assets {
         }
         ParentId: 4781671109827199097
         ChildIds: 2147333140034291028
-        ChildIds: 14422451171878853584
+        ChildIds: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -110,13 +110,14 @@ Assets {
         }
       }
       Objects {
-        Id: 14422451171878853584
+        Id: 4386117122058176708
         Name: "ClientContext"
         Transform {
           Location {
+            Y: -30
           }
           Rotation {
-            Yaw: 89.9999771
+            Yaw: 90
           }
           Scale {
             X: 1
@@ -125,13 +126,14 @@ Assets {
           }
         }
         ParentId: 3143075578765706199
-        ChildIds: 5774561760315885635
-        ChildIds: 13902909741602636810
-        ChildIds: 10831281052181069579
-        ChildIds: 16460569894625048045
-        ChildIds: 3294660343521058247
-        ChildIds: 4016492930842094913
-        ChildIds: 4931341627682160372
+        ChildIds: 12705907498750510030
+        ChildIds: 9159708940982828396
+        ChildIds: 10721837268384333807
+        ChildIds: 13667465086876060045
+        ChildIds: 7053908408436772575
+        ChildIds: 5384724499129566233
+        ChildIds: 13028786684796841562
+        ChildIds: 2611531755921793353
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -146,7 +148,7 @@ Assets {
         }
       }
       Objects {
-        Id: 5774561760315885635
+        Id: 12705907498750510030
         Name: "Modern Weapon - Grip 02"
         Transform {
           Location {
@@ -159,7 +161,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14422451171878853584
+        ParentId: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -186,7 +188,7 @@ Assets {
         }
       }
       Objects {
-        Id: 13902909741602636810
+        Id: 9159708940982828396
         Name: "Modern Weapon - Grip 03"
         Transform {
           Location {
@@ -201,7 +203,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 14422451171878853584
+        ParentId: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -228,7 +230,7 @@ Assets {
         }
       }
       Objects {
-        Id: 10831281052181069579
+        Id: 10721837268384333807
         Name: "Modern Weapon - Scope 02"
         Transform {
           Location {
@@ -243,7 +245,7 @@ Assets {
             Z: 1.25
           }
         }
-        ParentId: 14422451171878853584
+        ParentId: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -270,7 +272,7 @@ Assets {
         }
       }
       Objects {
-        Id: 16460569894625048045
+        Id: 13667465086876060045
         Name: "Modern Weapon - Grenade Canister 02"
         Transform {
           Location {
@@ -284,7 +286,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 14422451171878853584
+        ParentId: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -311,7 +313,7 @@ Assets {
         }
       }
       Objects {
-        Id: 3294660343521058247
+        Id: 7053908408436772575
         Name: "Modern Weapon - Grenade Canister 02"
         Transform {
           Location {
@@ -326,7 +328,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 14422451171878853584
+        ParentId: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -353,7 +355,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4016492930842094913
+        Id: 5384724499129566233
         Name: "Modern Weapon - Grenade Canister 02"
         Transform {
           Location {
@@ -368,7 +370,7 @@ Assets {
             Z: 0.5
           }
         }
-        ParentId: 14422451171878853584
+        ParentId: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -395,22 +397,75 @@ Assets {
         }
       }
       Objects {
-        Id: 4931341627682160372
+        Id: 13028786684796841562
+        Name: "Modern Weapon - Scope 02"
+        Transform {
+          Location {
+            X: 60
+            Z: 5
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.5
+            Y: 1
+            Z: 1.25
+          }
+        }
+        ParentId: 4386117122058176708
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              G: 0.654966772
+              B: 0.86
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 2168240361010595988
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 2611531755921793353
         Name: "Sci-fi Item Callout VFX"
         Transform {
           Location {
-            Z: -75
+            X: 29.9999962
+            Z: -70
           }
           Rotation {
-            Yaw: -90
+            Yaw: -89.9999924
           }
           Scale {
-            X: 3
-            Y: 3
-            Z: 1.75
+            X: 2.25
+            Y: 2.25
+            Z: 2.25
           }
         }
-        ParentId: 14422451171878853584
+        ParentId: 4386117122058176708
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

@@ -9,10 +9,16 @@ them to be destroyed.
 local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
 local propPlasmaExplosionVFX = script:GetCustomProperty("PlasmaExplosionVFX")
 local propPlasmaExplosionVolume = script:GetCustomProperty("PlasmaExplosionVolume")
+local propAttackAudio = script:GetCustomProperty("AttackAudio"):WaitForObject()
 
 local mgr = require(prop_HarvestManager)
 
 local gun = script.parent
+
+function OnAttack()
+	propAttackAudio:Play()
+end
+
 
 function OnImpact(weapon, impactData)
   local impactPos = impactData:GetHitResult():GetImpactPosition()
@@ -21,7 +27,7 @@ function OnImpact(weapon, impactData)
 
   local aoe = World.SpawnAsset(propPlasmaExplosionVolume, 
       {position = impactPos,
-      scale = Vector3.ONE * 20})
+      scale = Vector3.ONE * 25})
 
   for _, obj in pairs(aoe:GetOverlappingObjects()) do
     if obj:IsA("StaticMesh") then
@@ -37,3 +43,4 @@ end
 
 
 gun.targetImpactedEvent:Connect(OnImpact)
+gun.projectileSpawnedEvent:Connect(OnAttack)

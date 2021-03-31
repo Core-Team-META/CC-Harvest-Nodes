@@ -18,6 +18,7 @@ Assets {
         ParentId: 4781671109827199097
         ChildIds: 10097670557083780936
         ChildIds: 6772022435545467381
+        ChildIds: 2658655755655427203
         Lifespan: 3
         WantsNetworking: true
         Collidable_v2 {
@@ -124,6 +125,42 @@ Assets {
           }
         }
       }
+      Objects {
+        Id: 2658655755655427203
+        Name: "Electrical Zap Explosion SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18399834624427032983
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 7856219786431298361
+          }
+          AutoPlay: true
+          Volume: 4
+          Falloff: -1
+          Radius: 5000
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
     }
     Assets {
       Id: 5767706018506866063
@@ -132,6 +169,15 @@ Assets {
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_ChargeUp_Hold_Var1"
+      }
+    }
+    Assets {
+      Id: 7856219786431298361
+      Name: "Electrical Zap Explosion SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_zapsplosion"
       }
     }
     PrimaryAssetId {
