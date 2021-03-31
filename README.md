@@ -107,36 +107,4 @@ Creating tools to harvest nodes is much less fiddly.  They can basically be stan
 
 
 
-## Node and Group Properties
 
-There are a bunch of properties on HarvestNodes and HarvestNodeGroups.  This is an attempt to explain what they all do.  (They also have tooltips, if you forget!)
-
-### Harvest Node Properties
-
-#### _HarvestManager
-
-This is an asset reference link to the harvest manager, so that 
-
-local prop_HarvestManager = script:GetCustomProperty("_HarvestManager")
-local propMaxHealth = script:GetCustomProperty("MaxHealth")
-local propDestroyEffect = script:GetCustomProperty("DestroyEffect")
-local propHitEffect = script:GetCustomProperty("HitEffect")
-local propNodeName = script:GetCustomProperty("NodeName")
-local propHarvestResource = script:GetCustomProperty("HarvestResource")
-local propHarvestResourceMin = script:GetCustomProperty("HarvestResourceMin")
-local propHarvestResourceMax = script:GetCustomProperty("HarvestResourceMax")
-local propHarvestMessage = script:GetCustomProperty("HarvestMessage")
-local propRequiredHarvestTags = script:GetCustomProperty("RequiredHarvestTags")
-local propPickupSpawnMin = script:GetCustomProperty("PickupSpawnMin")
-local propPickupSpawnMax = script:GetCustomProperty("PickupSpawnMax")
-local propPickupTemplate = script:GetCustomProperty("PickupTemplate")
-
-
-Nodes 
-
-
-
-## Coming Soon
-* node properties
-* group properties
-* Tool properties
