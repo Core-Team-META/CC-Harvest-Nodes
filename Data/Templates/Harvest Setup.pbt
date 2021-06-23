@@ -149,7 +149,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
         }
@@ -320,6 +320,7 @@ Assets {
             }
           }
           Canvas {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -372,6 +373,7 @@ Assets {
             }
           }
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -735,6 +737,7 @@ Assets {
             }
           }
           Canvas {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -791,6 +794,7 @@ Assets {
             }
           }
           Panel {
+            Opacity: 1
           }
           AnchorLayout {
             SelfAnchor {
@@ -911,6 +915,10 @@ Assets {
               A: 1
             }
             Percent: 0.540604413
+            FillBrush {
+            }
+            BackgroundBrush {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -1316,7 +1324,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         NetworkContext {
         }
@@ -1432,5 +1440,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 89
 }

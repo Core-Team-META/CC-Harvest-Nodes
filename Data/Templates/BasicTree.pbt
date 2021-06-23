@@ -87,8 +87,8 @@ Assets {
           Overrides {
             Name: "ma:Nature_Leaves:color"
             Color {
-              R: 0.368476778
-              G: 0.52
+              R: 0.293
+              G: 0.180683345
               A: 1
             }
           }
@@ -100,7 +100,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -116,6 +116,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+            BoundsScale: 1
           }
         }
       }
@@ -134,5 +135,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 89
 }

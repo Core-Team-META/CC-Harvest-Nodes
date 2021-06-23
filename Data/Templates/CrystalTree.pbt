@@ -93,7 +93,19 @@ Assets {
           Overrides {
             Name: "ma:Nature_Trunk:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 276703422172321502
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Trunk:utile"
+            Float: 2.70902324
+          }
+          Overrides {
+            Name: "ma:Nature_Trunk:color"
+            Color {
+              R: 0.840000033
+              G: 0.417218596
+              A: 1
             }
           }
         }
@@ -104,11 +116,11 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
-            Id: 16603617074924532378
+            Id: 502766425914155155
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -120,17 +132,18 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+            BoundsScale: 1
           }
         }
       }
     }
     Assets {
-      Id: 16603617074924532378
-      Name: "Tree Birch 01"
+      Id: 502766425914155155
+      Name: "Tree Redwood Big"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_tree_birch_001"
+        AssetId: "sm_tree_redwood_001"
       }
     }
     Assets {
@@ -142,10 +155,19 @@ Assets {
         AssetId: "fxmi_magic_glass"
       }
     }
+    Assets {
+      Id: 276703422172321502
+      Name: "Cliff 03"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "cliff_003"
+      }
+    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 89
 }

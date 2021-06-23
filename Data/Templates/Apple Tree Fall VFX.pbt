@@ -44,6 +44,7 @@ Assets {
             Float: 2
           }
         }
+        Lifespan: 8
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -51,7 +52,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         CoreMesh {
           MeshAsset {
@@ -61,12 +62,12 @@ Assets {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          InteractWithTriggers: true
           StaticMesh {
             Physics {
               Mass: 100
               LinearDamping: 0.01
             }
+            BoundsScale: 1
           }
         }
       }
@@ -217,7 +218,7 @@ Assets {
     }
     Assets {
       Id: 16096880531311687570
-      Name: "Car Crash Heavy Metal Impact 02 SFX"
+      Name: "Vehicle Car Crash Heavy Metal Impact 02 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
@@ -229,5 +230,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 89
 }

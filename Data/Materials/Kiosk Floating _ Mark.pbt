@@ -2,7 +2,7 @@ Assets {
   Id: 15023031498414554028
   Name: "Kiosk Floating ? Mark"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 89
   CustomMaterialAsset {
     BaseMaterialId: 15678370105705006556
     ParameterOverrides {

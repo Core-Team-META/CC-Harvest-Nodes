@@ -43,6 +43,7 @@ Assets {
               Mass: 100
               LinearDamping: 0.01
             }
+            BoundsScale: 1
           }
         }
       }
@@ -184,7 +185,7 @@ Assets {
     }
     Assets {
       Id: 16096880531311687570
-      Name: "Car Crash Heavy Metal Impact 02 SFX"
+      Name: "Vehicle Car Crash Heavy Metal Impact 02 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
@@ -196,5 +197,5 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 78
+  SerializationVersion: 89
 }

@@ -49,5 +49,5 @@ Assets {
     Version: "1.2.0"
     Description: "This is a basic information kiosk that pops up text when you get close.  No \"interact\" button necessary, and the text automatically goes away when they move away from the kiosk.\r\n\r\nHas a nice system for text authoring, so you can keep all of your info text in one, (relatively!) human-readable file.\r\n\r\nPerfect for tutorials, museums, hints, or any place you just want to stick some text into the world!\r\n\r\n\r\n\r\n\r\n----\r\n\r\n\r\n1.01 - Added tooltip to the InfoTextKey custom property.\r\n1.00 - Initial release!"
   }
-  SerializationVersion: 78
+  SerializationVersion: 89
 }

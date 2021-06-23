@@ -2,7 +2,7 @@ Assets {
   Id: 15988133150657502041
   Name: "Terrain Material"
   PlatformAssetType: 13
-  SerializationVersion: 78
+  SerializationVersion: 89
   CustomMaterialAsset {
     BaseMaterialId: 18272731448475791451
     ParameterOverrides {
@@ -15,7 +15,7 @@ Assets {
       Overrides {
         Name: "cmp:Material2"
         AssetReference {
-          Id: 872422851713384541
+          Id: 276703422172321502
         }
       }
       Overrides {
@@ -37,19 +37,38 @@ Assets {
         }
       }
       Overrides {
-        Name: "cmpc:Material2"
-        Color {
-          R: 2
-          G: 2
-          B: 2
-          A: 1
-        }
-      }
-      Overrides {
         Name: "cmp:Material4"
         AssetReference {
           Id: 16021048002592970614
         }
+      }
+      Overrides {
+        Name: "material2_scale"
+        Float: 0.5
+      }
+      Overrides {
+        Name: "material1side_scale"
+        Float: 0.5
+      }
+      Overrides {
+        Name: "cmp:Material2_Sides"
+        AssetReference {
+          Id: 276703422172321502
+        }
+      }
+      Overrides {
+        Name: "material2side_scale"
+        Float: 0.5
+      }
+      Overrides {
+        Name: "cmp:Material4_Sides"
+        AssetReference {
+          Id: 276703422172321502
+        }
+      }
+      Overrides {
+        Name: "material4side_scale"
+        Float: 0.5
       }
     }
     Assets {
@@ -71,12 +90,12 @@ Assets {
       }
     }
     Assets {
-      Id: 872422851713384541
-      Name: "Bricks Cobblestone Floor Arches 001"
+      Id: 276703422172321502
+      Name: "Cliff 03"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_cobblestone_floor_arch_001"
+        AssetId: "cliff_003"
       }
     }
     Assets {
@@ -113,6 +132,24 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "dirt_001"
+      }
+    }
+    Assets {
+      Id: 276703422172321502
+      Name: "Cliff 03"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "cliff_003"
+      }
+    }
+    Assets {
+      Id: 276703422172321502
+      Name: "Cliff 03"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "cliff_003"
       }
     }
   }
