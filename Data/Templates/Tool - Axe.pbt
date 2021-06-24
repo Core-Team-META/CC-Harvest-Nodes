@@ -359,6 +359,7 @@ Assets {
         ChildIds: 7067686696212581041
         ChildIds: 4375609231174640549
         ChildIds: 13042890894921129833
+        ChildIds: 2168319525279800257
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -442,8 +443,8 @@ Assets {
             Roll: -179.999954
           }
           Scale {
-            X: 0.09
-            Y: 0.09
+            X: 0.0562565289
+            Y: 0.0900000408
             Z: 1
           }
         }
@@ -452,12 +453,24 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7795504530598228722
+              Id: 14231809728886464860
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.125
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.350000024
+              G: 0.0764900744
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -492,20 +505,38 @@ Assets {
         Name: "Fantasy Axe Blade 01"
         Transform {
           Location {
-            X: -95.6142578
+            X: -82.6795807
             Y: 218.306458
-            Z: 69.4827881
+            Z: 78.3288116
           }
           Rotation {
-            Yaw: -179.999954
+            Pitch: -79.7185059
+            Roll: -90
           }
           Scale {
-            X: 1.47087419
-            Y: 1.00000012
-            Z: 1.3105886
+            X: 0.264397085
+            Y: 0.273970187
+            Z: 0.0290966555
           }
         }
         ParentId: 5648504430275594095
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.6
+              B: 0.6
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -517,7 +548,71 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 18423898048047861963
+            Id: 2184283665274506558
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2168319525279800257
+        Name: "Fantasy Axe Blade 01"
+        Transform {
+          Location {
+            X: -100.034439
+            Y: 218.306458
+            Z: 65.6262817
+          }
+          Rotation {
+            Pitch: -91.1693726
+            Roll: -89.9983215
+          }
+          Scale {
+            X: 0.173790351
+            Y: 0.146790177
+            Z: 0.0152059663
+          }
+        }
+        ParentId: 5648504430275594095
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.6
+              B: 0.6
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -544,21 +639,39 @@ Assets {
       }
     }
     Assets {
-      Id: 7795504530598228722
-      Name: "Wood Planks"
+      Id: 14231809728886464860
+      Name: "Wood Raw White"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_planks_dark_001_uv"
+        AssetId: "mi_wood_raw_white_001_uv"
       }
     }
     Assets {
-      Id: 18423898048047861963
-      Name: "Fantasy Axe Blade 01"
+      Id: 2184283665274506558
+      Name: "Trim - Curve 45\302\260 - 02m Radius"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_blade_axe_001"
+        AssetId: "sm_trimitives_001_curve45_2m_ref"
+      }
+    }
+    Assets {
+      Id: 14212988502358508072
+      Name: "Metal Basic Steel"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "steel_001"
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
       }
     }
     PrimaryAssetId {

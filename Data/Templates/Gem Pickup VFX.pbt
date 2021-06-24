@@ -16,6 +16,7 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
+        ChildIds: 17315813721799106641
         ChildIds: 6202763124118730440
         ChildIds: 1037111216689000294
         Lifespan: 2
@@ -30,6 +31,118 @@ Assets {
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 17315813721799106641
+        Name: "Energy Charge Up Start VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1236597551726676605
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 6.94530392
+          }
+          Overrides {
+            Name: "bp:Enable Rings"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp: Enable Energy Curls"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Outer Core"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Inner Core"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Outer Core Edge Color"
+            Color {
+              R: 15
+              G: 14.3279438
+              B: 8.2794342
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color"
+            Color {
+              R: 1
+              G: 0.666666687
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Inner Core Color"
+            Color {
+              R: 1
+              G: 0.6
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Ring Density"
+            Float: 4.40936327
+          }
+          Overrides {
+            Name: "bp:Outer Core Color"
+            Color {
+              R: 0.973445
+              G: 0.292033523
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Ring Color"
+            Color {
+              R: 0.973445
+              G: 0.811204195
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Charge Up Duration"
+            Float: 0.4
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 11658657249568630423
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
         }
       }
       Objects {
@@ -97,7 +210,6 @@ Assets {
           TeamSettings {
           }
           Vfx {
-            AutoPlay: true
           }
         }
         Relevance {
@@ -119,6 +231,14 @@ Assets {
           }
         }
         ParentId: 1236597551726676605
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:emx_combo_4_stingers:61"
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -144,6 +264,15 @@ Assets {
             IsAttenuationEnabled: true
           }
         }
+      }
+    }
+    Assets {
+      Id: 11658657249568630423
+      Name: "Energy Charge Up Start VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ChargeUp_var1"
       }
     }
     Assets {

@@ -141,8 +141,9 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 0.929999948
-              B: 0.110860638
+              R: 0.271725416
+              G: 0.186438009
+              B: 0.322000027
               A: 1
             }
           }
@@ -198,8 +199,9 @@ Assets {
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 0.929999948
-              B: 0.110860638
+              R: 0.271725416
+              G: 0.186438009
+              B: 0.322000027
               A: 1
             }
           }
@@ -335,7 +337,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
             }
           }
           Overrides {
@@ -344,7 +346,20 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.165835291
+            Float: 0.346275061
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.92271149
           }
         }
         Collidable_v2 {
@@ -395,7 +410,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
             }
           }
           Overrides {
@@ -404,7 +419,20 @@ Assets {
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.165835291
+            Float: 0.346275061
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.92271149
           }
         }
         Collidable_v2 {
@@ -498,7 +526,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -594,7 +631,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -690,7 +736,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -788,7 +843,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -886,7 +950,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -984,7 +1057,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -1082,7 +1164,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -1180,7 +1271,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -1278,7 +1378,16 @@ Assets {
           Overrides {
             Name: "ma:Nature_Branch:id"
             AssetReference {
-              Id: 5223385215047925506
+              Id: 387249764444394031
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:color"
+            Color {
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
+              A: 1
             }
           }
         }
@@ -1344,15 +1453,6 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cylinder_002"
-      }
-    }
-    Assets {
-      Id: 5223385215047925506
-      Name: "Magic Glass"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_magic_glass"
       }
     }
     Assets {

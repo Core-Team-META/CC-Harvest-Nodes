@@ -93,20 +93,31 @@ Assets {
           Overrides {
             Name: "ma:Nature_Trunk:id"
             AssetReference {
-              Id: 276703422172321502
+              Id: 387249764444394031
             }
           }
           Overrides {
             Name: "ma:Nature_Trunk:utile"
-            Float: 2.70902324
+            Float: 0.741834342
           }
           Overrides {
             Name: "ma:Nature_Trunk:color"
             Color {
-              R: 0.840000033
-              G: 0.417218596
+              R: 0.141900018
+              G: 0.47300002
+              B: 0.459843725
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Nature_Branch:id"
+            AssetReference {
+              Id: 6862424443534458531
+            }
+          }
+          Overrides {
+            Name: "ma:Nature_Trunk:vtile"
+            Float: 0.526512146
           }
         }
         Collidable_v2 {
@@ -153,15 +164,6 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxmi_magic_glass"
-      }
-    }
-    Assets {
-      Id: 276703422172321502
-      Name: "Cliff 03"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "cliff_003"
       }
     }
     PrimaryAssetId {

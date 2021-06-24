@@ -144,7 +144,7 @@ Assets {
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.1
+            Duration: 0.5
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -155,7 +155,7 @@ Assets {
             }
           }
           RecoveryPhaseSettings {
-            Duration: 0.01
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -175,7 +175,7 @@ Assets {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "2hand_melee_slash_vertical"
+          Animation: "2hand_melee_dig_shovel"
           KeyBinding_v2 {
             Value: "mc:egameaction:primaryaction"
           }
@@ -308,6 +308,7 @@ Assets {
         ParentId: 11098158781156617198
         ChildIds: 7407967775870392956
         ChildIds: 6327806724685925941
+        ChildIds: 2271068313143538778
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -343,12 +344,24 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7795504530598228722
+              Id: 14231809728886464860
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.350000024
+              G: 0.0764900744
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.125
           }
         }
         Collidable_v2 {
@@ -398,12 +411,21 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1620387684860425604
+              Id: 14212988502358508072
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.6
+              B: 0.6
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -418,6 +440,71 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 6292373523314299415
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 2271068313143538778
+        Name: "Thorn"
+        Transform {
+          Location {
+            X: -6.24829102
+            Z: -10.6924744
+          }
+          Rotation {
+            Yaw: 90
+          }
+          Scale {
+            X: 0.274257869
+            Y: 0.0866845772
+            Z: 0.0347921848
+          }
+        }
+        ParentId: 2677580035233775389
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.6
+              B: 0.6
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12330866013407098468
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -547,7 +634,7 @@ Assets {
           Overrides {
             Name: "cs:AoETemplate"
             AssetReference {
-              Id: 13094493791807916252
+              Id: 15177551590828923324
             }
           }
         }
@@ -577,12 +664,12 @@ Assets {
       }
     }
     Assets {
-      Id: 7795504530598228722
-      Name: "Wood Planks"
+      Id: 14231809728886464860
+      Name: "Wood Raw White"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_planks_dark_001_uv"
+        AssetId: "mi_wood_raw_white_001_uv"
       }
     }
     Assets {
@@ -595,12 +682,21 @@ Assets {
       }
     }
     Assets {
-      Id: 1620387684860425604
-      Name: "Metal Basic 01"
+      Id: 14212988502358508072
+      Name: "Metal Basic Steel"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_basic_001"
+        AssetId: "steel_001"
+      }
+    }
+    Assets {
+      Id: 12330866013407098468
+      Name: "Arch"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_arch_001"
       }
     }
     PrimaryAssetId {

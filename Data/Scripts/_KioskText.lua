@@ -60,7 +60,7 @@ textData = {
 	
 	["Treasure"] = {
 		title = "Treasure!",
-		text = [[Haresting nodes generates events,
+		text = [[Harvesting nodes generates events,
 		which your code can listen for.  You can use this
 		to add your own gameplay effects on to harvest nodes!
 		
@@ -83,7 +83,7 @@ textData = {
 
 		Press 1 or 2, to select your axe or
 		pickaxe, and try harvesting some of
-		these.  The resouces will fall out
+		these.  The resources will fall out
 		when the harvest node is broken!
 		]]
 	},		
@@ -102,7 +102,7 @@ textData = {
 		they are.
 
 		Press '2' to ready your pickaxe, and try
-		breaking some rocks, and notice how there are
+		breaking some rocks. Notice how there are
 		always exactly 8 rocks left!
 		]]
 	},			
@@ -115,6 +115,9 @@ textData = {
 		
 		This whole grove of trees is only using two
 		networked objects!
+
+		The Crystal trees are set up to have 16 possible spawn locations, but
+		only one tree will be active at any given time. 
 		]]
 	},			
 	
@@ -150,16 +153,16 @@ textData = {
 	["Welcome"] = {
 		title = "Welcome!",
 		text = [[
-		To start with, pull out a tool
+		Welcome! To get started, pull out a tool
 		by pressing 1 or 2 on your keyboard.
 		
-		Try breaking the rocks and trees around the courtyard!
+		Try breaking some of these rocks and trees!
 		The axe will work on the trees, but the rocks require
 		the pickaxe to break.
 		
 		(Don't worry!  They'll grow back!)
 		
-		After you get the hang of that, go upstairs and wander
+		After you get the hang of that, feel free to wander
 		around a bit.  There's lots to see!  Whenever you see
 		a blue kiosk like this one, approach it to find out
 		what's happening.
@@ -189,7 +192,7 @@ textData = {
 	["explore"] = {
 		title = "Go Explore~",
 		text = [[Now that you know the basics of
-		harvesting, (select a weapon with your number
+		harvesting, (select a tool with your number
 		keys, then hit stuff with it), it's time to go
 		exploring!
 

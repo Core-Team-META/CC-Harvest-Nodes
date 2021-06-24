@@ -54,7 +54,7 @@ function EnterMidasZone(trigger, other)
       harvestData.resource = "coins"
     end)
   local newVFX = World.SpawnAsset(propMidasVFX)
-  newVFX:AttachToPlayer(player, "head")
+  newVFX:AttachToPlayer(player, "root")
   playerVFX[player] = newVFX
 end
 

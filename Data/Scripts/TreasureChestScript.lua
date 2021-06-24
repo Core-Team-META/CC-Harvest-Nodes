@@ -13,6 +13,8 @@ local propResourceAmount = script:GetCustomProperty("ResourceAmount")
 local propRoot = script:GetCustomProperty("Root"):WaitForObject()
 local propTrigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local propAutoOpenTime = script:GetCustomProperty("AutoOpenTime")
+local Ease3D = require(script:GetCustomProperty("Ease3D"))
+local OpenSFX = script:GetCustomProperty("OpenSFX"):WaitForObject()
 
 
 propRoot:LookAt(Game:GetLocalPlayer():GetWorldPosition())
@@ -43,9 +45,12 @@ propTrigger.isEnabled = false
 --Task.Wait(2)
 rot = propChestLid:GetWorldRotation()
 rot.x = -90
-propChestLid:RotateTo(rot, 1)
+--propChestLid:RotateTo(rot, 1)
+OpenSFX:Play()
+Ease3D.EaseRotation(propChestLid, Rotation.New(-120,0,-90), 1.2, Ease3D.EasingEquation.BOUNCE, Ease3D.EasingDirection.OUT)
 Task.Wait(0.5)
 propOpenGlow:Play()
+
 Events.BroadcastToServer("Harvest-AddResource", "coins", propResourceAmount)
 
 local radius = 100

@@ -76,7 +76,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -797,15 +797,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -22461.8633
-            Y: 13758.4307
-            Z: -86.5077209
+            X: -22448.0664
+            Y: 13740.5615
+            Z: -95.3439941
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 64.9866104
+            Yaw: 42.0546875
           }
         }
         Overrides {
@@ -919,15 +919,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -24238.4375
-            Y: 15209.4854
-            Z: -61.6470718
+            X: -25598.6367
+            Y: 15558.4521
+            Z: -18.6852264
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 70.3580246
+            Yaw: 55.5347824
           }
         }
         Overrides {
@@ -1174,8 +1174,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -20036.9883
-            Y: 10827.5625
+            X: -21239.5625
+            Y: 11896.416
             Z: -103.392822
           }
         }
@@ -5696,6 +5696,8 @@ Objects {
   ChildIds: 1165908422100245738
   ChildIds: 5773368216635787640
   ChildIds: 8305920835116012909
+  ChildIds: 9555099058798034131
+  ChildIds: 18436219388933518715
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5709,6 +5711,168 @@ Objects {
   }
   NetworkContext {
     Type: RuntimeStatic
+  }
+}
+Objects {
+  Id: 18436219388933518715
+  Name: "CrystalTree"
+  Transform {
+    Location {
+      X: 11906.7549
+      Y: -9472.96582
+      Z: -221.103821
+    }
+    Rotation {
+      Pitch: 2.20678616
+      Yaw: 13.8114614
+      Roll: 2.4153831
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15528465808647617243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4353526738624117170
+      value {
+        Overrides {
+          Name: "Mesh.InteractWithTriggers"
+          Bool: false
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16335679030288361272
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CrystalTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5856.13574
+            Y: 672.019531
+            Z: -205.149719
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 3.25892901
+            Yaw: -38.776886
+            Roll: -0.283844
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10398249714091287957
+    }
+  }
+}
+Objects {
+  Id: 9555099058798034131
+  Name: "CrystalTree"
+  Transform {
+    Location {
+      X: 9279.14648
+      Y: -9718.25293
+      Z: -27.5072784
+    }
+    Rotation {
+      Pitch: 2.20678616
+      Yaw: -71.131218
+      Roll: 2.41538048
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15528465808647617243
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4353526738624117170
+      value {
+        Overrides {
+          Name: "Mesh.InteractWithTriggers"
+          Bool: false
+        }
+        Overrides {
+          Name: "CoreProxy.CameraCollidable"
+          Enum {
+            Value: "mc:ecollisionsetting:forceoff"
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16335679030288361272
+      value {
+        Overrides {
+          Name: "Name"
+          String: "CrystalTree"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3882.06934
+            Y: 1755.85059
+            Z: -333.371399
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 2.20678616
+            Yaw: 13.8114405
+            Roll: 2.41538262
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10398249714091287957
+    }
   }
 }
 Objects {
@@ -5872,21 +6036,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4353526738624117170
-      value {
-        Overrides {
-          Name: "Mesh.InteractWithTriggers"
-          Bool: false
-        }
-        Overrides {
-          Name: "CoreProxy.CameraCollidable"
-          Enum {
-            Value: "mc:ecollisionsetting:forceoff"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 16335679030288361272
       value {
         Overrides {
@@ -5907,14 +6056,6 @@ Objects {
             Pitch: -2.06271362
             Yaw: 157.583954
             Roll: 2.07656789
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -5969,15 +6110,15 @@ Objects {
           Vector {
             X: -2435.01514
             Y: 3190.14648
-            Z: -227.667374
+            Z: -165.069275
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 4.68085146
-            Yaw: 87.2228928
-            Roll: -2.1415768e-07
+            Pitch: 0.229501173
+            Yaw: 87.1740646
+            Roll: -0.706665039
           }
         }
         Overrides {
@@ -6086,15 +6227,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 836.490845
-            Y: 5737.11328
-            Z: -344.409424
+            X: 1240.8877
+            Y: 4005.67139
+            Z: -153.82666
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 6.71433496
+            Pitch: 0.6
             Yaw: -156.226028
           }
         }
@@ -6132,21 +6273,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4353526738624117170
-      value {
-        Overrides {
-          Name: "Mesh.InteractWithTriggers"
-          Bool: false
-        }
-        Overrides {
-          Name: "CoreProxy.CameraCollidable"
-          Enum {
-            Value: "mc:ecollisionsetting:forceoff"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 16335679030288361272
       value {
         Overrides {
@@ -6156,25 +6282,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 87.7631836
-            Y: 6033.64063
-            Z: -367.164093
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 3.30085945
-            Yaw: -158.726242
-            Roll: -0.425994873
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 158.484863
+            Y: 6170.44092
+            Z: -392.306274
           }
         }
       }
@@ -6203,21 +6313,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4353526738624117170
-      value {
-        Overrides {
-          Name: "Mesh.InteractWithTriggers"
-          Bool: false
-        }
-        Overrides {
-          Name: "CoreProxy.CameraCollidable"
-          Enum {
-            Value: "mc:ecollisionsetting:forceoff"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 16335679030288361272
       value {
         Overrides {
@@ -6227,25 +6322,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1265.4917
-            Y: 4257.43066
-            Z: -264.981842
+            X: -1169.97852
+            Y: 4497.45605
+            Z: -264.981812
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 0.34043026
-            Yaw: 120.188034
-            Roll: -2.41568
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            Pitch: -1.42288208
+            Yaw: 120.159424
+            Roll: 0.616530478
           }
         }
       }
@@ -6306,9 +6393,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 6.48402119
-            Yaw: -50.1807251
-            Roll: 2.14817504e-07
+            Pitch: 3.8043263
+            Yaw: 48.4648972
+            Roll: 2.39173937
           }
         }
         Overrides {
@@ -6377,8 +6464,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 5.03718233
-            Yaw: 70.9604263
+            Pitch: 4.47289944
+            Yaw: 70.8248901
+            Roll: -1.63439941
           }
         }
         Overrides {
@@ -6442,14 +6530,6 @@ Objects {
             X: 5286.56543
             Y: 4572.3125
             Z: -339.641541
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: 4.95687294
-            Yaw: -147.365417
-            Roll: 3.48499489
           }
         }
         Overrides {
@@ -6549,21 +6629,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4353526738624117170
-      value {
-        Overrides {
-          Name: "Mesh.InteractWithTriggers"
-          Bool: false
-        }
-        Overrides {
-          Name: "CoreProxy.CameraCollidable"
-          Enum {
-            Value: "mc:ecollisionsetting:forceoff"
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 16335679030288361272
       value {
         Overrides {
@@ -6584,14 +6649,6 @@ Objects {
             Pitch: 1.16303086
             Yaw: -137.167892
             Roll: 2.51316357
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -6652,9 +6709,9 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 3.26491213
-            Yaw: -121.287842
-            Roll: 3.34970117
+            Pitch: 1.31562412
+            Yaw: -47.3785095
+            Roll: 0.148683757
           }
         }
       }
@@ -53809,9 +53866,9 @@ Objects {
   Name: "Spawn Points"
   Transform {
     Location {
-      X: -14880.1699
-      Y: 10312.5254
-      Z: 278.845886
+      X: -15133.1445
+      Y: 10504.9717
+      Z: 278.845825
     }
     Rotation {
       Yaw: -28.4441833

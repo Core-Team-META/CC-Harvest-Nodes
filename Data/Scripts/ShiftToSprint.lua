@@ -5,7 +5,7 @@ faster when shift is held down.
 ]]
 function OnBindingPressed(player, binding)
 	if binding == "ability_feet" then
-		player.maxWalkSpeed = 1280
+		player.maxWalkSpeed = 1680
 	end
 end
 

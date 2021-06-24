@@ -308,6 +308,8 @@ Assets {
         ParentId: 3376498988457263438
         ChildIds: 8282619275002026655
         ChildIds: 9134387016336598855
+        ChildIds: 4469368537546345596
+        ChildIds: 14517685450484029412
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -326,16 +328,17 @@ Assets {
         Name: "Crescent - 02"
         Transform {
           Location {
+            X: -1.35181808
+            Z: 7.43294525
           }
           Rotation {
-            Pitch: -90
             Yaw: -90
-            Roll: 180
+            Roll: 90
           }
           Scale {
-            X: 0.290590227
-            Y: 1
-            Z: 0.1
+            X: 0.0639537498
+            Y: 0.0716417208
+            Z: 0.469012052
           }
         }
         ParentId: 3901858285101031299
@@ -343,7 +346,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 16254281410732861046
+              Id: 14212988502358508072
             }
           }
           Overrides {
@@ -353,9 +356,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.6
+              G: 0.6
+              B: 0.6
               A: 1
             }
           }
@@ -379,7 +382,7 @@ Assets {
         }
         CoreMesh {
           MeshAsset {
-            Id: 17486578884833630931
+            Id: 13440535163126852768
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -407,8 +410,8 @@ Assets {
             Roll: -179.999954
           }
           Scale {
-            X: 0.09
-            Y: 0.09
+            X: 0.0573203713
+            Y: 0.090000011
             Z: 1
           }
         }
@@ -417,12 +420,24 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7795504530598228722
+              Id: 14231809728886464860
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.350000024
+              G: 0.0764900744
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.167911246
           }
         }
         Collidable_v2 {
@@ -437,6 +452,156 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 14609222748856275364
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 4469368537546345596
+        Name: "Crescent - 02"
+        Transform {
+          Location {
+            Z: 7.75388336
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: -90
+            Roll: 180
+          }
+          Scale {
+            X: 0.0902549848
+            Y: 0.182900473
+            Z: 0.101269685
+          }
+        }
+        ParentId: 3901858285101031299
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.6
+              B: 0.6
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 4.50611877
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.194317594
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+              Mass: 100
+              LinearDamping: 0.01
+            }
+            BoundsScale: 1
+          }
+        }
+      }
+      Objects {
+        Id: 14517685450484029412
+        Name: "Crescent - 02"
+        Transform {
+          Location {
+            X: -32.2006454
+            Z: 5.66046906
+          }
+          Rotation {
+            Yaw: -90
+            Roll: 81.6278763
+          }
+          Scale {
+            X: 0.0866955891
+            Y: 0.0533089191
+            Z: 0.370497465
+          }
+        }
+        ParentId: 3901858285101031299
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.6
+              G: 0.6
+              B: 0.6
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 4.50611877
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.194317594
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 13440535163126852768
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -588,21 +753,21 @@ Assets {
       }
     }
     Assets {
-      Id: 17486578884833630931
-      Name: "Crescent - 03"
+      Id: 13440535163126852768
+      Name: "Wedge - Curved"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_crescent_003"
+        AssetId: "sm_wedge_curved_001"
       }
     }
     Assets {
-      Id: 16254281410732861046
-      Name: "Metal Steel Brushed"
+      Id: 14212988502358508072
+      Name: "Metal Basic Steel"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_stainless-steel_001_uv"
+        AssetId: "steel_001"
       }
     }
     Assets {
@@ -615,12 +780,21 @@ Assets {
       }
     }
     Assets {
-      Id: 7795504530598228722
-      Name: "Wood Planks"
+      Id: 14231809728886464860
+      Name: "Wood Raw White"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_wood_planks_dark_001_uv"
+        AssetId: "mi_wood_raw_white_001_uv"
+      }
+    }
+    Assets {
+      Id: 12095835209017042614
+      Name: "Cube"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_002"
       }
     }
     PrimaryAssetId {
